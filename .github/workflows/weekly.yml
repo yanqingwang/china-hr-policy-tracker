@@ -2,7 +2,7 @@ name: weekly refresh
 
 on:
   schedule:
-    - cron: "30 2 * * 1"     # 每周一 02:30 UTC（北京 10:30）
+    - cron: "0 20 * * 0"      # 周日 20:00 UTC（周一 04:00 北京）——阿里云 01:00 CST 先跑，3 小时后 CI 拉取
   workflow_dispatch:
 
 permissions:
@@ -55,16 +55,17 @@ jobs:
           pattern: discovery-shard-*
           path: data
           merge-multiple: true
-      - name: Pull Aliyun cloud data (optional)
-        env:
-          ALIYUN_DATA_URL: ${{ secrets.ALIYUN_DATA_URL }}
+      - name: Pull Aliyun cloud data (aliyun-data branch, fallback URL)
         run: |
-          if [ -n "$ALIYUN_DATA_URL" ]; then
-            curl -sk --max-time 25 -o data/discovery-aliyun.json "$ALIYUN_DATA_URL" \
-              && echo "aliyun data fetched: $(wc -c < data/discovery-aliyun.json) bytes" \
-              || echo "aliyun data unavailable (skipped)"
+          git fetch origin aliyun-data:refs/remotes/origin/aliyun-data 2>/dev/null || true
+          if git show-ref --verify --quiet refs/remotes/origin/aliyun-data; then
+            if git show origin/aliyun-data:data/discovery-aliyun.json > data/discovery-aliyun.json 2>/dev/null; then
+              echo "aliyun data fetched: $(wc -c < data/discovery-aliyun.json) bytes"
+            else
+              echo "aliyun data unavailable on branch (skipped)"
+            fi
           else
-            echo "ALIYUN_DATA_URL not set (skipped)"
+            echo "aliyun-data branch not found (skipped)"
           fi
       - name: Build weekly report & notify
         env:
