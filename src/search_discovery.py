@@ -27,7 +27,8 @@ QUERIES = [
     "{city} 住房公积金 缴存比例 自主选择",
 ]
 DELAY = (1.5, 3.0)
-DETAIL_FETCH_CAP = 30   # 每次 run 抓正文提取的社保类条目上限（防撞 workflow 时长）
+DETAIL_FETCH_CAP = 30   # 每次 run 抓正文提取的社保类条目目标（有效条数）
+DETAIL_FETCH_MAX = 80   # 单次 run 最多抓取条数硬上限（无效文件会被跳过重抓，防爆时长）
 
 UDM_RE = re.compile(r"uddg=([^&=]+)")
 A_SNIPPET = re.compile(r"<a[^>]*class=\"[^\"]*result__snippet[^\"]*\"[^>]*>(.*?)</a>", re.S | re.I)
@@ -203,9 +204,11 @@ def _write_cache(tag: str, cache: list[dict]) -> None:
 
 
 def enrich_details(recs: list[dict]) -> None:
-    """社保公积金发现条目：抓详情页正文做数字提取（带总量上限，防爆时长）。
+    """社保公积金发现条目：抓详情页正文做数字提取 + 内容有效性校验（带总量上限，防爆时长）。
 
-    按标题含数字关键词与否排序，让最可能出数字的条目优先占满 cap。
+    抓到的文件若无实质政策内容（has_policy_content=False）视为无效文件剔除，
+    并继续抓取后续候选（尝试获取其他文件），直到凑够 DETAIL_FETCH_CAP 条有效记录。
+    按标题含数字关键词与否排序，让最可能出数字的条目优先。
     """
     import re as _re
     keyed = []
@@ -214,18 +217,27 @@ def enrich_details(recs: list[dict]) -> None:
             continue
         keyed.append((0 if _re.search(r"基数|比例|上限|下限|调整|最低工资|补贴", r.get("title") or "") else 1, i, r))
     keyed.sort()
-    n = 0
-    for _, _, r in keyed:
-        if n >= DETAIL_FETCH_CAP:
+    n_fetched = 0
+    n_valid = 0
+    for _, i, r in keyed:
+        # 凑够有效条数即停；硬上限 DETAIL_FETCH_MAX 防爆时长
+        if n_valid >= DETAIL_FETCH_CAP or n_fetched >= DETAIL_FETCH_MAX:
             break
         # 短超时：详情提取不能拖垮整期（试点教训：20s×45 最坏 16 分钟）
         html = util.http_get(r["url"], timeout=10)
         time.sleep(random.uniform(0.5, 1.2))
         if html is None:
             continue
+        n_fetched += 1
         text = util.text_of(html)
         from src import normalize as N
+        if not N.has_policy_content(text):
+            # 无实质政策内容 → 无效文件，剔除，继续尝试其他文件
+            r["_invalid"] = True
+            continue
         r["extracted"] = N.extract_fields(r["title"], text)
         if not r.get("quotes"):
             r["quotes"] = util.pick_quotes(text)
-        n += 1
+        n_valid += 1
+    # 剔除无效条目（原地过滤，保留其余类别）
+    recs[:] = [r for r in recs if not r.get("_invalid")]

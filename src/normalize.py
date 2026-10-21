@@ -46,6 +46,53 @@ def policy_type(title: str) -> str:
     return "—"
 
 
+# 非政策类噪声（财务公开/采购/人事/机构信息等），build 时剔除
+NOISE_RE = re.compile(
+    r"决算|预算|三公经费|绩效评价|绩效自评|绩效目标申报|审计报告|审计结果"
+    r"|采购公告|招标公告|中标公告|询价公告|竞争性磋商|政府采购"
+    r"|人事任免|任前公示|任职公示|干部任免|拟任|公示材料"
+    r"|信访|留言办理|投诉举报|办理情况"
+    r"|信息公开.{0,4}年度报告|信息公开.{0,4}年报|政府信息公开工作年度报告|政务公开年报"
+    r"|机构设置|领导分工|领导信息|联系方式|办公时间|作息时间|搬迁公告|迁址公告|地址变更"
+)
+
+
+def is_noise(title: str) -> bool:
+    """非政策类文件（决算/预算/采购/人事/机构信息等）→ True（应剔除）。"""
+    return bool(NOISE_RE.search(title or ""))
+
+
+def has_policy_content(text: str) -> bool:
+    """详情页是否含实质政策内容（比例/基数/上下限/金额/生效条款）。
+
+    无 → 视为无效文件（新闻/活动/财务公开等），应剔除并尝试获取其他文件。
+    """
+    if not text:
+        return False
+    # 去掉导航/页眉页脚壳文字
+    body = re.sub(
+        r"(首页|政务公开|政策法规|办事指南|网上办事|互动交流|网站首页|今天是|"
+        r"无障碍|长者模式|登录|注册|机构简介|联系方式|网站地图|主办|承办|版权所有)",
+        " ", text,
+    )
+    if re.search(r"\d+(?:\.\d+)?\s*%", body):
+        return True
+    if re.search(
+        r"(?:缴费基数|缴存基数|社保基数|工资基数|缴存比例|缴费比例|缴存额|缴费额|"
+        r"最低工资|养老金|补贴|失业金|上限|下限|调整为|调至|提高至|降低至|上调|下调)"
+        r"\D{0,15}[\d,，]{3,}(?:\s*元)?", body,
+    ):
+        return True
+    if re.search(r"自\s*[\d年月日.\- ]{0,14}(?:起)?\s*(?:施行|执行|实施|生效)", body):
+        return True
+    if re.search(r"(?:20\d{2})年\s*\d{1,2}\s*月\s*\d{1,2}\s*日", body) and re.search(
+        r"(?:施行|执行|实施|生效|调整|提高|降低|上调|下调|明确|规定|标准|比例|基数|"
+        r"上限|下限|缴存|缴费|养老金|补贴|失业金|最低工资)", body,
+    ):
+        return True
+    return False
+
+
 def _num(s: str) -> int | None:
     try:
         return int(re.sub(r"[,，]", "", s))
@@ -168,8 +215,10 @@ def extract_fields(title: str, page_text: str = "") -> dict:
 
 
 def build(raw: dict) -> dict:
-    """raw(adapter产出) -> canonical record。"""
+    """raw(adapter产出) -> canonical record；非政策类噪声返回 None。"""
     title = raw["title"].strip()
+    if is_noise(title):
+        return None
     url = raw["url"]
     city = raw.get("region") or util.guess_region(title)
     if city == "—":
