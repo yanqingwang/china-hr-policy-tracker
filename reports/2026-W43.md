@@ -528,7 +528,6 @@
 ---
 ## HR 服务情报
 
-- 【—】[12333在线咨询详情- 无锡 市人力资源和社会保障局](https://hrss.wuxi.gov.cn/fzlm/hdjlgny/12333zxzxxq/index.shtml?id=2826382) — — · 无锡官方 · 无锡
 - 【—】[Yantai - 烟台 市人力资源社会保障局](https://rshj.yantai.gov.cn/index.html) — — · 烟台官方 · 烟台
 - 【—】[三亚市人力资源开发局关于支付2026年9月就业困难人员社会保...](https://hrss.sanya.gov.cn/rsjsite/tzgg/202610/abf6ac3181c84ca3adb477d5da0847dc.shtml) — — · 三亚官方 · 三亚
 - 【—】[三亚市人力资源和社会保障局关于下达三亚市2026年工伤预防...](https://hrss.sanya.gov.cn/rsjsite/bmwjxx/202603/b4742f91434e4509b94b3ed9d662c8ac.shtml) — — · 三亚官方 · 三亚
