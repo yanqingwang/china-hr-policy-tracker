@@ -203,11 +203,21 @@ def _write_cache(tag: str, cache: list[dict]) -> None:
 
 
 def enrich_details(recs: list[dict]) -> None:
-    """社保公积金发现条目：抓详情页正文做数字提取（带总量上限，防爆时长）。"""
-    n = 0
-    for r in recs:
-        if r.get("category") != "社保公积金" or n >= DETAIL_FETCH_CAP:
+    """社保公积金发现条目：抓详情页正文做数字提取（带总量上限，防爆时长）。
+
+    按标题含数字关键词与否排序，让最可能出数字的条目优先占满 cap。
+    """
+    import re as _re
+    keyed = []
+    for i, r in enumerate(recs):
+        if r.get("category") != "社保公积金":
             continue
+        keyed.append((0 if _re.search(r"基数|比例|上限|下限|调整|最低工资|补贴", r.get("title") or "") else 1, i, r))
+    keyed.sort()
+    n = 0
+    for _, _, r in keyed:
+        if n >= DETAIL_FETCH_CAP:
+            break
         # 短超时：详情提取不能拖垮整期（试点教训：20s×45 最坏 16 分钟）
         html = util.http_get(r["url"], timeout=10)
         time.sleep(random.uniform(0.5, 1.2))

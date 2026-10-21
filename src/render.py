@@ -84,9 +84,40 @@ def _bullets(recs: list[dict], cat: str, limit: int = 8) -> list[str]:
     return rows[:limit + 16]
 
 
+def coverage(recs: list[dict], all_cities: list[str]) -> tuple[int, list[str]]:
+    """70 城覆盖统计：本周发现式采集实际命中的城市数 + 未覆盖清单。"""
+    covered = set()
+    for r in recs:
+        if r.get("source_id") != "search-70cities":
+            continue
+        region = (r.get("region") or "").replace("（省域）", "").replace("(省域)", "")
+        covered.add(region)
+    missing = [c for c in all_cities if c not in covered]
+    return len(covered), missing
+
+
 def report(recs: list[dict], path: str, week: str) -> str:
     today = dt.date.today().isoformat()
     fund_rec = fund_table(recs)
+    # 70 城覆盖统计
+    import yaml
+    from pathlib import Path as _P
+    cities = []
+    try:
+        ccfg = yaml.safe_load((_P(path).parent.parent / "data" / "cities.yml").read_text(encoding="utf-8"))
+        cities = ccfg.get("cities") or []
+    except Exception:
+        cities = []
+    n_cover, missing = coverage(recs, cities)
+    cov_lines = [
+        "## 📡 覆盖统计（70 大中城市）",
+        "",
+        f"本周发现式采集命中 **{n_cover}/70** 城（含省域命中的归入对应市）。",
+    ]
+    if missing:
+        cov_lines += ["未覆盖城市：" + "、".join(missing), ""]
+    else:
+        cov_lines += ["✅ 全部 70 城均有官方页面命中。", ""]
     lines = [
         "# 中国人力资源政策周报",
         "",
@@ -101,6 +132,8 @@ def report(recs: list[dict], path: str, week: str) -> str:
         fund_rec,
         "",
     ]
+    if cities:
+        lines += cov_lines + ["---"]
     qs = _quotes_block(recs, "社保公积金")
     if qs:
         lines += ["### 关键原文摘录（社保公积金）", ""] + qs + ["---"]
