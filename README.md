@@ -24,6 +24,7 @@ _2026-10-21 自动重建 · 数据管道见 [`src/`](src/)，源清单见 [`data
 | 南京 | — | — | — | 其他 | 南京政府网 | [Nanjing - 中共 南京 市委 南京 市人民政府](https://www.nanjing.gov.cn/index.html) |
 | 南京 | — | — | — | 其他 | 南京政府网 | [中共 南京 市委 南京 市人民政府 - Nanjing](https://www.nanjing.gov.cn/zzb/njgl/) |
 | 杭州 | — | — | — | 其他 | 杭州政府网 | [Hangzhou, China ( 浙江杭州) | Official site of Hangzhou,](https://www.ehangzhou.gov.cn/) |
+| 宁波 | — | — | — | 其他 | 宁波政府网 | [宁波 市人民政府](https://www.ningbo.gov.cn/) |
 | 合肥 | — | — | — | 其他 | 合肥政府网 | [政府信息公开_ 合肥 市人民政府](https://www.hefei.gov.cn/zwgk/index.html) |
 | 合肥 | — | — | — | 其他 | 合肥政府网 | [合肥 市人民政府（政府办公室）-信息公开](https://www.hefei.gov.cn/zwgk/public/column/1741?type=4&amp;catId=6711211&amp;action=list&amp;nav=3) |
 | 青岛 | — | — | — | 其他 | 青岛政府网 | [Qingdao - 青岛 市文化和旅游局](http://whlyj.qingdao.gov.cn/) |
@@ -38,7 +39,10 @@ _2026-10-21 自动重建 · 数据管道见 [`src/`](src/)，源清单见 [`data
 | 锦州 | — | — | — | 其他 | 锦州政府网 | [锦州 政务服务网](https://zwfw.jz.gov.cn/jeesaas/f?areacode=210701000000) |
 | 吉林 | — | — | — | 其他 | 吉林政府网 | [吉林 省文化和旅游厅](https://whhlyt.jl.gov.cn/) |
 | 牡丹江 | — | — | — | 其他 | 牡丹江政府网 | [hlj - 牡丹江 市政务服务网](https://mdj.zwfw.hlj.gov.cn/) |
+| 徐州 | — | — | — | 其他 | 徐州政府网 | [专利证书下载 - cnipa.gov.cn](https://cponline.cnipa.gov.cn/GzfwYwblGlwhT/zlzsxztz) |
+| 徐州 | — | — | — | 其他 | 徐州政府网 | [专利业务办理系统 - cnipa.gov.cn](https://cponline.cnipa.gov.cn/GzfwYwblGlwhTMVC/GzfwYwblGlwhT/selectIndexType) |
 | 蚌埠(省域) | — | — | — | 其他 | 蚌埠政府网 | [国家税务总局安徽省税务局 通知公告 @缴费人：2026年度 ...](http://anhui.chinatax.gov.cn/art/2026/10/15/art_9601_1328761.html) |
+| 蚌埠 | — | — | — | 其他 | 蚌埠政府网 | [www.bengbu.gov.cn](https://www.bengbu.gov.cn/zjbb/index.html) |
 | 泉州 | — | — | — | 其他 | 泉州政府网 | [Quanzhou - 泉州 市人民政府](http://www.quanzhou.gov.cn/) |
 | 九江 | — | — | — | 其他 | 九江政府网 | [中国 九江 网_ 九江 市委 市 政府门户网站](https://www.jiujiang.gov.cn/) |
 | 烟台 | — | — | — | HR 服务情报 | 烟台官方 | [Yantai - 烟台 市人力资源社会保障局](https://rshj.yantai.gov.cn/index.html) |
@@ -49,10 +53,6 @@ _2026-10-21 自动重建 · 数据管道见 [`src/`](src/)，源清单见 [`data
 | 常德 | — | — | — | 其他 | 常德政府网 | [Changde - 常德 市人民政府门户网站](https://www.changde.gov.cn/) |
 | 常德 | — | — | — | 其他 | 常德政府网 | [走进 常德 _ 常德 市人民政府门户网站 - Changde](https://www.changde.gov.cn/lccd) |
 | 三亚 | — | — | — | 其他 | 三亚政府网 | [Sanya - 三亚 市人民政府网](https://www.sanya.gov.cn/) |
-| 泸州 | — | — | — | 其他 | 泸州政府网 | [Luzhou - 泸州 市人民政府门户网站](https://www.luzhou.gov.cn/) |
-| 南充 | — | — | — | 其他 | 南充政府网 | [Nanchong - 南充 市人民政府](https://www.nanchong.gov.cn/) |
-| 南充 | — | — | — | 其他 | 南充政府网 | [南充 市人民政府 - Nanchong](https://www.nanchong.gov.cn/syjb/) |
-| 三亚 | — | — | — | 其他 | 三亚官方 | [促进新就业形态规范健康持续发展——《新就业形态劳动者权...](https://hrss.sanya.gov.cn/rsjsite/gzdt/202610/59c00e8c54414c20936870b4f52a11e2.shtml) |
 <!-- AUTO-TABLE-END -->
 
 ## 社保公积金数据表说明
