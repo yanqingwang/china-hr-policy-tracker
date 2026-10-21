@@ -79,8 +79,46 @@ def _sub_list_pages(html, page: str, cap: int = 5) -> list[str]:
     return out
 
 
+def _next_page(html, page: str) -> str | None:
+    """找列表页的下一页 URL：优先「下一页」锚文本，其次 index_N.html / *_N.shtml 递增模式。"""
+    txt = html.decode("utf-8", "ignore") if isinstance(html, bytes) else html
+    for href, label in A_RE.findall(txt):
+        title = re.sub(r"\s+", "", util.text_of(label))
+        if title in ("下一页", "下页"):
+            u = util.ensure_absolute(href, page)
+            if u and u != page:
+                return u
+    m = re.search(r"^(.*?)(/index|/list|/default|/t)?(_\d+)?\.(html?|shtml|htm)(\?.*)?$", page, re.I)
+    if m and not m.group(3):
+        return None
+    if m:
+        base, num = m.group(1), m.group(3)
+        n = int(num[1:]) if num else 1
+        nxt = re.sub(r"_\d+\.(html?|shtml|htm)", f"_{n+1}.\\1", page)
+        if nxt != page:
+            return nxt
+    return None
+
+
+def _scan_with_pagination(list_url: str, city: str, seen: set, depth: int = 3) -> list[dict]:
+    """扫列表页并跟随分页（翻最近几个月的历史，抓 4月/7月 基数调整高峰文件）。"""
+    items = []
+    cur = list_url
+    for _ in range(depth):
+        html = util.http_get(cur, timeout=10)
+        if html is None:
+            break
+        items.extend(_collect_links(html, cur, city, seen))
+        nxt = _next_page(html, cur)
+        if not nxt or nxt in seen:
+            break
+        seen.add(nxt)
+        cur = nxt
+    return items
+
+
 def scan_city(city: str, page: str) -> list[dict]:
-    """扫单个城市门户：主页 + 政策列表子页，返回命中条目（尝试获取其他文件）。"""
+    """扫单个城市门户：主页 + 政策列表子页（含分页），返回命中条目（尝试获取其他文件）。"""
     items = []
     html = util.http_get(page, timeout=12)
     if html is None:
@@ -88,12 +126,9 @@ def scan_city(city: str, page: str) -> list[dict]:
     seen: set = set()
     items.extend(_collect_links(html, page, city, seen))
 
-    # 深入一层：扫「政策法规/通知公告/文件库」列表子页，拿到首页没覆盖的政策文件
+    # 深入一层：扫「政策法规/通知公告/文件库」列表子页（带分页跟随），拿年度基数调整等历史文件
     for sub in _sub_list_pages(html, page):
-        sub_html = util.http_get(sub, timeout=10)
-        if sub_html is None:
-            continue
-        items.extend(_collect_links(sub_html, sub, city, seen))
+        items.extend(_scan_with_pagination(sub, city, seen))
     return items
 
 
