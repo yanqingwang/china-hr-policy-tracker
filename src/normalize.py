@@ -86,6 +86,45 @@ def extract_fields(title: str, page_text: str = "") -> dict:
         out["ratio_old"] = _ratio(m.group(1)) or None
         out["ratio_new"] = _ratio(m.group(2)) if m.group(2) else None
 
+    # 拆分比例（单位/公司 vs 个人/职工）——社保公积金公司/个人部分分离
+    # 1) 明确「单位(缴存/缴费)比例 X%」/「个人(缴存/缴费)比例 Y%」
+    m = re.search(r"(?:单位|公司|用人单位)\s*(?:缴存|缴费)?\s*比例\s*[:：为]?\s*([\d.]+)\s*%", text)
+    if m:
+        out["ratio_company"] = _ratio(m.group(1))
+    m = re.search(r"(?:个人|职工|员工)\s*(?:缴存|缴费)?\s*比例\s*[:：为]?\s*([\d.]+)\s*%", text)
+    if m:
+        out["ratio_individual"] = _ratio(m.group(1))
+    # 2) 连写「缴存比例为单位X%个人Y%」/「单位X%、个人Y%」
+    m = re.search(r"缴存比例\s*(?:为)?\s*单位\s*([\d.]+)\s*%\D{0,6}个人\s*([\d.]+)\s*%", text)
+    if m:
+        out["ratio_company"] = _ratio(m.group(1))
+        out["ratio_individual"] = _ratio(m.group(2))
+    m = re.search(r"单位\s*([\d.]+)\s*%\s*[、和及与]\s*个人\s*([\d.]+)\s*%", text)
+    if m:
+        out["ratio_company"] = _ratio(m.group(1))
+        out["ratio_individual"] = _ratio(m.group(2))
+
+    # 3) 月缴存额拆分（如「单位月缴存额为102元、个人月缴存额为102元」）
+    m = re.search(r"(?:单位|公司|用人单位)\s*(?:月缴存额|缴存额|缴费额)\s*(?:为|是)?\s*([\d,，]+)\s*元", text)
+    if m:
+        out["monthly_company"] = _num(m.group(1))
+    m = re.search(r"(?:个人|职工|员工)\s*(?:月缴存额|缴存额|缴费额)\s*(?:为|是)?\s*([\d,，]+)\s*元", text)
+    if m:
+        out["monthly_individual"] = _num(m.group(1))
+    # 合计/最低月缴存额（如「最低月缴存额为204元（其中单位…个人…）」）
+    m = re.search(r"(?:最低月缴存额|月缴存额(?:下限|最低)|\b月缴存额为)\D{0,6}([\d,，]+)\s*元", text)
+    if m:
+        out["monthly_min"] = _num(m.group(1))
+
+    # 4) 比例未明确但可推导：缴存额 ÷ 缴存基数 = 比例（如 102/2040 = 5%）
+    if out.get("ratio_company") is None or out.get("ratio_individual") is None:
+        base = out.get("base_new") or out.get("floor_new") or out.get("cap_new")
+        if base:
+            if out.get("ratio_company") is None and out.get("monthly_company") is not None:
+                out["ratio_company"] = round(out["monthly_company"] * 100 / base, 2)
+            if out.get("ratio_individual") is None and out.get("monthly_individual") is not None:
+                out["ratio_individual"] = round(out["monthly_individual"] * 100 / base, 2)
+
     # 弹性缴存（东莞模式）：「比例可在 X%–Y% 之间（自行/自主）选择」
     m = re.search(
         r"(?:比例|缴存比例).{0,16}?([\d.]+)\s*%\s*[至到~—–\-]{1,2}\s*([\d.]+)\s*%"

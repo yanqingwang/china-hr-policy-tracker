@@ -11,12 +11,39 @@ CAT_BILINGUAL = {}
 FUND_TABLE_HEADERS = {
     "zh_kwargs": ("| 城市 | 区域 | 保险类型 | 生效时间 | 发布时间 | 发布单位 "
                   "| 原基数 | 原比例 | 原下限 | 原上限 "
-                  "| 新基数 | 新比例 | 新下限 | 新上限 | 原文 |"),
+                  "| 新基数 | 新比例(公司/个人) | 新下限 | 新上限 | 原文 |"),
     "sep": "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|",
 }
 
 FIELD_ORDER = ["base_old", "ratio_old", "floor_old", "cap_old",
                "base_new", "ratio_new", "floor_new", "cap_new"]
+
+
+def _ratio_cell(ex: dict) -> str:
+    """新比例单元格：优先拆分比例（公司/个人），其次弹性区间，最后单值。"""
+    if ex.get("ratio_range"):
+        return str(ex["ratio_range"])
+    r_c, r_i = ex.get("ratio_company"), ex.get("ratio_individual")
+    if r_c is not None or r_i is not None:
+        parts = []
+        if r_c is not None:
+            parts.append(f"公司{r_c:g}%")
+        if r_i is not None:
+            parts.append(f"个人{r_i:g}%")
+        # 附注月缴存额拆分（有则补）
+        m_c, m_i = ex.get("monthly_company"), ex.get("monthly_individual")
+        if m_c is not None or m_i is not None:
+            mparts = []
+            if m_c is not None:
+                mparts.append(f"单位{m_c:,}元")
+            if m_i is not None:
+                mparts.append(f"个人{m_i:,}元")
+            return f"{' · '.join(parts)}<br><sub>{' · '.join(mparts)}</sub>"
+        return " · ".join(parts)
+    v = ex.get("ratio_new")
+    if v is None:
+        return "—"
+    return f"{v:g}%"
 
 
 def _d(x) -> str:
@@ -54,8 +81,8 @@ def fund_table(recs: list[dict]) -> str:
         ex = r.get("extracted") or {}
         vals = []
         for f in FIELD_ORDER:
-            if f == "ratio_new" and ex.get("ratio_range"):
-                vals.append(str(ex["ratio_range"]))   # 弹性缴存区间（如 5%–12%（可自行选择））
+            if f == "ratio_new":
+                vals.append(_ratio_cell(ex))          # 拆分比例/弹性区间/单值
                 continue
             v = ex.get(f)
             if v is None:
