@@ -386,7 +386,7 @@
 - — · [关于马剑投诉陕西名信企业管理咨询有限公司未按规定缴存住房公积金案件《询问通知书》的送达公告](https://zfgjj.xa.gov.cn/gzdt/xzzfgs/xwtzs/2110984676225613825.html)
 - — · [关于田莉、郑圆反映西安蓝恩健身有限公司未按规定缴存住房公积金的《询问通知书》的送达公告](https://zfgjj.xa.gov.cn/gzdt/xzzfgs/xwtzs/2105188454562824193.html)
 
-**赣州 · 公积金（历史版本 19 条）**
+**赣州 · 公积金（历史版本 20 条）**
 - — · [2026年全市住房公积金系统培训班举办](https://zfgjj.ganzhou.gov.cn/gzszfjj/c102904/202609/e17892e2d41143c787a6180f33fef8b7.shtml)
 - — · [市住房公积金管理委员会召开2026年第二次会议](https://zfgjj.ganzhou.gov.cn/gzszfjj/c102904/202609/e453cd4402f549169bef590bdd0942a9.shtml)
 - — · [汇聚公益暖流践行责任担当——市住房公积金管理中心积极参与2026年“久久公益节”及“慈善赣州](https://zfgjj.ganzhou.gov.cn/gzszfjj/c102904/202609/ceb784b476764289b1370af5e724386b.shtml)
@@ -395,6 +395,7 @@
 - — · [赣州市住房公积金管理中心关于集中清退住房公积金贷款保证金的通告](https://zfgjj.ganzhou.gov.cn/gzszfjj/c102906/202610/ace037d53bcd460e90539c425f00c827.shtml)
 - — · [关于朱建梅投诉瑞金清泉矿业集团有限公司未按规定缴存住房公积金案件《核查通知书》的送达公告](https://zfgjj.ganzhou.gov.cn/gzszfjj/c102906/202610/ae45acf25b8741a79e9e892b019c6f42.shtml)
 - — · [关于梁九生等16名职工投诉江西丰德企业管理有限公司赣州分公司未按规定缴存住房公积金案件《核查](https://zfgjj.ganzhou.gov.cn/gzszfjj/c102906/202609/b9085193db60494c9b22e2671961d4cb.shtml)
+- — · [关于调整我市住房公积金部分管理规定的通知](https://zfgjj.ganzhou.gov.cn/gzszfjj/c103430/202609/a18300607025489cb17a8e8478ca9223.shtml)
 - — · [关于开展提取住房公积金支付自住住房物业费业务的通知](https://zfgjj.ganzhou.gov.cn/gzszfjj/c103430/202609/ac47d35be504487c91004ade0ee4bfdb.shtml)
 - — · [《住房公积金管理条例》](https://zfgjj.ganzhou.gov.cn/gzszfjj/c103429/202609/39d6fd55d5464fd3bde50f057eb0b9c3.shtml)
 - — · [关于印发《赣州市住房公积金归集业务操作细则》《赣州市住房公积金提取业务操作细则》《赣州市住房](https://zfgjj.ganzhou.gov.cn/gzszfjj/c103431/202605/07bba404126144fe95f2de768abfe3c0.shtml)
