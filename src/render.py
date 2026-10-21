@@ -11,39 +11,46 @@ CAT_BILINGUAL = {}
 FUND_TABLE_HEADERS = {
     "zh_kwargs": ("| 城市 | 区域 | 保险类型 | 生效时间 | 发布时间 | 发布单位 "
                   "| 原基数 | 原比例 | 原下限 | 原上限 "
-                  "| 新基数 | 新比例(公司/个人) | 新下限 | 新上限 | 原文 |"),
-    "sep": "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|",
+                  "| 新基数 | 新公司比例 | 新个人比例 | 新下限 | 新上限 | 原文 |"),
+    "sep": "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|",
 }
 
 FIELD_ORDER = ["base_old", "ratio_old", "floor_old", "cap_old",
                "base_new", "ratio_new", "floor_new", "cap_new"]
 
 
-def _ratio_cell(ex: dict) -> str:
-    """新比例单元格：优先拆分比例（公司/个人），其次弹性区间，最后单值。"""
+def _ratio_cell_company(ex: dict) -> str:
+    """新公司比例：拆分比例优先；无拆分时用弹性区间/单值。"""
+    if ex.get("ratio_company") is not None:
+        cell = f"{ex['ratio_company']:g}%"
+        subs = []
+        if ex.get("ratio_range"):
+            subs.append(f"弹性 {ex['ratio_range']}")
+        if ex.get("monthly_company") is not None:
+            subs.append(f"单位{ex['monthly_company']:,}元")
+        return cell + (f"<br><sub>{' · '.join(subs)}</sub>" if subs else "")
     if ex.get("ratio_range"):
         return str(ex["ratio_range"])
-    r_c, r_i = ex.get("ratio_company"), ex.get("ratio_individual")
-    if r_c is not None or r_i is not None:
-        parts = []
-        if r_c is not None:
-            parts.append(f"公司{r_c:g}%")
-        if r_i is not None:
-            parts.append(f"个人{r_i:g}%")
-        # 附注月缴存额拆分（有则补）
-        m_c, m_i = ex.get("monthly_company"), ex.get("monthly_individual")
-        if m_c is not None or m_i is not None:
-            mparts = []
-            if m_c is not None:
-                mparts.append(f"单位{m_c:,}元")
-            if m_i is not None:
-                mparts.append(f"个人{m_i:,}元")
-            return f"{' · '.join(parts)}<br><sub>{' · '.join(mparts)}</sub>"
-        return " · ".join(parts)
-    v = ex.get("ratio_new")
-    if v is None:
-        return "—"
-    return f"{v:g}%"
+    if ex.get("ratio_new") is not None:
+        return f"{ex['ratio_new']:g}%"
+    return "—"
+
+
+def _ratio_cell_individual(ex: dict) -> str:
+    """新个人比例：拆分比例优先；无拆分时用弹性区间/单值。"""
+    if ex.get("ratio_individual") is not None:
+        cell = f"{ex['ratio_individual']:g}%"
+        subs = []
+        if ex.get("ratio_range"):
+            subs.append(f"弹性 {ex['ratio_range']}")
+        if ex.get("monthly_individual") is not None:
+            subs.append(f"个人{ex['monthly_individual']:,}元")
+        return cell + (f"<br><sub>{' · '.join(subs)}</sub>" if subs else "")
+    if ex.get("ratio_range"):
+        return str(ex["ratio_range"])
+    if ex.get("ratio_new") is not None:
+        return f"{ex['ratio_new']:g}%"
+    return "—"
 
 
 def _d(x) -> str:
@@ -75,14 +82,15 @@ def fund_table(recs: list[dict]) -> str:
         shown.append(r)
     shown.sort(key=lambda r: (r.get("effective_date") or "9999", -(r.get("publisher_rank") or 0)))
     if not shown:
-        rows.append("| —（本期无本类条目）" + " |" * 14)
+        rows.append("| —（本期无本类条目）" + " |" * 15)
         return "\n".join(rows)
     for r in shown:
         ex = r.get("extracted") or {}
         vals = []
         for f in FIELD_ORDER:
             if f == "ratio_new":
-                vals.append(_ratio_cell(ex))          # 拆分比例/弹性区间/单值
+                vals.append(_ratio_cell_company(ex))   # 新公司比例
+                vals.append(_ratio_cell_individual(ex))  # 新个人比例
                 continue
             v = ex.get(f)
             if v is None:

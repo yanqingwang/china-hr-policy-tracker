@@ -103,6 +103,19 @@ def extract_fields(title: str, page_text: str = "") -> dict:
     if m:
         out["ratio_company"] = _ratio(m.group(1))
         out["ratio_individual"] = _ratio(m.group(2))
+    # 2.1) 「单位、个人各 X%」/「个人、单位各 X%」（同比例）
+    m = re.search(
+        r"(?:单位|公司)\s*[、和及与]\s*(?:个人|职工|员工)\s*(?:缴存|缴费)?\s*(?:比例)?\s*各\s*(?:为|执行)?\s*([\d.]+)\s*%", text
+    )
+    if m:
+        out["ratio_company"] = _ratio(m.group(1))
+        out["ratio_individual"] = _ratio(m.group(1))
+    m = re.search(
+        r"(?:个人|职工|员工)\s*[、和及与]\s*(?:单位|公司)\s*(?:缴存|缴费)?\s*(?:比例)?\s*各\s*(?:为|执行)?\s*([\d.]+)\s*%", text
+    )
+    if m:
+        out["ratio_company"] = _ratio(m.group(1))
+        out["ratio_individual"] = _ratio(m.group(1))
 
     # 3) 月缴存额拆分（如「单位月缴存额为102元、个人月缴存额为102元」）
     m = re.search(r"(?:单位|公司|用人单位)\s*(?:月缴存额|缴存额|缴费额)\s*(?:为|是)?\s*([\d,，]+)\s*元", text)
@@ -133,6 +146,15 @@ def extract_fields(title: str, page_text: str = "") -> dict:
     if m:
         out["ratio_range"] = f"{m.group(1)}%–{m.group(2)}%（可自行选择）"
         out.pop("ratio_new", None)   # 区间语义优先于单值
+
+    # 弹性缴存（区间下限/上限）：「不低于 X% 且不高于 Y%」/「不低于X%、不高于Y%」
+    m = re.search(
+        r"不低于\s*([\d.]+)\s*%\D{0,10}不高于\s*([\d.]+)\s*%", text
+    )
+    if m:
+        lo, hi = _ratio(m.group(1)), _ratio(m.group(2))
+        out["ratio_range"] = f"{lo:g}%–{hi:g}%（不低于/不高于）"
+        out.pop("ratio_new", None)
 
     # 把"由 X 调至 Y"语言同时也匹配上下限
     m = re.search(r"上限\s*(?:由)\s*([\d,，]{4,})\s*元?\s*(?:调整为|调至)\s*([\d,，]{4,})\s*元", text)
