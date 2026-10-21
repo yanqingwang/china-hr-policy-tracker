@@ -8,10 +8,10 @@ UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.3
 TIMEOUT = 20
 
 
-def http_get(url: str) -> str | bytes | None:
+def http_get(url: str, timeout: int = TIMEOUT) -> str | bytes | None:
     """Content best-effort; None 当页面不可达（单源失败不炸整期）."""
     try:
-        r = requests.get(url, headers={"User-Agent": UA}, timeout=TIMEOUT)
+        r = requests.get(url, headers={"User-Agent": UA}, timeout=timeout)
         if r.status_code != 200:
             return None
         return r.content

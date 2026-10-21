@@ -32,7 +32,7 @@ QUERIES = [
     "{city} 住房公积金 缴存比例 自主选择",
 ]
 DELAY = (2.0, 3.5)
-DETAIL_FETCH_CAP = 45   # 每次 run 抓正文提取的社保类条目上限
+DETAIL_FETCH_CAP = 30   # 每次 run 抓正文提取的社保类条目上限（防撞 workflow 时长）
 
 
 def _strip(s: str) -> str:
@@ -126,8 +126,9 @@ def enrich_details(recs: list[dict]) -> None:
     for r in recs:
         if r.get("category") != "社保公积金" or n >= DETAIL_FETCH_CAP:
             continue
-        html = util.http_get(r["url"])
-        time.sleep(random.uniform(0.8, 1.6))
+        # 短超时：详情提取不能拖垮整期（试点教训：20s×45 最坏 16 分钟）
+        html = util.http_get(r["url"], timeout=10)
+        time.sleep(random.uniform(0.5, 1.2))
         if html is None:
             continue
         text = util.text_of(html)
