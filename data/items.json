@@ -276,6 +276,27 @@
     ]
   },
   {
+    "uid": "edcd169aa55c",
+    "title": "12333在线咨询详情- 无锡 市人力资源和社会保障局",
+    "url": "https://hrss.wuxi.gov.cn/fzlm/hdjlgny/12333zxzxxq/index.shtml?id=2826382",
+    "publisher": "无锡官方",
+    "publisher_rank": 4,
+    "region": "无锡",
+    "region_city": "无锡",
+    "district": null,
+    "category": "HR 服务情报",
+    "policy_type": "—",
+    "key": "011a71aa5b71",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": null,
+    "history": [],
+    "is_vendor": false,
+    "source_id": "search-70cities",
+    "detail_text": "站点地图 | 联系我们 | 电子邮局 无锡市人力资源和社会保障局版权所有 无锡市人力资源和社会保障局主办 联系电话：12333 苏ICP …",
+    "quotes": []
+  },
+  {
     "uid": "f13fe9175109",
     "title": "关于发布2026年社会保险缴费 基数 上下限的通知_安徽省人力 ...",
     "url": "https://hrss.ah.gov.cn/public/6595721/80811450.html",
@@ -560,7 +581,12 @@
         "history": [],
         "is_vendor": false,
         "source_id": "city-portal",
-        "detail_text": null
+        "detail_text": null,
+        "quotes": [
+          "2022年04月13日 -->",
+          "海南大学生城乡居民医疗保险参保缴费指南",
+          "继续访问 放弃 非本域名链接跳转弹窗--> --> 关闭 网站上线温馨提醒 2022年04月13日，海南省社会保险服务中心门户网站上线试运行，希望给您带来便捷、舒适的访问体验"
+        ]
       }
     ],
     "is_vendor": false,
@@ -771,7 +797,12 @@
     "history": [],
     "is_vendor": false,
     "source_id": "city-portal",
-    "detail_text": null
+    "detail_text": null,
+    "quotes": [
+      "2022年04月13日 -->",
+      "海南大学生城乡居民医疗保险参保缴费指南",
+      "继续访问 放弃 非本域名链接跳转弹窗--> --> 关闭 网站上线温馨提醒 2022年04月13日，海南省社会保险服务中心门户网站上线试运行，希望给您带来便捷、舒适的访问体验"
+    ]
   },
   {
     "uid": "b298525c0a73",
@@ -5741,9 +5772,9 @@
     "detail_text": null
   },
   {
-    "uid": "9b6962eb0562",
+    "uid": "a4dee6e64d32",
     "title": "泸州市劳动人事争议仲裁委员会公告",
-    "url": "https://rsj.luzhou.gov.cn/ldgx/ldzyzc/content_1160033",
+    "url": "https://rsj.luzhou.gov.cn/ldgx/ldzyzc/content_1160302",
     "publisher": "泸州官方",
     "publisher_rank": 4,
     "region": "泸州",
@@ -5760,6 +5791,7 @@
     "source_id": "city-portal",
     "detail_text": null,
     "dup_links": [
+      "https://rsj.luzhou.gov.cn/ldgx/ldzyzc/content_1160033",
       "https://rsj.luzhou.gov.cn/ldgx/ldzyzc/content_1160032",
       "https://rsj.luzhou.gov.cn/ldgx/ldzyzc/content_1159835"
     ]
@@ -7444,9 +7476,9 @@
     ]
   },
   {
-    "uid": "a7a32ab56612",
-    "title": "2026年全市住房公积金系统培训班举办",
-    "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/c102904/202609/e17892e2d41143c787a6180f33fef8b7.shtml",
+    "uid": "77cdb78dd552",
+    "title": "《住房公积金管理条例》",
+    "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/c103429/202609/39d6fd55d5464fd3bde50f057eb0b9c3.shtml",
     "publisher": "赣州官方",
     "publisher_rank": 4,
     "region": "赣州",
@@ -7459,58 +7491,6 @@
     "effective_date": null,
     "extracted": {},
     "history": [
-      {
-        "uid": "6e5f47af4bee",
-        "title": "市住房公积金管理委员会召开2026年第二次会议",
-        "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/c102904/202609/e453cd4402f549169bef590bdd0942a9.shtml",
-        "publisher": "赣州官方",
-        "publisher_rank": 4,
-        "region": "赣州",
-        "region_city": "赣州",
-        "district": null,
-        "category": "社保公积金",
-        "policy_type": "公积金",
-        "key": "79a759c60959",
-        "publish_date": null,
-        "effective_date": null,
-        "extracted": {},
-        "history": [],
-        "is_vendor": false,
-        "source_id": "city-portal",
-        "detail_text": null,
-        "quotes": [
-          "市住房公积金管理委员会2026年第2次会议召开 \"> 90935907 市住房公积金管理委员会2026年第2次会议召开 20 遵义市住房公积金管理中心 2026-09-24 09:26:05 5233825 中心动态 中央政府网站 | 贵州省政府网站 | 个人中心 | 适老化及无障碍浏览 --> 搜&nbsp;索 -…",
-          "会议 强调，要深刻领会新《条例》修订的重大意义，不折不扣抓好落地执行"
-        ],
-        "dup_links": [
-          "http://zfgjj.zunyi.gov.cn/zxdt/zxdt/202609/t20260924_90935907.html"
-        ]
-      },
-      {
-        "uid": "77cdb78dd552",
-        "title": "《住房公积金管理条例》",
-        "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/c103429/202609/39d6fd55d5464fd3bde50f057eb0b9c3.shtml",
-        "publisher": "赣州官方",
-        "publisher_rank": 4,
-        "region": "赣州",
-        "region_city": "赣州",
-        "district": null,
-        "category": "社保公积金",
-        "policy_type": "公积金",
-        "key": "79a759c60959",
-        "publish_date": null,
-        "effective_date": null,
-        "extracted": {},
-        "history": [],
-        "is_vendor": false,
-        "source_id": "city-portal",
-        "detail_text": null,
-        "quotes": [
-          "待单位经济效益好转后，再提高缴存比例或者补缴缓缴",
-          "（二）根据本条例第十八条的规定，拟订住房公积金的具体缴存比例",
-          "单位为职工缴存的住房公积金的月缴存额为职工本人上一年度月平均工资乘以单位住房公积金缴存比例"
-        ]
-      },
       {
         "uid": "6d045ecf4d1e",
         "title": "关于印发《赣州市住房公积金归集业务操作细则》《赣州市住房公积金提取业务操作细则》《赣州市住房公积金个人住房贷款业务操作细则》的通知",
@@ -7585,55 +7565,28 @@
           "支持使用住房公积金购买配售型保障性住房（含人才住房）政策的解读 | 赣州市住房公积金管理中心 网站首页 新闻中心 机构职能 政务公开 政务服务 互动交流 业务指南 专题专栏 无障碍 关怀版 无障碍 当前位置： 首页 &nbsp;>&nbsp; 政务公开 &nbsp;>&nbsp; 政策解读 支持使用住房公积金购买配售…",
           "&ensp; &ensp; 注意：最高贷款额度和可贷金额上浮政策不叠加使用，缴存人家庭根据自身实际选择"
         ]
+      },
+      {
+        "uid": "e4b2deeb46c6",
+        "title": "市住房公积金管理中心机关第三党支部召开2024年度组织生活会",
+        "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/jgdj/202504/b624955e61234f2190c225ece405876a.shtml",
+        "publisher": "赣州官方",
+        "publisher_rank": 4,
+        "region": "赣州",
+        "region_city": "赣州",
+        "district": null,
+        "category": "社保公积金",
+        "policy_type": "公积金",
+        "key": "79a759c60959",
+        "publish_date": null,
+        "effective_date": null,
+        "extracted": {},
+        "history": [],
+        "is_vendor": false,
+        "source_id": "city-portal",
+        "detail_text": null
       }
     ],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null
-  },
-  {
-    "uid": "6e5f47af4bee",
-    "title": "市住房公积金管理委员会召开2026年第二次会议",
-    "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/c102904/202609/e453cd4402f549169bef590bdd0942a9.shtml",
-    "publisher": "赣州官方",
-    "publisher_rank": 4,
-    "region": "赣州",
-    "region_city": "赣州",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "公积金",
-    "key": "79a759c60959",
-    "publish_date": null,
-    "effective_date": null,
-    "extracted": {},
-    "history": [],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null,
-    "quotes": [
-      "市住房公积金管理委员会2026年第2次会议召开 \"> 90935907 市住房公积金管理委员会2026年第2次会议召开 20 遵义市住房公积金管理中心 2026-09-24 09:26:05 5233825 中心动态 中央政府网站 | 贵州省政府网站 | 个人中心 | 适老化及无障碍浏览 --> 搜&nbsp;索 -…",
-      "会议 强调，要深刻领会新《条例》修订的重大意义，不折不扣抓好落地执行"
-    ],
-    "dup_links": [
-      "http://zfgjj.zunyi.gov.cn/zxdt/zxdt/202609/t20260924_90935907.html"
-    ]
-  },
-  {
-    "uid": "77cdb78dd552",
-    "title": "《住房公积金管理条例》",
-    "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/c103429/202609/39d6fd55d5464fd3bde50f057eb0b9c3.shtml",
-    "publisher": "赣州官方",
-    "publisher_rank": 4,
-    "region": "赣州",
-    "region_city": "赣州",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "公积金",
-    "key": "79a759c60959",
-    "publish_date": null,
-    "effective_date": null,
-    "extracted": {},
-    "history": [],
     "is_vendor": false,
     "source_id": "city-portal",
     "detail_text": null,
@@ -7751,6 +7704,50 @@
     ]
   },
   {
+    "uid": "e4b2deeb46c6",
+    "title": "市住房公积金管理中心机关第三党支部召开2024年度组织生活会",
+    "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/jgdj/202504/b624955e61234f2190c225ece405876a.shtml",
+    "publisher": "赣州官方",
+    "publisher_rank": 4,
+    "region": "赣州",
+    "region_city": "赣州",
+    "district": null,
+    "category": "社保公积金",
+    "policy_type": "公积金",
+    "key": "79a759c60959",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": {},
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null
+  },
+  {
+    "uid": "89205920ec8a",
+    "title": "市住房公积金管理委员会2026年第2次会议召开",
+    "url": "http://zfgjj.zunyi.gov.cn/zxdt/zxdt/202609/t20260924_90935907.html",
+    "publisher": "遵义官方",
+    "publisher_rank": 4,
+    "region": "遵义",
+    "region_city": "遵义",
+    "district": null,
+    "category": "社保公积金",
+    "policy_type": "公积金",
+    "key": "b945b51fc11a",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": {},
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null,
+    "quotes": [
+      "市住房公积金管理委员会2026年第2次会议召开 \"> 90935907 市住房公积金管理委员会2026年第2次会议召开 20 遵义市住房公积金管理中心 2026-09-24 09:26:05 5233825 中心动态 中央政府网站 | 贵州省政府网站 | 个人中心 | 适老化及无障碍浏览 --> 搜&nbsp;索 -…",
+      "会议 强调，要深刻领会新《条例》修订的重大意义，不折不扣抓好落地执行"
+    ]
+  },
+  {
     "uid": "9ca4e1936df6",
     "title": "遵义市住房公积金管理中心关于警惕不法中介虚假宣传代办住房公积金提取等业务的公告",
     "url": "http://zfgjj.zunyi.gov.cn/zxdt/tzgg/202610/t20261015_90994619.html",
@@ -7793,6 +7790,26 @@
         "dup_links": [
           "http://zfgjj.zunyi.gov.cn/zxdt/tzgg/202609/t20260929_90949261.html"
         ]
+      },
+      {
+        "uid": "f114f05e35f6",
+        "title": "关于办理装修自住住房提取住房公积金的公告",
+        "url": "http://zfgjj.zunyi.gov.cn/zxdt/tzgg/202609/t20260929_90949290.html",
+        "publisher": "遵义官方",
+        "publisher_rank": 4,
+        "region": "遵义",
+        "region_city": "遵义",
+        "district": null,
+        "category": "社保公积金",
+        "policy_type": "公积金",
+        "key": "b945b51fc11a",
+        "publish_date": "2026-09-29",
+        "effective_date": null,
+        "extracted": {},
+        "history": [],
+        "is_vendor": false,
+        "source_id": "city-portal",
+        "detail_text": null
       },
       {
         "uid": "6c76d8cfc651",
@@ -8328,6 +8345,30 @@
         "dup_links": [
           "http://zfgjj.zunyi.gov.cn/hdjl/cjwt/dkwt/202509/t20250916_88621223.html"
         ]
+      },
+      {
+        "uid": "89205920ec8a",
+        "title": "市住房公积金管理委员会2026年第2次会议召开",
+        "url": "http://zfgjj.zunyi.gov.cn/zxdt/zxdt/202609/t20260924_90935907.html",
+        "publisher": "遵义官方",
+        "publisher_rank": 4,
+        "region": "遵义",
+        "region_city": "遵义",
+        "district": null,
+        "category": "社保公积金",
+        "policy_type": "公积金",
+        "key": "b945b51fc11a",
+        "publish_date": null,
+        "effective_date": null,
+        "extracted": {},
+        "history": [],
+        "is_vendor": false,
+        "source_id": "city-portal",
+        "detail_text": null,
+        "quotes": [
+          "市住房公积金管理委员会2026年第2次会议召开 \"> 90935907 市住房公积金管理委员会2026年第2次会议召开 20 遵义市住房公积金管理中心 2026-09-24 09:26:05 5233825 中心动态 中央政府网站 | 贵州省政府网站 | 个人中心 | 适老化及无障碍浏览 --> 搜&nbsp;索 -…",
+          "会议 强调，要深刻领会新《条例》修订的重大意义，不折不扣抓好落地执行"
+        ]
       }
     ],
     "is_vendor": false,
@@ -8371,9 +8412,9 @@
     ]
   },
   {
-    "uid": "6c76d8cfc651",
-    "title": "关于《遵义市二手房住房公积金贷款“带押过户”业务办理规则》的政策解读",
-    "url": "http://zfgjj.zunyi.gov.cn/zxdt/tzgg/202609/t20260924_90937371.html",
+    "uid": "f114f05e35f6",
+    "title": "关于办理装修自住住房提取住房公积金的公告",
+    "url": "http://zfgjj.zunyi.gov.cn/zxdt/tzgg/202609/t20260929_90949290.html",
     "publisher": "遵义官方",
     "publisher_rank": 4,
     "region": "遵义",
@@ -8382,30 +8423,7 @@
     "category": "社保公积金",
     "policy_type": "公积金",
     "key": "b945b51fc11a",
-    "publish_date": "2026-09-24",
-    "effective_date": null,
-    "extracted": {},
-    "history": [],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null,
-    "dup_links": [
-      "http://zfgjj.zunyi.gov.cn/zxdt/tzgg/202609/t20260924_90937255.html"
-    ]
-  },
-  {
-    "uid": "51e778d56103",
-    "title": "公积金政策迎大变化！一图读懂→",
-    "url": "http://zfgjj.zunyi.gov.cn/zxdt/zxdt/202609/t20260914_90867426.html",
-    "publisher": "遵义官方",
-    "publisher_rank": 4,
-    "region": "遵义",
-    "region_city": "遵义",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "公积金",
-    "key": "b945b51fc11a",
-    "publish_date": "2026-09-14",
+    "publish_date": "2026-09-29",
     "effective_date": null,
     "extracted": {},
     "history": [],
