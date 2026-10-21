@@ -13,7 +13,33 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  refresh:
+  # 分批分次：70 城拆 4 个 shard 并行扫描，单片 ~18 城 ≈ 5 分钟，避免全量撞超时
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: pip install pyyaml requests
+      - name: Scan city shard ${{ matrix.shard }}
+        run: python -m src.discover --shard ${{ matrix.shard }} --num-shards 4
+      - name: Upload shard items
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovery-shard-${{ matrix.shard }}
+          path: data/discovery-shard-${{ matrix.shard }}.json
+          if-no-files-found: warn
+
+  # 汇总：gov 部委检索 + 4 片发现结果 → 数字提取 → 周报 → 邮件 → 快照提交
+  assemble:
+    needs: discover
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -23,13 +49,19 @@ jobs:
           python-version: "3.11"
       - name: Install deps
         run: pip install pyyaml requests markdown
-      - name: Collect & build weekly report
+      - name: Download shard items
+        uses: actions/download-artifact@v4
+        with:
+          pattern: discovery-shard-*
+          path: data
+          merge-multiple: true
+      - name: Build weekly report & notify
         env:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
           SUBSCRIBER_KEY: ${{ secrets.SUBSCRIBER_KEY }}
-        run: python -m src.main --mail
+        run: python -m src.main --mail --detail --use-discovery
       - name: Commit snapshot
         run: |
           git config user.name "hr-policy-bot"

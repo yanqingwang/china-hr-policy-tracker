@@ -32,11 +32,13 @@ def merge(records: list[dict]) -> list[dict]:
                 merged = r
             else:
                 merged = other
-            # 数字提取/原文链接合并更强者
+            # 数字提取/原文引用合并更强者
             for k, v in r.items():
                 if k not in ("title", "url") and merged.get(k) in (None, "", 0, "—"):
                     if v not in (None, "", 0, "—"):
                         merged[k] = v
+            if not merged.get("quotes") and r.get("quotes"):
+                merged["quotes"] = r["quotes"]   # 原文引用随权威记录保留
             merged.setdefault("dup_links", [])
             if r["url"] != merged["url"]:
                 merged["dup_links"].append(r["url"])

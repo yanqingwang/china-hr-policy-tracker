@@ -19,6 +19,21 @@ def _d(x) -> str:
     return x or "—"
 
 
+def _quotes_block(recs: list[dict], cat: str) -> list[str]:
+    """关键原文摘录：每条政策 ≤3 句，逐句挂原文链接（条文引用保守截取）。"""
+    out: list[str] = []
+    for r in [x for x in recs if x["category"] == cat]:
+        qs = r.get("quotes") or []
+        if not qs:
+            continue
+        meta = f"{_d(r['region'])} · {_d(r['publish_date'])}"
+        out.append(f"**{_d(r['policy_type']) if r['policy_type'] != '—' else cat}｜{meta}** — [{r['title'][:40]}]({r['url']})")
+        for q in qs[:3]:
+            out.append(f"> 「{q}」")
+        out.append("")
+    return out
+
+
 def fund_table(recs: list[dict]) -> str:
     """社保公积金条目 → 规定列的数据表（用户口径：城市、发布/生效、政策类型、原/新基数比例上下限）。"""
     rows = [FUND_TABLE_HEADERS["zh_kwargs"], FUND_TABLE_HEADERS["sep"]]
@@ -61,7 +76,10 @@ def _bullets(recs: list[dict], cat: str, limit: int = 8) -> list[str]:
         effective = f"，生效 {r['effective_date']}" if r.get("effective_date") else ""
         meta = f"{_d(r['publish_date'])} · {_d(r['publisher'])[:18]} · {_d(r['region'])}"
         rows.append(f"- 【{_d(r['publish_date'])}】[{r['title']}]({r['url']}) — {meta}{effective}")
-    return rows[:limit]
+        # 原文引用行（≤2 句）
+        for q in (r.get("quotes") or [])[:2]:
+            rows.append(f"  > 「{q}」")
+    return rows[:limit + 16]
 
 
 def report(recs: list[dict], path: str, week: str) -> str:
@@ -80,8 +98,12 @@ def report(recs: list[dict], path: str, week: str) -> str:
         "",
         fund_rec,
         "",
-        "---",
     ]
+    qs = _quotes_block(recs, "社保公积金")
+    if qs:
+        lines += ["### 关键原文摘录（社保公积金）", ""] + qs + ["---"]
+    else:
+        lines += ["---"]
     for cat in CAT_ORDER:
         if cat == "社保公积金":
             continue

@@ -39,9 +39,23 @@ def load_sources() -> list[dict]:
     return out
 
 
+def _load_shard_items() -> list[dict]:
+    """读取分片发现产物（data/discovery-shard-*.json），供汇总模式构建周报。"""
+    raws = []
+    for p in sorted((REPO_ROOT / "data").glob("discovery-shard-*.json")):
+        try:
+            raws.extend(json.loads(p.read_text(encoding="utf-8")))
+        except Exception as exc:
+            print(f"[shard] {p.name} 读取失败: {exc}", file=sys.stderr)
+    return raws
+
+
 def collect(args) -> list[dict]:
     recs = []
     for s in load_sources():
+        # 分片汇总模式：内联 70 城扫描交给 discover 分片，这里跳过避免重复
+        if args.use_discovery and s.get("adapter") == "search_discovery":
+            continue
         try:
             if args.limit_cities and s.get("adapter") == "search_discovery":
                 s = dict(s); s["limit_cities"] = args.limit_cities
@@ -56,6 +70,16 @@ def collect(args) -> list[dict]:
                 rec["detail_text"] = extra["_snippet"]   # 摘要先行，详情页补提
             recs.append(rec)
         print(f"[{s['id']}] items={len(raws)}", file=sys.stderr)
+
+    if args.use_discovery:
+        sharded = _load_shard_items()
+        for raw in sharded:
+            raw.setdefault("source_adapter", "search_discovery")
+            rec = normalize.build(raw)
+            if raw.get("snippet"):
+                rec["detail_text"] = raw["snippet"]
+            recs.append(rec)
+        print(f"[shard-assemble] items={len(sharded)}", file=sys.stderr)
 
     # 社保公积金发现条目：抓详情页正文做数字提取（70 城覆盖的核心表格）
     try:
@@ -76,6 +100,8 @@ def main() -> None:
     ap.add_argument("--mail", action="store_true")
     ap.add_argument("--detail", action="store_true", help="社保公积金条目抓详情页做数字提取")
     ap.add_argument("--limit-cities", type=int, default=0, help="测试用：限制发现自己式的城市数")
+    ap.add_argument("--use-discovery", action="store_true",
+                    help="汇总模式：读取 data/discovery-shard-*.json，跳过内联 70 城扫描")
     args = ap.parse_args()
 
     recs = collect(args)
@@ -95,6 +121,9 @@ def main() -> None:
     for r in new_recs:
         if r["category"] == "社保公积金" and (r.get("extracted") is None):
             r["extracted"] = ext(r["title"], r.get("detail_text") or "")
+        # 原文引用：未做详情抓取时，用搜索摘要源文本兜底摘录
+        if not r.get("quotes") and r.get("detail_text"):
+            r["quotes"] = util.pick_quotes(r["detail_text"], limit=2, maxlen=140)
 
     # report
     today = dt.date.today()

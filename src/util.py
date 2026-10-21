@@ -71,6 +71,41 @@ def effective_from_text(text: str) -> str | None:
     return None
 
 
+def pick_quotes(text: str, limit: int = 3, maxlen: int = 160) -> list[str]:
+    """政策原文关键句摘录（条文属法定文件不受著作权限制，逐句挂原文链接）。
+
+    句级切分后按相关性词计分，取最高分前 limit 句；无命中返回 []。
+    """
+    sentences = [s.strip() for s in re.split(r"[。；！？\n\r]+", text or "") if s.strip()]
+    scored = []
+    for s in sentences:
+        if len(s) < 10:
+            continue
+        score = 0
+        for w, wt in (
+            ("基数", 3), ("比例", 3), ("上限", 3), ("下限", 3),
+            ("缴费", 2), ("缴存", 2), ("调整为", 3), ("调整为", 0), ("调至", 2),
+            ("最低工资", 3), ("补贴", 2), ("标准", 1), ("元/月", 3),
+            ("执行", 1), ("适用", 1),
+        ):
+            if w and w in s:
+                score += wt
+        if re.search(r"(20\d{2})\s*年\s*\d{1,2}\s*月", s):
+            score += 2        # 带生效时间的句子更关键
+        if score:
+            scored.append((score, s))
+    quoted, used = [], set()
+    for score, s in sorted(scored, key=lambda x: (-x[0], len(x[1]))):
+        key = s[:20]
+        if key in used:
+            continue
+        used.add(key)
+        quoted.append(s if len(s) <= maxlen else s[:maxlen - 1] + "…")
+        if len(quoted) >= limit:
+            break
+    return quoted
+
+
 REGION_WORDS = [
     "全国", "北京", "上海", "广州", "深圳", "天津", "重庆", "成都", "杭州", "苏州", "南京",
     "西安", "武汉", "郑州", "长沙", "合肥", "厦门", "青岛", "济南", "宁波", "无锡", "珠海",

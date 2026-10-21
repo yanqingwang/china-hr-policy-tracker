@@ -75,12 +75,19 @@ def fetch(source: dict) -> list[dict]:
     if limit_cities:
         cities = cities[:limit_cities]
 
+    out, cache = _scan(cities, source)
+    _write_cache(source.get("shard_tag") or "all", cache)
+    return out
+
+
+def _scan(cities: list[str], source: dict) -> tuple[list[dict], list[dict]]:
+    """对给定城市集合执行 3 条定向查询；返回 (原始条目, 查询缓存)。"""
     out, cache = [], []
     for city in cities:
         for tpl in QUERIES:
             q = tpl.format(city=city)
             url = DDG.format(q=urllib.parse.quote(q))
-            html = util.http_get(url)
+            html = util.http_get(url, timeout=12)
             time.sleep(random.uniform(*DELAY))
             if html is None:
                 cache.append({"city": city, "q": q, "ok": False})
@@ -115,9 +122,12 @@ def fetch(source: dict) -> list[dict]:
                 hit += 1
                 if hit >= 6:     # 每查询最多 6 条，控制后续正文抓取量
                     break
-    cache_path = ROOT / "data" / "discovery-cache.json"
-    cache_path.write_text(json.dumps(cache, ensure_ascii=False)[:200000] if False else json.dumps(cache, ensure_ascii=False), encoding="utf-8")
-    return out
+    return out, cache
+
+
+def _write_cache(tag: str, cache: list[dict]) -> None:
+    path = ROOT / "data" / f"discovery-cache-{tag}.json"
+    path.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
 
 
 def enrich_details(recs: list[dict]) -> None:
@@ -134,4 +144,6 @@ def enrich_details(recs: list[dict]) -> None:
         text = util.text_of(html)
         from src import normalize as N
         r["extracted"] = N.extract_fields(r["title"], text)
+        if not r.get("quotes"):
+            r["quotes"] = util.pick_quotes(text)
         n += 1
