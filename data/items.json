@@ -1,5 +1,25 @@
 [
   {
+    "uid": "7082d5035d82",
+    "title": "赛场逐梦展风采助残就业启新程——2026年全国残疾人就业服务机构职业指导竞赛在我市举行",
+    "url": "https://cq.gov.cn/ywdt/jrcq/202610/t20261022_16269843.html",
+    "publisher": "重庆官方",
+    "publisher_rank": 4,
+    "region": "重庆",
+    "region_city": "重庆",
+    "district": null,
+    "category": "补贴与保险待遇",
+    "policy_type": "—",
+    "key": "de8862014edd",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": null,
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null
+  },
+  {
     "uid": "f9cc6b94e11c",
     "title": "关于调整我市住房公积金部分管理规定的通知",
     "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/c103430/202609/a18300607025489cb17a8e8478ca9223.shtml",
@@ -8993,30 +9013,5 @@
     "is_vendor": false,
     "source_id": "city-portal",
     "detail_text": null
-  },
-  {
-    "uid": "4acef90dcb1c",
-    "title": "2023年度惠州市社会保险信息披露",
-    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5242131.html",
-    "publisher": "惠州官方",
-    "publisher_rank": 4,
-    "region": "惠州",
-    "region_city": "惠州",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "—",
-    "key": "1927c5bc1a96",
-    "publish_date": null,
-    "effective_date": null,
-    "extracted": {},
-    "history": [],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null,
-    "quotes": [
-      "2023年，全市按月领取失业保险金人数3.97万人，人均1847.05元/月",
-      "2023年7月起全市城乡居民基本养老保险基础养老金最低标准达到200元/人·月",
-      "2023年1月1日起调整企业退休人员基本养老金，调整后企业退休人员月人均基本养老金增加111.77元"
-    ]
   }
 ]
