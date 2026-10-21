@@ -23,15 +23,27 @@ from src import gov_city  # noqa: E402
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--shard", type=int, required=True)
+    ap.add_argument("--shard", type=int, default=-1, help="分片号（-1 = 不参与分片）")
     ap.add_argument("--num-shards", type=int, default=4)
     ap.add_argument("--limit-cities", type=int, default=0, help="测试：只看名单前 K 城")
+    ap.add_argument("--full", action="store_true", help="全量模式：扫描全部城市通道，产出 discovery-aliyun.json（阿里云侧用）")
+    ap.add_argument("--detail", action="store_true", help="全量模式下同时抓详情页做数字提取（慢）")
     args = ap.parse_args()
 
     channels = gov_city.load_channels()
     cities = list(channels.keys())
     if args.limit_cities:
         cities = cities[: args.limit_cities]
+
+    if args.full:
+        raws = gov_city.scan_many([(c, channels[c]) for c in cities])
+        if args.detail:
+            from src import search_discovery
+            search_discovery.enrich_details(raws)
+        out_path = ROOT / "data" / "discovery-aliyun.json"
+        out_path.write_text(json.dumps(raws, ensure_ascii=False), encoding="utf-8")
+        print(f"[full] cities={len(cities)} items={len(raws)} → {out_path.name}", file=sys.stderr)
+        return
 
     # round-robin 分片：编号相邻的城市分布在不同省域，降低同片 WAF 集中命中
     shard_cities = cities[args.shard :: args.num_shards]

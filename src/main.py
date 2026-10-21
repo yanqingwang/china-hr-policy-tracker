@@ -41,13 +41,20 @@ def load_sources() -> list[dict]:
 
 
 def _load_shard_items() -> list[dict]:
-    """读取分片发现产物（data/discovery-shard-*.json），供汇总模式构建周报。"""
+    """读取分片发现产物（data/discovery-shard-*.json）+ 阿里云侧产物（discovery-aliyun.json），供汇总模式构建周报。"""
     raws = []
     for p in sorted((REPO_ROOT / "data").glob("discovery-shard-*.json")):
         try:
             raws.extend(json.loads(p.read_text(encoding="utf-8")))
         except Exception as exc:
             print(f"[shard] {p.name} 读取失败: {exc}", file=sys.stderr)
+    aliyun_path = REPO_ROOT / "data" / "discovery-aliyun.json"
+    if aliyun_path.exists():
+        try:
+            raws.extend(json.loads(aliyun_path.read_text(encoding="utf-8")))
+            print(f"[aliyun] 合并 {aliyun_path.stat().st_size} 字节", file=sys.stderr)
+        except Exception as exc:
+            print(f"[aliyun] 读取失败: {exc}", file=sys.stderr)
     return raws
 
 
@@ -103,7 +110,11 @@ def main() -> None:
     ap.add_argument("--limit-cities", type=int, default=0, help="测试用：限制发现自己式的城市数")
     ap.add_argument("--use-discovery", action="store_true",
                     help="汇总模式：读取 data/discovery-shard-*.json，跳过内联 70 城扫描")
+    ap.add_argument("--detail-cap", type=int, default=60,
+                    help="详情页数字提取上限（默认 60，防撞 workflow 时长）")
     args = ap.parse_args()
+    if args.detail_cap:
+        search_discovery.DETAIL_FETCH_CAP = args.detail_cap
 
     recs = collect(args)
     merged = merge.merge(recs)

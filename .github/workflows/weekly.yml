@@ -55,13 +55,24 @@ jobs:
           pattern: discovery-shard-*
           path: data
           merge-multiple: true
+      - name: Pull Aliyun cloud data (optional)
+        env:
+          ALIYUN_DATA_URL: ${{ secrets.ALIYUN_DATA_URL }}
+        run: |
+          if [ -n "$ALIYUN_DATA_URL" ]; then
+            curl -sk --max-time 25 -o data/discovery-aliyun.json "$ALIYUN_DATA_URL" \
+              && echo "aliyun data fetched: $(wc -c < data/discovery-aliyun.json) bytes" \
+              || echo "aliyun data unavailable (skipped)"
+          else
+            echo "ALIYUN_DATA_URL not set (skipped)"
+          fi
       - name: Build weekly report & notify
         env:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
           SUBSCRIBER_KEY: ${{ secrets.SUBSCRIBER_KEY }}
-        run: python -m src.main --mail --detail --use-discovery
+        run: python -m src.main --mail --detail --detail-cap 80 --use-discovery
       - name: Commit snapshot
         run: |
           git config user.name "hr-policy-bot"
