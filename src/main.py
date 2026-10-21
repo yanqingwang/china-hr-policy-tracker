@@ -119,6 +119,7 @@ def main() -> None:
     args = ap.parse_args()
     if args.detail_cap:
         search_discovery.DETAIL_FETCH_CAP = args.detail_cap
+        search_discovery.DETAIL_FETCH_MAX = max(search_discovery.DETAIL_FETCH_MAX, args.detail_cap * 3)
 
     recs = collect(args)
     merged = merge.merge(recs)

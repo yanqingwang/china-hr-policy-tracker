@@ -56,7 +56,7 @@ def _collect_links(html, page: str, city: str, seen: set) -> list[dict]:
     return items
 
 
-def _sub_list_pages(html, page: str, cap: int = 3) -> list[str]:
+def _sub_list_pages(html, page: str, cap: int = 5) -> list[str]:
     """从频道页发现政策列表子页 URL（政策法规/通知公告/文件库等），去重、限数量。"""
     out, seen = [], set()
     txt = html.decode("utf-8", "ignore") if isinstance(html, bytes) else html

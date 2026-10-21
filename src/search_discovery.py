@@ -9,6 +9,7 @@
 - 只索引公开政策页，不接触个人信息。
 """
 import json
+import os
 import random
 import re
 import time
@@ -27,8 +28,8 @@ QUERIES = [
     "{city} 住房公积金 缴存比例 自主选择",
 ]
 DELAY = (1.5, 3.0)
-DETAIL_FETCH_CAP = 30   # 每次 run 抓正文提取的社保类条目目标（有效条数）
-DETAIL_FETCH_MAX = 80   # 单次 run 最多抓取条数硬上限（无效文件会被跳过重抓，防爆时长）
+DETAIL_FETCH_CAP = int(os.environ.get("DETAIL_FETCH_CAP", "30"))   # 目标有效条数
+DETAIL_FETCH_MAX = int(os.environ.get("DETAIL_FETCH_MAX", "80"))   # 单次抓取硬上限（无效跳过重抓）
 
 UDM_RE = re.compile(r"uddg=([^&=]+)")
 A_SNIPPET = re.compile(r"<a[^>]*class=\"[^\"]*result__snippet[^\"]*\"[^>]*>(.*?)</a>", re.S | re.I)
