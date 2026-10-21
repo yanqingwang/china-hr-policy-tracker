@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+reports/weekly.md
+data/discovery-cache-*.json
+/data/discovery-shard-*.json
+.venv/

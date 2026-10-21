@@ -115,7 +115,7 @@ def _scan(cities: list[str], source: dict) -> tuple[list[dict], list[dict]]:
                     "publisher": publisher,
                     "publisher_rank": rank,
                     "region": region,
-                    "publish_date": util.first_date(snippet) or util.first_date(title),
+                    "publish_date": util.first_date(snippet) or util.first_date(title) or _url_date(final),
                     "source_id": source["id"],
                     "snippet": snippet[:400],
                 })
@@ -128,6 +128,14 @@ def _scan(cities: list[str], source: dict) -> tuple[list[dict], list[dict]]:
 def _write_cache(tag: str, cache: list[dict]) -> None:
     path = ROOT / "data" / f"discovery-cache-{tag}.json"
     path.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+
+
+def _url_date(url: str) -> str | None:
+    """从 URL 路径取发布日期（t20260821_* / 202608/ 目录模式）。"""
+    m = re.search(r"(20\d{2})(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])", url)
+    if m:
+        return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+    return None
 
 
 def enrich_details(recs: list[dict]) -> None:
