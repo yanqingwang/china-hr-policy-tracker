@@ -16,10 +16,11 @@ sys.path.insert(0, str(REPO_ROOT))
 
 import yaml                                        # noqa: E402
 from src import util, normalize, merge             # noqa: E402
-from src import gov_search, gov_list, vendor_news  # noqa: E402
+from src import gov_search, gov_list, vendor_news, search_discovery  # noqa: E402
 from src import render, mailer                     # noqa: E402
 
-ADAPTERS = {"gov_search": gov_search, "gov_list": gov_list, "vendor_news": vendor_news}
+ADAPTERS = {"gov_search": gov_search, "gov_list": gov_list,
+            "vendor_news": vendor_news, "search_discovery": search_discovery}
 
 
 def load_sources() -> list[dict]:
@@ -42,6 +43,8 @@ def collect(args) -> list[dict]:
     recs = []
     for s in load_sources():
         try:
+            if args.limit_cities and s.get("adapter") == "search_discovery":
+                s = dict(s); s["limit_cities"] = args.limit_cities
             raws = s["_mod"].fetch(s)
         except Exception as exc:
             print(f"[{s['id']}] adapter error: {exc}", file=sys.stderr)
@@ -49,14 +52,17 @@ def collect(args) -> list[dict]:
         for raw in raws:
             raw["source_adapter"] = s["source_adapter"]
             rec = normalize.build(raw)
-            # 社保公积金类：可选抓详情页正文提取数字
-            if rec["category"] == "社保公积金" and args.detail and rec["extracted"] is None:
-                html = util.http_get(rec["url"])
-                if html:
-                    text = util.text_of(html)
-                    rec["extracted"] = ext(rec["title"], text)
+            if extra := (raw.get("snippet") and {"_snippet": raw["snippet"]}):
+                rec["detail_text"] = extra["_snippet"]   # 摘要先行，详情页补提
             recs.append(rec)
         print(f"[{s['id']}] items={len(raws)}", file=sys.stderr)
+
+    # 社保公积金发现条目：抓详情页正文做数字提取（70 城覆盖的核心表格）
+    try:
+        if args.detail:
+            search_discovery.enrich_details(recs)
+    except Exception as exc:
+        print(f"[enrich] error: {exc}", file=sys.stderr)
     return recs
 
 
@@ -69,6 +75,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--mail", action="store_true")
     ap.add_argument("--detail", action="store_true", help="社保公积金条目抓详情页做数字提取")
+    ap.add_argument("--limit-cities", type=int, default=0, help="测试用：限制发现自己式的城市数")
     args = ap.parse_args()
 
     recs = collect(args)

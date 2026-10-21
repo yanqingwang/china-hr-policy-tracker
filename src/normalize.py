@@ -22,6 +22,7 @@ def classify(title: str, source_adapter: str = "") -> str:
     return "其他"
 
 POLICY_SUBTYPES = [
+    ("公积金-缴存比例", r"缴存比例|缴费比例|比例.{0,10}自主|比例.{0,10}选择"),
     ("社保-养老", r"养老|退休"),
     ("社保-医疗", r"医疗|医保"),
     ("社保-失业", r"失业"),
@@ -83,6 +84,15 @@ def extract_fields(title: str, page_text: str = "") -> dict:
     if m:
         out["ratio_old"] = _ratio(m.group(1)) or None
         out["ratio_new"] = _ratio(m.group(2)) if m.group(2) else None
+
+    # 弹性缴存（东莞模式）：「比例可在 X%–Y% 之间（自行/自主）选择」
+    m = re.search(
+        r"(?:比例|缴存比例).{0,16}?([\d.]+)\s*%\s*[至到~—–\-]{1,2}\s*([\d.]+)\s*%"
+        r".{0,18}?(自行|自主|选择|自愿|灵活)", text
+    )
+    if m:
+        out["ratio_range"] = f"{m.group(1)}%–{m.group(2)}%（可自行选择）"
+        out.pop("ratio_new", None)   # 区间语义优先于单值
 
     # 把"由 X 调至 Y"语言同时也匹配上下限
     m = re.search(r"上限\s*(?:由)\s*([\d,，]{4,})\s*元?\s*(?:调整为|调至)\s*([\d,，]{4,})\s*元", text)

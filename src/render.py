@@ -35,6 +35,9 @@ def fund_table(recs: list[dict]) -> str:
         ex = r.get("extracted") or {}
         vals = []
         for f in FIELD_ORDER:
+            if f == "ratio_new" and ex.get("ratio_range"):
+                vals.append(str(ex["ratio_range"]))   # 弹性缴存区间（如 5%–12%（可自行选择））
+                continue
             v = ex.get(f)
             if v is None:
                 vals.append("—")

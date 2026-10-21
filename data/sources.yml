@@ -14,6 +14,21 @@ sources:
     region: 全国
     n_per_query: 20
 
+  - id: search-70cities
+    adapter: search_discovery
+    priority: 4
+    region: 70城
+    # limit_cities: 5      # 测试用；0/注释=全量 70 城每周扫描
+
+  - id: portals-12333
+    name: 12333 社保平台族
+    adapter: gov_list
+    priority: 4
+    region: 全国
+    pages:
+      - https://si.12333.gov.cn/
+      - https://www.12333.gov.cn/
+
   - id: mohrss
     name: 人社部
     adapter: gov_list
