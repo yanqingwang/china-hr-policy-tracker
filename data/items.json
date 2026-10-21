@@ -1,91 +1,5 @@
 [
   {
-    "uid": "1fbc07d1a545",
-    "title": "&sdot;&nbsp;北京社保经办业务将实现在雄安全量可办、一网通办",
-    "url": "https://rsj.beijing.gov.cn/xwsl/mtgz/202604/t20260403_4573881.html",
-    "publisher": "北京官方",
-    "publisher_rank": 4,
-    "region": "北京",
-    "region_city": "北京",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "—",
-    "key": "32d116d7511a",
-    "publish_date": null,
-    "effective_date": null,
-    "extracted": {},
-    "history": [
-      {
-        "uid": "fd4fa2c63893",
-        "title": "单位招用社保补贴",
-        "url": "https://rsj.beijing.gov.cn/fuwu/zxbs/202007/t20200720_1952515.html",
-        "publisher": "北京官方",
-        "publisher_rank": 4,
-        "region": "北京",
-        "region_city": "北京",
-        "district": null,
-        "category": "社保公积金",
-        "policy_type": "—",
-        "key": "32d116d7511a",
-        "publish_date": null,
-        "effective_date": null,
-        "extracted": {},
-        "history": [],
-        "is_vendor": false,
-        "source_id": "city-portal",
-        "detail_text": null,
-        "quotes": [
-          "信息系统技术服务电话： 呼我必回 监督电话： &nbsp; 呼我必回 请选择申报类型 单位招用社保补贴（原岗社补） 单位招用社保补贴（26年1月1日后招用） 关闭弹窗 【打印本页】 【关闭页面】 微信公众号 官方微博 关于我们 -&nbsp;&nbsp; 法律声明 -&nbsp;&nbsp; 网站地图 -&nbsp;…",
-          "关闭&nbsp;&nbsp; 点击进入&nbsp;&nbsp; 当前位置： 首页 &nbsp;&gt;&nbsp; 政务服务 &nbsp;&gt;&nbsp; 办事直达 单位招用社保补贴 字体大小: 大 中 小 分享 吸纳就业补贴入口弹窗改造 &nbsp; 单位招用社保补贴 结果公示 经办问答 操作手册 政策文件 《…",
-          "单位招用社保补贴_ 北京市人力资源和社会保障局_政务服务_办事直达 访问我的专属空间 个人办事 法人办事 北京政务服务网 简 繁 智能问答 移动版 简 繁 --> 政务邮箱 --> 网站无障碍 Title 我在听，请说话 (10s) 抱歉，没听清，请再说一遍吧 本网站&nbsp;&gt; 一网通查&nbsp;&gt;…"
-        ]
-      }
-    ],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null
-  },
-  {
-    "uid": "9e0bdc5951f0",
-    "title": "1、烟台公积金中心网上营业厅登录入口提示",
-    "url": "https://gjj.yantai.gov.cn/col/col4122/index.html",
-    "publisher": "烟台官方",
-    "publisher_rank": 4,
-    "region": "烟台",
-    "region_city": "烟台",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "公积金",
-    "key": "f9ba0e94736c",
-    "publish_date": "2019-02-18",
-    "effective_date": null,
-    "extracted": {},
-    "history": [],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null
-  },
-  {
-    "uid": "e21e5fe2b583",
-    "title": "市住房公积金管理中心组织开展“治未病”现场警示教...",
-    "url": "https://gjj.yantai.gov.cn/art/2025/6/25/art_11384_2880700.html",
-    "publisher": "烟台官方",
-    "publisher_rank": 4,
-    "region": "烟台",
-    "region_city": "烟台",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "公积金",
-    "key": "f9ba0e94736c",
-    "publish_date": null,
-    "effective_date": null,
-    "extracted": {},
-    "history": [],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null
-  },
-  {
     "uid": "d72cf6729061",
     "title": "实施就业优先战略 织密社会保障网络——国新办发布会聚焦“十五五”就业和 社保 高质量发展",
     "url": "https://www.gov.cn/zhengce/202610/content_7082936.htm",
@@ -274,257 +188,84 @@
     "detail_text": null
   },
   {
-    "uid": "0132c7b49ad9",
-    "title": "本市 调整 2026年度 社保缴费基数 上下限_公示公告_ 上海 市 ...",
-    "url": "https://rsj.sh.gov.cn/tgsgg_17341/20260818/t0035_1443203.html",
-    "publisher": "上海官方",
+    "uid": "1e8c572a046e",
+    "title": "全国就业公共服务",
+    "url": "https://www.12333.gov.cn/job?channel=12333",
+    "publisher": "12333 社保平台族",
     "publisher_rank": 4,
-    "region": "上海",
-    "region_city": "上海",
+    "region": "全国",
+    "region_city": "全国",
     "district": null,
-    "category": "社保公积金",
-    "policy_type": "社保-综合基数",
-    "key": "5cefd68494f3",
-    "publish_date": "2026-08-18",
-    "effective_date": null,
-    "extracted": {
-      "base_new": 37731,
-      "cap_new": 37731,
-      "floor_new": 7546
-    },
-    "history": [
-      {
-        "uid": "089ab2339a84",
-        "title": "本市 调整 2025年度 社保缴费基数 上下限_公示公告_ 上海 市 ...",
-        "url": "https://rsj.sh.gov.cn/tgsgg_17341/20250918/t0035_1435637.html",
-        "publisher": "上海官方",
-        "publisher_rank": 4,
-        "region": "上海",
-        "region_city": "上海",
-        "district": null,
-        "category": "社保公积金",
-        "policy_type": "社保-综合基数",
-        "key": "5cefd68494f3",
-        "publish_date": "2025-09-18",
-        "effective_date": null,
-        "extracted": {
-          "base_new": 37302,
-          "cap_new": 37302,
-          "floor_new": 7460
-        },
-        "history": [],
-        "is_vendor": false,
-        "source_id": "search-70cities",
-        "detail_text": "2025年9月18日&ensp;&#0183;&ensp;本市2024年度全口径城镇单位就业人员平均工资为12434元/月。 为确保参保人员社保权益，社保缴费基数上下限公 …",
-        "quotes": [
-          "本市调整2025年度社保缴费基数上下限_公示公告_上海市人力资源和社会保障局 不能读取语音阅读器 --> 政务公开 您现在的位置： 首页 /&nbsp;&nbsp;政务公开 /&nbsp;&nbsp;公示公告 本市调整2025年度社保缴费基数上下限 发布时间：2025-09-18 按照有关规定及要求，自2025年7月…",
-          "为确保参保人员社保权益，社保缴费基数上下限公布后，参保单位及其职工、灵活就业参保缴费人员因缴费基数调整产生的社会保险费补差部分，应在2025年10月底前缴纳，期间免收滞纳金",
-          "本市2024年度全口径城镇单位就业人员平均工资为12434元/月"
-        ]
-      }
-    ],
-    "is_vendor": false,
-    "source_id": "search-70cities",
-    "detail_text": "2026年8月18日&ensp;&#0183;&ensp;按照有关规定及要求，2026年7月1日起，本市社保缴费基数的上限调整为37731元/月，下限调整为7546元/月。 本 …",
-    "quotes": [
-      "本市调整2026年度社保缴费基数上下限_公示公告_上海市人力资源和社会保障局 不能读取语音阅读器 --> 政务公开 您现在的位置： 首页 /&nbsp;&nbsp;政务公开 /&nbsp;&nbsp;公示公告 本市调整2026年度社保缴费基数上下限 发布时间：2026-08-18 &emsp;&emsp;按照有关规定…",
-      "&emsp;&emsp;为确保参保人员社保权益，社保缴费基数上下限公布后，参保单位及其职工因缴费基数调整产生的社会保险费补差部分，应在2026年9月底前缴纳，期间免收滞纳金",
-      "灵活就业参保缴费人员清算补缴完成时限参照上述时间执行"
-    ]
-  },
-  {
-    "uid": "089ab2339a84",
-    "title": "本市 调整 2025年度 社保缴费基数 上下限_公示公告_ 上海 市 ...",
-    "url": "https://rsj.sh.gov.cn/tgsgg_17341/20250918/t0035_1435637.html",
-    "publisher": "上海官方",
-    "publisher_rank": 4,
-    "region": "上海",
-    "region_city": "上海",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "社保-综合基数",
-    "key": "5cefd68494f3",
-    "publish_date": "2025-09-18",
-    "effective_date": null,
-    "extracted": {
-      "base_new": 37302,
-      "cap_new": 37302,
-      "floor_new": 7460
-    },
-    "history": [],
-    "is_vendor": false,
-    "source_id": "search-70cities",
-    "detail_text": "2025年9月18日&ensp;&#0183;&ensp;本市2024年度全口径城镇单位就业人员平均工资为12434元/月。 为确保参保人员社保权益，社保缴费基数上下限公 …",
-    "quotes": [
-      "本市调整2025年度社保缴费基数上下限_公示公告_上海市人力资源和社会保障局 不能读取语音阅读器 --> 政务公开 您现在的位置： 首页 /&nbsp;&nbsp;政务公开 /&nbsp;&nbsp;公示公告 本市调整2025年度社保缴费基数上下限 发布时间：2025-09-18 按照有关规定及要求，自2025年7月…",
-      "为确保参保人员社保权益，社保缴费基数上下限公布后，参保单位及其职工、灵活就业参保缴费人员因缴费基数调整产生的社会保险费补差部分，应在2025年10月底前缴纳，期间免收滞纳金",
-      "本市2024年度全口径城镇单位就业人员平均工资为12434元/月"
-    ]
-  },
-  {
-    "uid": "edcd169aa55c",
-    "title": "12333在线咨询详情- 无锡 市人力资源和社会保障局",
-    "url": "https://hrss.wuxi.gov.cn/fzlm/hdjlgny/12333zxzxxq/index.shtml?id=2826382",
-    "publisher": "无锡官方",
-    "publisher_rank": 4,
-    "region": "无锡",
-    "region_city": "无锡",
-    "district": null,
-    "category": "HR 服务情报",
+    "category": "其他",
     "policy_type": "—",
-    "key": "011a71aa5b71",
+    "key": "541ee4957a44",
     "publish_date": null,
     "effective_date": null,
     "extracted": null,
     "history": [],
     "is_vendor": false,
-    "source_id": "search-70cities",
-    "detail_text": "站点地图 | 联系我们 | 电子邮局 无锡市人力资源和社会保障局版权所有 无锡市人力资源和社会保障局主办 联系电话：12333 苏ICP …",
-    "quotes": []
+    "source_id": "portals-12333",
+    "detail_text": null
   },
   {
-    "uid": "f13fe9175109",
-    "title": "关于发布2026年社会保险缴费 基数 上下限的通知_安徽省人力 ...",
-    "url": "https://hrss.ah.gov.cn/public/6595721/80811450.html",
-    "publisher": "蚌埠官方",
-    "publisher_rank": 4,
-    "region": "蚌埠(省域)",
-    "region_city": "蚌埠(省域)",
+    "uid": "e2dddd62d7cb",
+    "title": "智能社保SaaS登录",
+    "url": "https://service.51shebao.com/standard/login",
+    "publisher": "HR 服务商线索（51社保/社保100）",
+    "publisher_rank": 1,
+    "region": "全国",
+    "region_city": "全国",
     "district": null,
-    "category": "社保公积金",
+    "category": "HR 服务情报",
     "policy_type": "—",
-    "key": "e602aac42bdc",
-    "publish_date": "2026-09-04",
+    "key": "541ee4957a44",
+    "publish_date": null,
     "effective_date": null,
-    "extracted": {
-      "floor_new": 4354
-    },
+    "extracted": null,
     "history": [],
-    "is_vendor": false,
-    "source_id": "search-70cities",
-    "detail_text": "2026年9月4日&ensp;&#0183;&ensp;一、我省 2026年社会保险个人缴费基数上限为21772元/月，下限为4354 元 /月。 执行时间为202 6 年 1月1日至12 …",
-    "quotes": [
-      "一、我省 2026年社会保险个人缴费基数上限为 21 772元/月，下限为 4354 元 /月",
-      "关于发布2026年社会保险缴费基数上下限的通知_安徽省人力资源和社会保障厅 繁體 智能问答 首页 机构职能 资讯中心 信息公开 网上办事 公众参与 首页 机构职能 资讯中心 信息公开 网上办事 公众参与 网站首页 &gt; 省人力资源社会保障厅 &gt; 政策 &gt; 其他政策文件 索 引 号： 002986547…",
-      "各级税务部门要根据公布的缴费基数上下限标准，做好社保费系统配置和征缴服务工作"
-    ]
+    "is_vendor": true,
+    "source_id": "vendor-leads",
+    "detail_text": null
   },
   {
-    "uid": "e4e95a10fddd",
-    "title": "2025年 社保缴费基数调整 灵活就业人员缴费标准明确_ 蚌埠 ...",
-    "url": "https://rsj.bengbu.gov.cn/xwdt/gzdt/140984630.html",
-    "publisher": "蚌埠官方",
-    "publisher_rank": 4,
-    "region": "蚌埠",
-    "region_city": "蚌埠",
+    "uid": "564b62d96934",
+    "title": "智能社保SaaS服务",
+    "url": "https://www.51shebao.com/service/insure",
+    "publisher": "HR 服务商线索（51社保/社保100）",
+    "publisher_rank": 1,
+    "region": "全国",
+    "region_city": "全国",
     "district": null,
-    "category": "社保公积金",
-    "policy_type": "社保-综合基数",
-    "key": "bf7737dd9bff",
-    "publish_date": "2025-10-01",
+    "category": "HR 服务情报",
+    "policy_type": "—",
+    "key": "541ee4957a44",
+    "publish_date": null,
     "effective_date": null,
-    "extracted": {
-      "base_new": 4311,
-      "cap_new": 21556,
-      "floor_new": 4311
-    },
+    "extracted": null,
     "history": [],
-    "is_vendor": false,
-    "source_id": "search-70cities",
-    "detail_text": "从2025年10月1日起，参加企业职工基本养老保险的灵活就业人员，可在每月4311元至21556元之间，根据自身经济状况自主选择缴费 …",
-    "quotes": [
-      "这一标准相较于2024年的缴费基数下限4227元/月、上限21133元/月，均有所提高，体现了与社会经济发展水平的联动",
-      "2025年社保缴费基数调整 灵活就业人员缴费标准明确_蚌埠市人力资源和社会保障局 首页 首 页 新闻动态 机构概况 政府信息公开 政务服务 互动交流 特色栏目 首页 &gt; 新闻动态 &gt; 工作动态 2025年社保缴费基数调整 灵活就业人员缴费标准明确 发布日期：2025-10-13 18:05 信息来源：蚌埠…",
-      "根据《通知》，2025年蚌埠社会保险个人缴费基数的下限确定为每月4311元，上限为每月21556元"
-    ]
+    "is_vendor": true,
+    "source_id": "vendor-leads",
+    "detail_text": null
   },
   {
-    "uid": "d18d647b208a",
-    "title": "安徽 社保缴费基数调整 _安徽省人力资源和社会保障厅",
-    "url": "https://hrss.ah.gov.cn/public/6595721/80751455.html",
-    "publisher": "蚌埠官方",
-    "publisher_rank": 4,
-    "region": "蚌埠(省域)",
-    "region_city": "蚌埠(省域)",
+    "uid": "9bcbce1692d0",
+    "title": "全国社保一站式解决方案",
+    "url": "https://www.51shebao.com/solutions/oneStep",
+    "publisher": "HR 服务商线索（51社保/社保100）",
+    "publisher_rank": 1,
+    "region": "全国",
+    "region_city": "全国",
     "district": null,
-    "category": "社保公积金",
-    "policy_type": "社保-综合基数",
-    "key": "a15d7caf686e",
-    "publish_date": "2024-08-24",
+    "category": "HR 服务情报",
+    "policy_type": "—",
+    "key": "541ee4957a44",
+    "publish_date": null,
     "effective_date": null,
-    "extracted": {
-      "base_new": 4227,
-      "cap_new": 21133,
-      "floor_new": 4227
-    },
+    "extracted": null,
     "history": [],
-    "is_vendor": false,
-    "source_id": "search-70cities",
-    "detail_text": "2024年8月24日&ensp;&#0183;&ensp;日前，安徽省人力资源和社会保障厅会同省财政厅、省税务局、省统计局、省医疗保障局公布我省2024年全省社会保 …",
-    "quotes": [
-      "安徽社保缴费基数调整_安徽省人力资源和社会保障厅 繁體 智能问答 首页 机构职能 资讯中心 信息公开 网上办事 公众参与 首页 机构职能 资讯中心 信息公开 网上办事 公众参与 网站首页 &gt; 省人力资源社会保障厅 &gt; 政策解读咨询 &gt; 政策解读 索 引 号： 002986547/202408-000…",
-      "因此，缴费基数上下限仅涉及月平均工资低于缴费基数下限或高于缴费基数上限的参保职工及单位",
-      "按照国家规定，我省自2019年5月以来根据统计部门公布的有关数据，确定当年社保缴费基数上下限标准"
-    ]
-  },
-  {
-    "uid": "cf74cdcb5b03",
-    "title": "2025年 社保缴费基数调整 灵活就业人员缴费标准明确_ 蚌埠 市 ...",
-    "url": "https://www.bblzh.gov.cn/xwzx/ztzl/msfwly/sbly/ggts/5088998.html",
-    "publisher": "蚌埠政府网",
-    "publisher_rank": 4,
-    "region": "蚌埠",
-    "region_city": "蚌埠",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "社保-综合基数",
-    "key": "bf7737dd9bff",
-    "publish_date": "2026-01-04",
-    "effective_date": null,
-    "extracted": {
-      "base_new": 4311,
-      "cap_new": 21556,
-      "floor_new": 4311
-    },
-    "history": [
-      {
-        "uid": "e4e95a10fddd",
-        "title": "2025年 社保缴费基数调整 灵活就业人员缴费标准明确_ 蚌埠 ...",
-        "url": "https://rsj.bengbu.gov.cn/xwdt/gzdt/140984630.html",
-        "publisher": "蚌埠官方",
-        "publisher_rank": 4,
-        "region": "蚌埠",
-        "region_city": "蚌埠",
-        "district": null,
-        "category": "社保公积金",
-        "policy_type": "社保-综合基数",
-        "key": "bf7737dd9bff",
-        "publish_date": "2025-10-01",
-        "effective_date": null,
-        "extracted": {
-          "base_new": 4311,
-          "cap_new": 21556,
-          "floor_new": 4311
-        },
-        "history": [],
-        "is_vendor": false,
-        "source_id": "search-70cities",
-        "detail_text": "从2025年10月1日起，参加企业职工基本养老保险的灵活就业人员，可在每月4311元至21556元之间，根据自身经济状况自主选择缴费 …",
-        "quotes": [
-          "这一标准相较于2024年的缴费基数下限4227元/月、上限21133元/月，均有所提高，体现了与社会经济发展水平的联动",
-          "2025年社保缴费基数调整 灵活就业人员缴费标准明确_蚌埠市人力资源和社会保障局 首页 首 页 新闻动态 机构概况 政府信息公开 政务服务 互动交流 特色栏目 首页 &gt; 新闻动态 &gt; 工作动态 2025年社保缴费基数调整 灵活就业人员缴费标准明确 发布日期：2025-10-13 18:05 信息来源：蚌埠…",
-          "根据《通知》，2025年蚌埠社会保险个人缴费基数的下限确定为每月4311元，上限为每月21556元"
-        ]
-      }
-    ],
-    "is_vendor": false,
-    "source_id": "search-70cities",
-    "detail_text": "2026年1月4日&ensp;&#0183;&ensp;根据《通知》，2025年，蚌埠社会保险个人缴费基数的下限确定为每月4311元，上限为每月21556元。 这一标准相较 …",
-    "quotes": [
-      "这一标准相较于2024年的缴费基数下限4227元/月、上限21133元/月，均有所提高，体现了与社会经济发展水平的联动",
-      "2025年社保缴费基数调整 灵活就业人员缴费标准明确_蚌埠市龙子湖区人民政府 加入收藏 首 页 首 页 走进龙子湖 新闻中心 政府信息公开 网上办事 互动交流 数据发布 您的位置： 首页 &gt; 新闻中心 &gt; 专题专栏 &gt; 民生服务领域 &gt; 社保领域 &gt; 公告提示 2025年社保缴费基数调整…",
-      "根据《通知》，2025年，蚌埠社会保险个人缴费基数的下限确定为每月4311元，上限为每月21556元"
-    ]
+    "is_vendor": true,
+    "source_id": "vendor-leads",
+    "detail_text": null
   },
   {
     "uid": "3de225556753",
@@ -4006,8 +3747,30 @@
       "http://rsj.huizhou.gov.cn/zwgk/ssjygk/content/post_5375056.html",
       "http://rsj.huizhou.gov.cn/zwgk/ssjygk/content/post_5293775.html",
       "http://rsj.huizhou.gov.cn/zwgk/ssjygk/content/post_5164278.html",
-      "http://rsj.huizhou.gov.cn/zwgk/ssjygk/content/post_5104310.html"
+      "http://rsj.huizhou.gov.cn/zwgk/ssjygk/content/post_5104310.html",
+      "http://rsj.huizhou.gov.cn/zwgk/ssjygk/content/post_5017946.html",
+      "http://rsj.huizhou.gov.cn/zwgk/ssjygk/content/post_4952504.html"
     ]
+  },
+  {
+    "uid": "02234547a35b",
+    "title": "惠州市2022年第四季度用人单位重大劳动保障违法行为社会公布情况汇总表",
+    "url": "http://rsj.huizhou.gov.cn/zwgk/ssjygk/content/post_4890323.html",
+    "publisher": "惠州官方",
+    "publisher_rank": 4,
+    "region": "惠州",
+    "region_city": "惠州",
+    "district": null,
+    "category": "其他",
+    "policy_type": "—",
+    "key": "1927c5bc1a96",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": null,
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null
   },
   {
     "uid": "a385fa12bf54",
@@ -4094,6 +3857,9 @@
           "&nbsp; 网站无障碍 | 适老版 首 页 | 政务公开 通知公告 政策 规范性文件 其他文件 政策解读 发展规划 工作动态 双随机、一公开 政府采购 组织机构 领导分工 机构职能 财政预决算 财政预决算 三公经费 | 政务服务 | 政民互动 调查征集 政策咨询 社会保障 人才人事 劳动关系 就业创业 直播访谈 |…",
           "关于调整2026社会保险年度我市失业保险缴费基数上限的通知-惠州市人力资源和社会保障局网站 --> 欢迎来到惠州市人力资源和社会保障局网站",
           "惠州市人力资源和社会保障局 国家税务总局惠州市税务局 2026年7月8日 责任编辑：惠州市人社局 &nbsp; 网站地图 主办：惠州市人力资源和社会保障局 联系电话：0752-12333 传真：0752-2789397 惠州市人力资源和社会保障局 版权所有2010 粤公网安备 44130202000719号 网站标识…"
+        ],
+        "dup_links": [
+          "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5559236.html"
         ]
       }
     ],
@@ -4124,7 +3890,10 @@
     "history": [],
     "is_vendor": false,
     "source_id": "city-portal",
-    "detail_text": null
+    "detail_text": null,
+    "dup_links": [
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5485043.html"
+    ]
   },
   {
     "uid": "d3c1fa2858cc",
@@ -4152,6 +3921,9 @@
       "&nbsp; 网站无障碍 | 适老版 首 页 | 政务公开 通知公告 政策 规范性文件 其他文件 政策解读 发展规划 工作动态 双随机、一公开 政府采购 组织机构 领导分工 机构职能 财政预决算 财政预决算 三公经费 | 政务服务 | 政民互动 调查征集 政策咨询 社会保障 人才人事 劳动关系 就业创业 直播访谈 |…",
       "关于调整2026社会保险年度我市失业保险缴费基数上限的通知-惠州市人力资源和社会保障局网站 --> 欢迎来到惠州市人力资源和社会保障局网站",
       "惠州市人力资源和社会保障局 国家税务总局惠州市税务局 2026年7月8日 责任编辑：惠州市人社局 &nbsp; 网站地图 主办：惠州市人力资源和社会保障局 联系电话：0752-12333 传真：0752-2789397 惠州市人力资源和社会保障局 版权所有2010 粤公网安备 44130202000719号 网站标识…"
+    ],
+    "dup_links": [
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5559236.html"
     ]
   },
   {
@@ -4192,6 +3964,9 @@
         "quotes": [
           "2025年，全市按月领取失业保险金人数5.09万人，人均1639.49元/月",
           "2025年7月1日起全市城乡居民基本养老保险基础养老金最低标准达到240元/人·月"
+        ],
+        "dup_links": [
+          "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5491100.html"
         ]
       },
       {
@@ -4218,7 +3993,144 @@
           "附件：退回多享受工伤保险待遇告知书.pdf 惠州市社会保险基金管理局 2026年4月27日 （联系人: 黎先生&nbsp; 电话:0752-2789211） 责任编辑：惠州市人社局 &nbsp; 网站地图 主办：惠州市人力资源和社会保障局 联系电话：0752-12333 传真：0752-2789397 惠州市人力资源…"
         ],
         "dup_links": [
-          "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5757734.html"
+          "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5757734.html",
+          "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5483495.html"
+        ]
+      },
+      {
+        "uid": "122c1bea7171",
+        "title": "责令退回多享受社会保险待遇决定书",
+        "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5623995.html",
+        "publisher": "惠州官方",
+        "publisher_rank": 4,
+        "region": "惠州",
+        "region_city": "惠州",
+        "district": null,
+        "category": "社保公积金",
+        "policy_type": "—",
+        "key": "1927c5bc1a96",
+        "publish_date": null,
+        "effective_date": null,
+        "extracted": {},
+        "history": [],
+        "is_vendor": false,
+        "source_id": "city-portal",
+        "detail_text": null,
+        "quotes": [
+          "我单位于2025年7月7日公告送达《退回多享受社会保险待遇告知书》，附件名单人员未按要求退回多享受的工伤保险待遇",
+          "账户名称：惠州市社会保险基金管理局 银行账号：108501516010001320 开户银行：广发行惠州文华路支行 附言：XXX（姓名）退回多享受待遇 社会保险经办机构联系人：向小姐 电话：0752-2169005 社会保险经办机构地址： 惠州市惠城区下埔路19号惠城社保分局工伤股 附件： 人员名单.xlsx 惠州市…",
+          "在法定期限内不申请行政复议或者提起行政诉讼，又不履行本决定的，我单位将依法向人民法院申请强制执行"
+        ],
+        "dup_links": [
+          "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5495603.html"
+        ]
+      },
+      {
+        "uid": "bca3e9a694c1",
+        "title": "惠州市社会保险基金管理局仲恺分局关于黄运娇等4人社会保险基金待遇追回决定书送达公告",
+        "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5571938.html",
+        "publisher": "惠州官方",
+        "publisher_rank": 4,
+        "region": "惠州",
+        "region_city": "惠州",
+        "district": null,
+        "category": "社保公积金",
+        "policy_type": "—",
+        "key": "1927c5bc1a96",
+        "publish_date": null,
+        "effective_date": null,
+        "extracted": {},
+        "history": [],
+        "is_vendor": false,
+        "source_id": "city-portal",
+        "detail_text": null,
+        "quotes": [
+          "惠州市社会保险基金管理局仲恺分局 2025年7月17日 附件： 惠州市社会保险基金管理局仲恺分局关于黄运娇等4人社会保险基金待遇追回决定书送达公告（挂网）.pdf 责任编辑：惠州市人社局 &nbsp; 网站地图 主办：惠州市人力资源和社会保障局 联系电话：0752-12333 传真：0752-2789397 惠州市人…",
+          "&nbsp; 网站无障碍 | 适老版 首 页 | 政务公开 通知公告 政策 规范性文件 其他文件 政策解读 发展规划 工作动态 双随机、一公开 政府采购 组织机构 领导分工 机构职能 财政预决算 财政预决算 三公经费 | 政务服务 | 政民互动 调查征集 政策咨询 社会保障 人才人事 劳动关系 就业创业 直播访谈 |…",
+          "行政复议或者行政诉讼期间，本决定不停止执行"
+        ],
+        "dup_links": [
+          "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5549592.html",
+          "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5537673.html",
+          "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5516940.html"
+        ]
+      },
+      {
+        "uid": "efaf00d8b6e7",
+        "title": "关于违规补缴领取社会保险待遇的公告",
+        "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5526147.html",
+        "publisher": "惠州官方",
+        "publisher_rank": 4,
+        "region": "惠州",
+        "region_city": "惠州",
+        "district": null,
+        "category": "社保公积金",
+        "policy_type": "—",
+        "key": "1927c5bc1a96",
+        "publish_date": null,
+        "effective_date": null,
+        "extracted": {},
+        "history": [],
+        "is_vendor": false,
+        "source_id": "city-portal",
+        "detail_text": null,
+        "quotes": [
+          "经核实，黄运娇等5人通过违规办理一次性补缴养老保险业务骗取社会保险待遇，我局于2025年4月24日通过邮件方式送达《退款通知书》，由于你（们）的联系地址无法有效送达至你（们）本人签收，且无法取得你（们）的其他联系方式将退款通知书送达你（们）方，故我局现依法向你（们）公告送达退款通知书",
+          "惠州市社会保险基金管理局仲恺分局 2025年5月13日 附件： 关于违规补缴领取社会保险待遇的公告.pdf 责任编辑：惠州市人社局 &nbsp; 网站地图 主办：惠州市人力资源和社会保障局 联系电话：0752-12333 传真：0752-2789397 惠州市人力资源和社会保障局 版权所有2010 粤公网安备 441…",
+          "经办机构地址：仲恺高新区和畅五路西8号投资控股大厦六楼601 联系电话：0752-3278375 逾期拒不退还的（也未提出书面陈诉申辩意见的），将依法移交人力资源社会保障行政部门处理或申请人民法院强制执行，涉嫌违法犯罪的，将移交公安部门处理"
+        ]
+      },
+      {
+        "uid": "6e5940070b4d",
+        "title": "惠州市社会保险基金管理局仲恺分局送达公告（郑海军）",
+        "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5492658.html",
+        "publisher": "惠州官方",
+        "publisher_rank": 4,
+        "region": "惠州",
+        "region_city": "惠州",
+        "district": null,
+        "category": "社保公积金",
+        "policy_type": "—",
+        "key": "1927c5bc1a96",
+        "publish_date": null,
+        "effective_date": null,
+        "extracted": {},
+        "history": [],
+        "is_vendor": false,
+        "source_id": "city-portal",
+        "detail_text": null,
+        "quotes": [
+          "附件:《退款通知书》(惠仲社保失业退字〔2025〕1号) 惠州市社会保险基金管理局仲恺分局 2025年3月26日 退款通知书 惠仲社保失业退字〔2025〕1号 参保人 姓名：郑海军，性别：男，公民身份号码：4311********291293 住址：广东省惠州市仲恺区陈江大道北51号荷兰小城24栋1503房 银行账户…",
+          "联系人：温辛河 联系电话：0752-3278371 联系地址：仲恺高新区和畅五路西8号投资控股大厦二楼自然人厅 惠州市社会保险基金管理局仲恺分局 2025年2月25日 送达回证 受送达人 郑海军（身份证4311********291293） 送达内容 惠仲社保失业退字〔2025〕1号 送达人 惠州市社会保险基金管理局…",
+          "&nbsp; 网站无障碍 | 适老版 首 页 | 政务公开 通知公告 政策 规范性文件 其他文件 政策解读 发展规划 工作动态 双随机、一公开 政府采购 组织机构 领导分工 机构职能 财政预决算 财政预决算 三公经费 | 政务服务 | 政民互动 调查征集 政策咨询 社会保障 人才人事 劳动关系 就业创业 直播访谈 |…"
+        ],
+        "dup_links": [
+          "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5492659.html"
+        ]
+      },
+      {
+        "uid": "b4d498a8a8d7",
+        "title": "抵扣多享受社会保险待遇决定书（王华）",
+        "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5467297.html",
+        "publisher": "惠州官方",
+        "publisher_rank": 4,
+        "region": "惠州",
+        "region_city": "惠州",
+        "district": null,
+        "category": "社保公积金",
+        "policy_type": "—",
+        "key": "1927c5bc1a96",
+        "publish_date": null,
+        "effective_date": null,
+        "extracted": {},
+        "history": [],
+        "is_vendor": false,
+        "source_id": "city-portal",
+        "detail_text": null,
+        "quotes": [
+          "&nbsp; &nbsp;&nbsp; 2025年 1月 19日，我局向您依法送达了《退回多享受社会保险待遇告知书》，您在规定时限内未按期退回，也未提出异议或异议不成立",
+          "经核查，姓名：王华，社会保障号码：3404031957*****2，于 2014 年 6 月至 2021 年 1 月多享受（☑企业职工基本养老保险□机关事业单位工作人员养老保险□城乡居民基本养老保险□工伤保险□失业保险）待遇，共计人民币 25784.24元，大写 贰万伍仟柒佰捌拾肆元贰角肆分",
+          "惠州市社会保险基金管理局 2025年2月20日 （一式两份：一份送当事人，一份社会保险经办机构留存） 责任编辑：惠州市人社局 &nbsp; 网站地图 主办：惠州市人力资源和社会保障局 联系电话：0752-12333 传真：0752-2789397 惠州市人力资源和社会保障局 版权所有2010 粤公网安备 441302…"
         ]
       }
     ],
@@ -4229,6 +4141,9 @@
       "根据《中华人民共和国行政强制法》第五十四条之规定，我单位于2026年5月19日依法作出《退回多享受社会保险待遇催告书》（以下简称“催告书”），请您（们）在收到催告书之日起10日内退回多享受的工伤保险待遇至社会保险经办机构指定账户",
       "联系人： 杨小姐&nbsp; &nbsp; &nbsp; 电话： 0752-2169007&nbsp; 联系地址：惠州市惠城区下埔路19号惠城社保分局稽核股 附件：白红平等9人人员公告信息明细表.pdf 惠州市社会保险基金管理局惠城分局 2026年6月5日 责任编辑：惠州市人社局 &nbsp; 网站地图 主办：惠州市…",
       "&nbsp; 网站无障碍 | 适老版 首 页 | 政务公开 通知公告 政策 规范性文件 其他文件 政策解读 发展规划 工作动态 双随机、一公开 政府采购 组织机构 领导分工 机构职能 财政预决算 财政预决算 三公经费 | 政务服务 | 政民互动 调查征集 政策咨询 社会保障 人才人事 劳动关系 就业创业 直播访谈 |…"
+    ],
+    "dup_links": [
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5639349.html"
     ]
   },
   {
@@ -4253,6 +4168,9 @@
     "quotes": [
       "2025年，全市按月领取失业保险金人数5.09万人，人均1639.49元/月",
       "2025年7月1日起全市城乡居民基本养老保险基础养老金最低标准达到240元/人·月"
+    ],
+    "dup_links": [
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5491100.html"
     ]
   },
   {
@@ -4282,7 +4200,13 @@
       "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5708471.html",
       "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5708466.html",
       "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5664980.html",
-      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5664875.html"
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5664875.html",
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5664864.html",
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5643082.html",
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5643090.html",
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5643086.html",
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5643064.html",
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5643057.html"
     ]
   },
   {
@@ -4309,7 +4233,8 @@
       "附件：退回多享受工伤保险待遇告知书.pdf 惠州市社会保险基金管理局 2026年4月27日 （联系人: 黎先生&nbsp; 电话:0752-2789211） 责任编辑：惠州市人社局 &nbsp; 网站地图 主办：惠州市人力资源和社会保障局 联系电话：0752-12333 传真：0752-2789397 惠州市人力资源…"
     ],
     "dup_links": [
-      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5757734.html"
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5757734.html",
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5483495.html"
     ]
   },
   {
@@ -4334,6 +4259,348 @@
     "quotes": [
       "惠州市社会保险基金管理局 2026年2月27日 责任编辑：惠州市人社局 &nbsp; 网站地图 主办：惠州市人力资源和社会保障局 联系电话：0752-12333 传真：0752-2789397 惠州市人力资源和社会保障局 版权所有2010 粤公网安备 44130202000719号 网站标识码4413000058 粤…"
     ]
+  },
+  {
+    "uid": "5d1cb3318b44",
+    "title": "关于积极参加岁末个人养老金缴存、享受2025年度税收优惠的倡议函",
+    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5655156.html",
+    "publisher": "惠州官方",
+    "publisher_rank": 4,
+    "region": "惠州",
+    "region_city": "惠州",
+    "district": null,
+    "category": "补贴与保险待遇",
+    "policy_type": "社保-养老",
+    "key": "1c3869b4b0f4",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": null,
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null
+  },
+  {
+    "uid": "122c1bea7171",
+    "title": "责令退回多享受社会保险待遇决定书",
+    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5623995.html",
+    "publisher": "惠州官方",
+    "publisher_rank": 4,
+    "region": "惠州",
+    "region_city": "惠州",
+    "district": null,
+    "category": "社保公积金",
+    "policy_type": "—",
+    "key": "1927c5bc1a96",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": {},
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null,
+    "quotes": [
+      "我单位于2025年7月7日公告送达《退回多享受社会保险待遇告知书》，附件名单人员未按要求退回多享受的工伤保险待遇",
+      "账户名称：惠州市社会保险基金管理局 银行账号：108501516010001320 开户银行：广发行惠州文华路支行 附言：XXX（姓名）退回多享受待遇 社会保险经办机构联系人：向小姐 电话：0752-2169005 社会保险经办机构地址： 惠州市惠城区下埔路19号惠城社保分局工伤股 附件： 人员名单.xlsx 惠州市…",
+      "在法定期限内不申请行政复议或者提起行政诉讼，又不履行本决定的，我单位将依法向人民法院申请强制执行"
+    ],
+    "dup_links": [
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5495603.html"
+    ]
+  },
+  {
+    "uid": "a4135b528a7e",
+    "title": "依法支付工伤保险待遇催告通知书",
+    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5615775.html",
+    "publisher": "惠州官方",
+    "publisher_rank": 4,
+    "region": "惠州",
+    "region_city": "惠州",
+    "district": null,
+    "category": "补贴与保险待遇",
+    "policy_type": "社保-工伤",
+    "key": "704b1b9242c9",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": null,
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null,
+    "dup_links": [
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5615789.html"
+    ]
+  },
+  {
+    "uid": "bca3e9a694c1",
+    "title": "惠州市社会保险基金管理局仲恺分局关于黄运娇等4人社会保险基金待遇追回决定书送达公告",
+    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5571938.html",
+    "publisher": "惠州官方",
+    "publisher_rank": 4,
+    "region": "惠州",
+    "region_city": "惠州",
+    "district": null,
+    "category": "社保公积金",
+    "policy_type": "—",
+    "key": "1927c5bc1a96",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": {},
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null,
+    "quotes": [
+      "惠州市社会保险基金管理局仲恺分局 2025年7月17日 附件： 惠州市社会保险基金管理局仲恺分局关于黄运娇等4人社会保险基金待遇追回决定书送达公告（挂网）.pdf 责任编辑：惠州市人社局 &nbsp; 网站地图 主办：惠州市人力资源和社会保障局 联系电话：0752-12333 传真：0752-2789397 惠州市人…",
+      "&nbsp; 网站无障碍 | 适老版 首 页 | 政务公开 通知公告 政策 规范性文件 其他文件 政策解读 发展规划 工作动态 双随机、一公开 政府采购 组织机构 领导分工 机构职能 财政预决算 财政预决算 三公经费 | 政务服务 | 政民互动 调查征集 政策咨询 社会保障 人才人事 劳动关系 就业创业 直播访谈 |…",
+      "行政复议或者行政诉讼期间，本决定不停止执行"
+    ],
+    "dup_links": [
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5549592.html",
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5537673.html",
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5516940.html"
+    ]
+  },
+  {
+    "uid": "b80a6d3e7548",
+    "title": "关于敦促有关人员退回多领取工伤保险待遇的公告",
+    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5560545.html",
+    "publisher": "惠州官方",
+    "publisher_rank": 4,
+    "region": "惠州",
+    "region_city": "惠州",
+    "district": null,
+    "category": "补贴与保险待遇",
+    "policy_type": "社保-工伤",
+    "key": "704b1b9242c9",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": null,
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null,
+    "dup_links": [
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5462446.html"
+    ]
+  },
+  {
+    "uid": "f070af1687d3",
+    "title": "关于惠州市合为电子有限公司支付罗慧婷工伤保险待遇催告通知书的送达公告",
+    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5559259.html",
+    "publisher": "惠州官方",
+    "publisher_rank": 4,
+    "region": "惠州",
+    "region_city": "惠州",
+    "district": null,
+    "category": "补贴与保险待遇",
+    "policy_type": "社保-工伤",
+    "key": "704b1b9242c9",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": null,
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null
+  },
+  {
+    "uid": "dac7cc6085e9",
+    "title": "工伤保险先行支付催告通知书",
+    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5553215.html",
+    "publisher": "惠州官方",
+    "publisher_rank": 4,
+    "region": "惠州",
+    "region_city": "惠州",
+    "district": null,
+    "category": "补贴与保险待遇",
+    "policy_type": "社保-工伤",
+    "key": "704b1b9242c9",
+    "publish_date": "2025-06-26",
+    "effective_date": null,
+    "extracted": null,
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null
+  },
+  {
+    "uid": "efaf00d8b6e7",
+    "title": "关于违规补缴领取社会保险待遇的公告",
+    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5526147.html",
+    "publisher": "惠州官方",
+    "publisher_rank": 4,
+    "region": "惠州",
+    "region_city": "惠州",
+    "district": null,
+    "category": "社保公积金",
+    "policy_type": "—",
+    "key": "1927c5bc1a96",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": {},
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null,
+    "quotes": [
+      "经核实，黄运娇等5人通过违规办理一次性补缴养老保险业务骗取社会保险待遇，我局于2025年4月24日通过邮件方式送达《退款通知书》，由于你（们）的联系地址无法有效送达至你（们）本人签收，且无法取得你（们）的其他联系方式将退款通知书送达你（们）方，故我局现依法向你（们）公告送达退款通知书",
+      "惠州市社会保险基金管理局仲恺分局 2025年5月13日 附件： 关于违规补缴领取社会保险待遇的公告.pdf 责任编辑：惠州市人社局 &nbsp; 网站地图 主办：惠州市人力资源和社会保障局 联系电话：0752-12333 传真：0752-2789397 惠州市人力资源和社会保障局 版权所有2010 粤公网安备 441…",
+      "经办机构地址：仲恺高新区和畅五路西8号投资控股大厦六楼601 联系电话：0752-3278375 逾期拒不退还的（也未提出书面陈诉申辩意见的），将依法移交人力资源社会保障行政部门处理或申请人民法院强制执行，涉嫌违法犯罪的，将移交公安部门处理"
+    ]
+  },
+  {
+    "uid": "c7522128e741",
+    "title": "关于惠州市锦红实业发展有限公司支付王其荣工伤保险待遇催告通知书的送达公告",
+    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5498015.html",
+    "publisher": "惠州官方",
+    "publisher_rank": 4,
+    "region": "惠州",
+    "region_city": "惠州",
+    "district": null,
+    "category": "补贴与保险待遇",
+    "policy_type": "社保-工伤",
+    "key": "704b1b9242c9",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": null,
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null
+  },
+  {
+    "uid": "91331d6ec0f2",
+    "title": "关于惠州市金豪塑胶有限公司支付陈贤中工伤保险待遇催告通知书的送达公告",
+    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5498012.html",
+    "publisher": "惠州官方",
+    "publisher_rank": 4,
+    "region": "惠州",
+    "region_city": "惠州",
+    "district": null,
+    "category": "补贴与保险待遇",
+    "policy_type": "社保-工伤",
+    "key": "704b1b9242c9",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": null,
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null
+  },
+  {
+    "uid": "2a49473a662b",
+    "title": "关于惠州市博诚安装工程有限公司支付黄建军工伤保险待遇催告通知书的送达公告",
+    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5498004.html",
+    "publisher": "惠州官方",
+    "publisher_rank": 4,
+    "region": "惠州",
+    "region_city": "惠州",
+    "district": null,
+    "category": "补贴与保险待遇",
+    "policy_type": "社保-工伤",
+    "key": "704b1b9242c9",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": null,
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null
+  },
+  {
+    "uid": "6e5940070b4d",
+    "title": "惠州市社会保险基金管理局仲恺分局送达公告（郑海军）",
+    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5492658.html",
+    "publisher": "惠州官方",
+    "publisher_rank": 4,
+    "region": "惠州",
+    "region_city": "惠州",
+    "district": null,
+    "category": "社保公积金",
+    "policy_type": "—",
+    "key": "1927c5bc1a96",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": {},
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null,
+    "quotes": [
+      "附件:《退款通知书》(惠仲社保失业退字〔2025〕1号) 惠州市社会保险基金管理局仲恺分局 2025年3月26日 退款通知书 惠仲社保失业退字〔2025〕1号 参保人 姓名：郑海军，性别：男，公民身份号码：4311********291293 住址：广东省惠州市仲恺区陈江大道北51号荷兰小城24栋1503房 银行账户…",
+      "联系人：温辛河 联系电话：0752-3278371 联系地址：仲恺高新区和畅五路西8号投资控股大厦二楼自然人厅 惠州市社会保险基金管理局仲恺分局 2025年2月25日 送达回证 受送达人 郑海军（身份证4311********291293） 送达内容 惠仲社保失业退字〔2025〕1号 送达人 惠州市社会保险基金管理局…",
+      "&nbsp; 网站无障碍 | 适老版 首 页 | 政务公开 通知公告 政策 规范性文件 其他文件 政策解读 发展规划 工作动态 双随机、一公开 政府采购 组织机构 领导分工 机构职能 财政预决算 财政预决算 三公经费 | 政务服务 | 政民互动 调查征集 政策咨询 社会保障 人才人事 劳动关系 就业创业 直播访谈 |…"
+    ],
+    "dup_links": [
+      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5492659.html"
+    ]
+  },
+  {
+    "uid": "a096dc0a8ee3",
+    "title": "关于提供个人养老金退税辅导政策宣讲和现场缴存办理服务的公告",
+    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5478109.html",
+    "publisher": "惠州官方",
+    "publisher_rank": 4,
+    "region": "惠州",
+    "region_city": "惠州",
+    "district": null,
+    "category": "补贴与保险待遇",
+    "policy_type": "社保-养老",
+    "key": "1c3869b4b0f4",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": null,
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null
+  },
+  {
+    "uid": "b4d498a8a8d7",
+    "title": "抵扣多享受社会保险待遇决定书（王华）",
+    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5467297.html",
+    "publisher": "惠州官方",
+    "publisher_rank": 4,
+    "region": "惠州",
+    "region_city": "惠州",
+    "district": null,
+    "category": "社保公积金",
+    "policy_type": "—",
+    "key": "1927c5bc1a96",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": {},
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null,
+    "quotes": [
+      "&nbsp; &nbsp;&nbsp; 2025年 1月 19日，我局向您依法送达了《退回多享受社会保险待遇告知书》，您在规定时限内未按期退回，也未提出异议或异议不成立",
+      "经核查，姓名：王华，社会保障号码：3404031957*****2，于 2014 年 6 月至 2021 年 1 月多享受（☑企业职工基本养老保险□机关事业单位工作人员养老保险□城乡居民基本养老保险□工伤保险□失业保险）待遇，共计人民币 25784.24元，大写 贰万伍仟柒佰捌拾肆元贰角肆分",
+      "惠州市社会保险基金管理局 2025年2月20日 （一式两份：一份送当事人，一份社会保险经办机构留存） 责任编辑：惠州市人社局 &nbsp; 网站地图 主办：惠州市人力资源和社会保障局 联系电话：0752-12333 传真：0752-2789397 惠州市人力资源和社会保障局 版权所有2010 粤公网安备 441302…"
+    ]
+  },
+  {
+    "uid": "09537ad4cf25",
+    "title": "惠州市工伤康复服务定点协议机构拟备案名单公示",
+    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5459318.html",
+    "publisher": "惠州官方",
+    "publisher_rank": 4,
+    "region": "惠州",
+    "region_city": "惠州",
+    "district": null,
+    "category": "其他",
+    "policy_type": "社保-工伤",
+    "key": "704b1b9242c9",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": null,
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null
   },
   {
     "uid": "80d365b8c05e",
@@ -6818,6 +7085,26 @@
     ]
   },
   {
+    "uid": "43e9e7ee8664",
+    "title": "住房公积金维权调解申请书（职...",
+    "url": "https://gjj.yantai.gov.cn/col/col4132/art/2026/art_378fd766505240b8a1e41799b3e3fba8.html",
+    "publisher": "烟台官方",
+    "publisher_rank": 4,
+    "region": "烟台",
+    "region_city": "烟台",
+    "district": null,
+    "category": "社保公积金",
+    "policy_type": "公积金",
+    "key": "f9ba0e94736c",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": {},
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null
+  },
+  {
     "uid": "c99485fc98d0",
     "title": "住房公积金维权手册",
     "url": "https://gjj.yantai.gov.cn/col/col4132/art/2026/art_8e52896fd542417cadf3a55afdd55415.html",
@@ -6934,6 +7221,26 @@
           "当个贷率发生区间变化并连续6个月保持稳定的比例时，由市中心确定倍数执行标准，并发布执行",
           "2.共同申请人没有缴存住房公积金或住房公积金账户状态为“封存”、“销户”的，按照我市当年住房公积金最低缴存基数认定"
         ]
+      },
+      {
+        "uid": "43e9e7ee8664",
+        "title": "住房公积金维权调解申请书（职...",
+        "url": "https://gjj.yantai.gov.cn/col/col4132/art/2026/art_378fd766505240b8a1e41799b3e3fba8.html",
+        "publisher": "烟台官方",
+        "publisher_rank": 4,
+        "region": "烟台",
+        "region_city": "烟台",
+        "district": null,
+        "category": "社保公积金",
+        "policy_type": "公积金",
+        "key": "f9ba0e94736c",
+        "publish_date": null,
+        "effective_date": null,
+        "extracted": {},
+        "history": [],
+        "is_vendor": false,
+        "source_id": "city-portal",
+        "detail_text": null
       },
       {
         "uid": "c99485fc98d0",
@@ -7374,463 +7681,6 @@
       "缴存职工每年度办理 无房 租房提取次数由一次提取调整为多次提取，每个月不超过一次 ， 每次提取及累计提取额不得超过当年度提取限额",
       "&ensp;&ensp;&ensp;&ensp;&ensp;二、于 2023年10月16日至11月15日在市公积金中心网站及政务公开网向社会各界发布意见征求公告，公告期内未收到意见或建议",
       "附件 2： &nbsp; 关于调整住房公积金租房提取 频次 的通知 （ 征求意见稿 ） &nbsp; 各缴存单位、缴存职工： 为进一步落实 “租购并举”制度，加大对无房职工租赁自住住房支持力度，解决好青年人、新市民的住房困难问题"
-    ]
-  },
-  {
-    "uid": "2c43b02bcc45",
-    "title": "西安住房公积金管理中心关于与咸阳市住房公积金管理中心开通逾期贷款异地扣划业务的通告",
-    "url": "https://zfgjj.xa.gov.cn/gzdt/tzgg/2104854878853611521.html",
-    "publisher": "西安官方",
-    "publisher_rank": 4,
-    "region": "西安",
-    "region_city": "西安",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "公积金",
-    "key": "f44b4d51035f",
-    "publish_date": "2026-09-24",
-    "effective_date": null,
-    "extracted": {},
-    "history": [
-      {
-        "uid": "5d2d6e8db623",
-        "title": "西安住房公积金管理中心关于拓宽住房公积金提取范围的通知",
-        "url": "https://zfgjj.xa.gov.cn/gzdt/tzgg/2100502056129388546.html",
-        "publisher": "西安官方",
-        "publisher_rank": 4,
-        "region": "西安",
-        "region_city": "西安",
-        "district": null,
-        "category": "社保公积金",
-        "policy_type": "公积金",
-        "key": "f44b4d51035f",
-        "publish_date": "2026-08-26",
-        "effective_date": null,
-        "extracted": {},
-        "history": [],
-        "is_vendor": false,
-        "source_id": "city-portal",
-        "detail_text": null,
-        "quotes": [
-          "提取额度按不动产权证面积计算，每平方米1500元，上限20万元",
-          "本通知自2026年9月20日起施行",
-          "西安住房公积金管理中心 2026年9月17日 西安住房公积金管理中心关于拓宽住房公积金提取范围的解读 分享： 扫一扫在手机打开当前页 主办单位：西安住房公积金管理中心 地址：碑林区振兴路137号 邮编：710068 关于我们 | 联系方式 | 郑重声明 | 下设机构 | 网站地图 网站标识码：6101000061 陕…"
-        ],
-        "dup_links": [
-          "https://zfgjj.xa.gov.cn/xxgk/zcjd/2100503552262672385.html"
-        ]
-      },
-      {
-        "uid": "eb7d0cf44774",
-        "title": "关于农业银行西安凤新路支行住房公积金服务网点暂停办理业务的通告",
-        "url": "https://zfgjj.xa.gov.cn/gzdt/tzgg/2081589574912532482.html",
-        "publisher": "西安官方",
-        "publisher_rank": 4,
-        "region": "西安",
-        "region_city": "西安",
-        "district": null,
-        "category": "社保公积金",
-        "policy_type": "公积金",
-        "key": "f44b4d51035f",
-        "publish_date": "2026-07-09",
-        "effective_date": null,
-        "extracted": {},
-        "history": [],
-        "is_vendor": false,
-        "source_id": "city-portal",
-        "detail_text": null,
-        "quotes": [
-          "关于农业银行西安凤新路支行住房公积金服务网点暂停办理业务的通告-西安住房公积金管理中心 长者模式 登录 退出 注册 本站支持IPV6 无障碍浏览 首页 工作动态 政府信息公开 政务服务 互动交流 首页 工作动态 政府信息公开 政务服务 互动交流 专题专栏 首页 / 工作动态 / 通知公告 / 正文 关于农业银行西安凤…",
-          "西安住房公积金管理中心 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; …"
-        ],
-        "dup_links": [
-          "https://zfgjj.xa.gov.cn/gzdt/tzgg/2075029497579577346.html"
-        ]
-      },
-      {
-        "uid": "442cb55dbfaf",
-        "title": "西安住房公积金管理中心关于调整个人住房公积金贷款借款人年龄上限的通知",
-        "url": "https://zfgjj.xa.gov.cn/xxgk/zcfg/1882270275915517954.html",
-        "publisher": "西安官方",
-        "publisher_rank": 4,
-        "region": "西安",
-        "region_city": "西安",
-        "district": null,
-        "category": "社保公积金",
-        "policy_type": "公积金",
-        "key": "f44b4d51035f",
-        "publish_date": "2024-12-31",
-        "effective_date": null,
-        "extracted": {},
-        "history": [],
-        "is_vendor": false,
-        "source_id": "city-portal",
-        "detail_text": null,
-        "quotes": [
-          "西安住房公积金管理中心 关于调整个人住房公积金贷款借款人 年龄上限的通知-西安住房公积金管理中心 长者模式 登录 退出 注册 本站支持IPV6 无障碍浏览 首页 工作动态 政府信息公开 政务服务 互动交流 首页 工作动态 政府信息公开 政务服务 互动交流 专题专栏 首页 / 政府信息公开 / 政策法规 / 政策法规 …",
-          "西安住房公积金管理中心 2025年1月21日 分享： 扫一扫在手机打开当前页 主办单位：西安住房公积金管理中心 地址：碑林区振兴路137号 邮编：710068 关于我们 | 联系方式 | 郑重声明 | 下设机构 | 网站地图 网站标识码：6101000061 陕ICP备05015284号-3 陕公网安备 610103…",
-          "二、本通知印发前已签订个人住房公积金借款合同的贷款，按原规定执行"
-        ]
-      }
-    ],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null,
-    "quotes": [
-      "西安住房公积金管理中心 2026年9月29日 西安住房公积金逾期贷款异地扣划业务 办理指南 一、受理对象 在西安住房公积金管理中心有逾期贷款的咸阳市住房公积金缴存人",
-      "西安住房公积金管理中心关于与咸阳市住房公积金管理中心开通逾期贷款异地扣划业务的通告-西安住房公积金管理中心 长者模式 登录 退出 注册 本站支持IPV6 无障碍浏览 首页 工作动态 政府信息公开 政务服务 互动交流 首页 工作动态 政府信息公开 政务服务 互动交流 专题专栏 首页 / 工作动态 / 通知公告 / 正文…"
-    ]
-  },
-  {
-    "uid": "5d2d6e8db623",
-    "title": "西安住房公积金管理中心关于拓宽住房公积金提取范围的通知",
-    "url": "https://zfgjj.xa.gov.cn/gzdt/tzgg/2100502056129388546.html",
-    "publisher": "西安官方",
-    "publisher_rank": 4,
-    "region": "西安",
-    "region_city": "西安",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "公积金",
-    "key": "f44b4d51035f",
-    "publish_date": "2026-08-26",
-    "effective_date": null,
-    "extracted": {},
-    "history": [],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null,
-    "quotes": [
-      "提取额度按不动产权证面积计算，每平方米1500元，上限20万元",
-      "本通知自2026年9月20日起施行",
-      "西安住房公积金管理中心 2026年9月17日 西安住房公积金管理中心关于拓宽住房公积金提取范围的解读 分享： 扫一扫在手机打开当前页 主办单位：西安住房公积金管理中心 地址：碑林区振兴路137号 邮编：710068 关于我们 | 联系方式 | 郑重声明 | 下设机构 | 网站地图 网站标识码：6101000061 陕…"
-    ],
-    "dup_links": [
-      "https://zfgjj.xa.gov.cn/xxgk/zcjd/2100503552262672385.html"
-    ]
-  },
-  {
-    "uid": "eb7d0cf44774",
-    "title": "关于农业银行西安凤新路支行住房公积金服务网点暂停办理业务的通告",
-    "url": "https://zfgjj.xa.gov.cn/gzdt/tzgg/2081589574912532482.html",
-    "publisher": "西安官方",
-    "publisher_rank": 4,
-    "region": "西安",
-    "region_city": "西安",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "公积金",
-    "key": "f44b4d51035f",
-    "publish_date": "2026-07-09",
-    "effective_date": null,
-    "extracted": {},
-    "history": [],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null,
-    "quotes": [
-      "关于农业银行西安凤新路支行住房公积金服务网点暂停办理业务的通告-西安住房公积金管理中心 长者模式 登录 退出 注册 本站支持IPV6 无障碍浏览 首页 工作动态 政府信息公开 政务服务 互动交流 首页 工作动态 政府信息公开 政务服务 互动交流 专题专栏 首页 / 工作动态 / 通知公告 / 正文 关于农业银行西安凤…",
-      "西安住房公积金管理中心 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; …"
-    ],
-    "dup_links": [
-      "https://zfgjj.xa.gov.cn/gzdt/tzgg/2075029497579577346.html"
-    ]
-  },
-  {
-    "uid": "442cb55dbfaf",
-    "title": "西安住房公积金管理中心关于调整个人住房公积金贷款借款人年龄上限的通知",
-    "url": "https://zfgjj.xa.gov.cn/xxgk/zcfg/1882270275915517954.html",
-    "publisher": "西安官方",
-    "publisher_rank": 4,
-    "region": "西安",
-    "region_city": "西安",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "公积金",
-    "key": "f44b4d51035f",
-    "publish_date": "2024-12-31",
-    "effective_date": null,
-    "extracted": {},
-    "history": [],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null,
-    "quotes": [
-      "西安住房公积金管理中心 关于调整个人住房公积金贷款借款人 年龄上限的通知-西安住房公积金管理中心 长者模式 登录 退出 注册 本站支持IPV6 无障碍浏览 首页 工作动态 政府信息公开 政务服务 互动交流 首页 工作动态 政府信息公开 政务服务 互动交流 专题专栏 首页 / 政府信息公开 / 政策法规 / 政策法规 …",
-      "西安住房公积金管理中心 2025年1月21日 分享： 扫一扫在手机打开当前页 主办单位：西安住房公积金管理中心 地址：碑林区振兴路137号 邮编：710068 关于我们 | 联系方式 | 郑重声明 | 下设机构 | 网站地图 网站标识码：6101000061 陕ICP备05015284号-3 陕公网安备 610103…",
-      "二、本通知印发前已签订个人住房公积金借款合同的贷款，按原规定执行"
-    ]
-  },
-  {
-    "uid": "77cdb78dd552",
-    "title": "《住房公积金管理条例》",
-    "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/c103429/202609/39d6fd55d5464fd3bde50f057eb0b9c3.shtml",
-    "publisher": "赣州官方",
-    "publisher_rank": 4,
-    "region": "赣州",
-    "region_city": "赣州",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "公积金",
-    "key": "79a759c60959",
-    "publish_date": null,
-    "effective_date": null,
-    "extracted": {},
-    "history": [
-      {
-        "uid": "6d045ecf4d1e",
-        "title": "关于印发《赣州市住房公积金归集业务操作细则》《赣州市住房公积金提取业务操作细则》《赣州市住房公积金个人住房贷款业务操作细则》的通知",
-        "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/c103431/202605/07bba404126144fe95f2de768abfe3c0.shtml",
-        "publisher": "赣州官方",
-        "publisher_rank": 4,
-        "region": "赣州",
-        "region_city": "赣州",
-        "district": null,
-        "category": "社保公积金",
-        "policy_type": "公积金",
-        "key": "79a759c60959",
-        "publish_date": null,
-        "effective_date": null,
-        "extracted": {},
-        "history": [],
-        "is_vendor": false,
-        "source_id": "city-portal",
-        "detail_text": null,
-        "quotes": [
-          "缴存人住房公积金月缴存基数及月缴存额应当按照我市当年公布的上下限标准执行",
-          "第三章 &ensp; 缴存 第 十七 条 &ensp;&ensp; 住房公积金月缴存基数按职工本人上一自然年度月平均工资确定， 最低不应低于我市当年最低工资标准，最高不应高于统计部门公布的我市上一年度城镇非私营单位在岗职工月平均工资的 3 倍",
-          "（三）因缴存基数或缴存比例调整需补缴住房公积金的"
-        ]
-      },
-      {
-        "uid": "4e5311f8219c",
-        "title": "优化调整我市住房公积金部分贷款业务政策的解读",
-        "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/zcjd/202507/02c07a65c51b42a3ac66f002b0755cc6.shtml",
-        "publisher": "赣州官方",
-        "publisher_rank": 4,
-        "region": "赣州",
-        "region_city": "赣州",
-        "district": null,
-        "category": "社保公积金",
-        "policy_type": "公积金",
-        "key": "79a759c60959",
-        "publish_date": null,
-        "effective_date": null,
-        "extracted": {},
-        "history": [],
-        "is_vendor": false,
-        "source_id": "city-portal",
-        "detail_text": null,
-        "quotes": [
-          "举例： 缴存人张三购买一套 100 万的商品住房时，申请商业贷款，首付款比例为 15% ，贷款金额为 85 万元",
-          "（四）缴存人购买新建商品住房时，办理了首付款提取或购房提取，且符合我市住房公积金贷款条件的，申请住房公积金贷款时， “贷款的额度须扣除已提取金额”的规定， 调整为 “贷款额度加上已提取金额不得超过房屋总价”",
-          "优化调整我市住房公积金部分贷款业务政策的解读 | 赣州市住房公积金管理中心 网站首页 新闻中心 机构职能 政务公开 政务服务 互动交流 业务指南 专题专栏 无障碍 关怀版 无障碍 当前位置： 首页 &nbsp;>&nbsp; 政务公开 &nbsp;>&nbsp; 政策解读 优化调整我市住房公积金部分贷款业务政策的解读…"
-        ]
-      },
-      {
-        "uid": "a7addf1ffefb",
-        "title": "支持使用住房公积金购买配售型保障性住房（含人才住房）政策的解读",
-        "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/zcjd/202507/64c5ebff34ce47a2ae0036e85480a48a.shtml",
-        "publisher": "赣州官方",
-        "publisher_rank": 4,
-        "region": "赣州",
-        "region_city": "赣州",
-        "district": null,
-        "category": "社保公积金",
-        "policy_type": "公积金",
-        "key": "79a759c60959",
-        "publish_date": null,
-        "effective_date": null,
-        "extracted": {},
-        "history": [],
-        "is_vendor": false,
-        "source_id": "city-portal",
-        "detail_text": null,
-        "quotes": [
-          "④不低于规定比例的首付款发票",
-          "支持使用住房公积金购买配售型保障性住房（含人才住房）政策的解读 | 赣州市住房公积金管理中心 网站首页 新闻中心 机构职能 政务公开 政务服务 互动交流 业务指南 专题专栏 无障碍 关怀版 无障碍 当前位置： 首页 &nbsp;>&nbsp; 政务公开 &nbsp;>&nbsp; 政策解读 支持使用住房公积金购买配售…",
-          "&ensp; &ensp; 注意：最高贷款额度和可贷金额上浮政策不叠加使用，缴存人家庭根据自身实际选择"
-        ]
-      },
-      {
-        "uid": "e4b2deeb46c6",
-        "title": "市住房公积金管理中心机关第三党支部召开2024年度组织生活会",
-        "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/jgdj/202504/b624955e61234f2190c225ece405876a.shtml",
-        "publisher": "赣州官方",
-        "publisher_rank": 4,
-        "region": "赣州",
-        "region_city": "赣州",
-        "district": null,
-        "category": "社保公积金",
-        "policy_type": "公积金",
-        "key": "79a759c60959",
-        "publish_date": null,
-        "effective_date": null,
-        "extracted": {},
-        "history": [],
-        "is_vendor": false,
-        "source_id": "city-portal",
-        "detail_text": null
-      }
-    ],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null,
-    "quotes": [
-      "待单位经济效益好转后，再提高缴存比例或者补缴缓缴",
-      "（二）根据本条例第十八条的规定，拟订住房公积金的具体缴存比例",
-      "单位为职工缴存的住房公积金的月缴存额为职工本人上一年度月平均工资乘以单位住房公积金缴存比例"
-    ]
-  },
-  {
-    "uid": "eb73dc134431",
-    "title": "关于确定2026年我市住房公积金缴存基数及月缴存额上下限的通知",
-    "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/c103430/202607/616e6f447b994708997219f5e2e1748f.shtml",
-    "publisher": "赣州官方",
-    "publisher_rank": 4,
-    "region": "赣州",
-    "region_city": "赣州",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "公积金-基数",
-    "key": "8d6bf5651e8d",
-    "publish_date": null,
-    "effective_date": null,
-    "extracted": {
-      "base_new": 24304,
-      "cap_new": 5832,
-      "floor_new": 1950,
-      "ratio_company": 12.0,
-      "ratio_individual": 12.0,
-      "ratio_range": "5%–12%（不低于/不高于）"
-    },
-    "history": [],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null,
-    "quotes": [
-      "关于确定2026年我市住房公积金缴存基数及月缴存额上下限的通知 | 赣州市住房公积金管理中心 网站首页 新闻中心 机构职能 政务公开 政务服务 互动交流 业务指南 专题专栏 无障碍 关怀版 无障碍 当前位置： 首页 &nbsp;>&nbsp; 政务公开 &nbsp;>&nbsp; 政策法规 &nbsp;>&nbsp;…",
-      "二、缴存基数及月缴存额上下限 依据 赣州市 202 5 年度城镇非私营单位在岗职工 月 平均工资 的 3 倍 和 202 6 年最低工资标准 核算确定， 202 6 年我市住房公积金缴存基数上 限为 24304 元、 下限 为 1950 元",
-      "我市辖区内中央、省属驻市单位及灵活就业人员的住房公积金缴存比例、缴存基数及月缴存额标准，统一按照我市现行住房公积金缴存管理规定执行"
-    ]
-  },
-  {
-    "uid": "6d045ecf4d1e",
-    "title": "关于印发《赣州市住房公积金归集业务操作细则》《赣州市住房公积金提取业务操作细则》《赣州市住房公积金个人住房贷款业务操作细则》的通知",
-    "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/c103431/202605/07bba404126144fe95f2de768abfe3c0.shtml",
-    "publisher": "赣州官方",
-    "publisher_rank": 4,
-    "region": "赣州",
-    "region_city": "赣州",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "公积金",
-    "key": "79a759c60959",
-    "publish_date": null,
-    "effective_date": null,
-    "extracted": {},
-    "history": [],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null,
-    "quotes": [
-      "缴存人住房公积金月缴存基数及月缴存额应当按照我市当年公布的上下限标准执行",
-      "第三章 &ensp; 缴存 第 十七 条 &ensp;&ensp; 住房公积金月缴存基数按职工本人上一自然年度月平均工资确定， 最低不应低于我市当年最低工资标准，最高不应高于统计部门公布的我市上一年度城镇非私营单位在岗职工月平均工资的 3 倍",
-      "（三）因缴存基数或缴存比例调整需补缴住房公积金的"
-    ]
-  },
-  {
-    "uid": "4e5311f8219c",
-    "title": "优化调整我市住房公积金部分贷款业务政策的解读",
-    "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/zcjd/202507/02c07a65c51b42a3ac66f002b0755cc6.shtml",
-    "publisher": "赣州官方",
-    "publisher_rank": 4,
-    "region": "赣州",
-    "region_city": "赣州",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "公积金",
-    "key": "79a759c60959",
-    "publish_date": null,
-    "effective_date": null,
-    "extracted": {},
-    "history": [],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null,
-    "quotes": [
-      "举例： 缴存人张三购买一套 100 万的商品住房时，申请商业贷款，首付款比例为 15% ，贷款金额为 85 万元",
-      "（四）缴存人购买新建商品住房时，办理了首付款提取或购房提取，且符合我市住房公积金贷款条件的，申请住房公积金贷款时， “贷款的额度须扣除已提取金额”的规定， 调整为 “贷款额度加上已提取金额不得超过房屋总价”",
-      "优化调整我市住房公积金部分贷款业务政策的解读 | 赣州市住房公积金管理中心 网站首页 新闻中心 机构职能 政务公开 政务服务 互动交流 业务指南 专题专栏 无障碍 关怀版 无障碍 当前位置： 首页 &nbsp;>&nbsp; 政务公开 &nbsp;>&nbsp; 政策解读 优化调整我市住房公积金部分贷款业务政策的解读…"
-    ]
-  },
-  {
-    "uid": "a7addf1ffefb",
-    "title": "支持使用住房公积金购买配售型保障性住房（含人才住房）政策的解读",
-    "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/zcjd/202507/64c5ebff34ce47a2ae0036e85480a48a.shtml",
-    "publisher": "赣州官方",
-    "publisher_rank": 4,
-    "region": "赣州",
-    "region_city": "赣州",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "公积金",
-    "key": "79a759c60959",
-    "publish_date": null,
-    "effective_date": null,
-    "extracted": {},
-    "history": [],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null,
-    "quotes": [
-      "④不低于规定比例的首付款发票",
-      "支持使用住房公积金购买配售型保障性住房（含人才住房）政策的解读 | 赣州市住房公积金管理中心 网站首页 新闻中心 机构职能 政务公开 政务服务 互动交流 业务指南 专题专栏 无障碍 关怀版 无障碍 当前位置： 首页 &nbsp;>&nbsp; 政务公开 &nbsp;>&nbsp; 政策解读 支持使用住房公积金购买配售…",
-      "&ensp; &ensp; 注意：最高贷款额度和可贷金额上浮政策不叠加使用，缴存人家庭根据自身实际选择"
-    ]
-  },
-  {
-    "uid": "e4b2deeb46c6",
-    "title": "市住房公积金管理中心机关第三党支部召开2024年度组织生活会",
-    "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/jgdj/202504/b624955e61234f2190c225ece405876a.shtml",
-    "publisher": "赣州官方",
-    "publisher_rank": 4,
-    "region": "赣州",
-    "region_city": "赣州",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "公积金",
-    "key": "79a759c60959",
-    "publish_date": null,
-    "effective_date": null,
-    "extracted": {},
-    "history": [],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null
-  },
-  {
-    "uid": "89205920ec8a",
-    "title": "市住房公积金管理委员会2026年第2次会议召开",
-    "url": "http://zfgjj.zunyi.gov.cn/zxdt/zxdt/202609/t20260924_90935907.html",
-    "publisher": "遵义官方",
-    "publisher_rank": 4,
-    "region": "遵义",
-    "region_city": "遵义",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "公积金",
-    "key": "b945b51fc11a",
-    "publish_date": null,
-    "effective_date": null,
-    "extracted": {},
-    "history": [],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null,
-    "quotes": [
-      "市住房公积金管理委员会2026年第2次会议召开 \"> 90935907 市住房公积金管理委员会2026年第2次会议召开 20 遵义市住房公积金管理中心 2026-09-24 09:26:05 5233825 中心动态 中央政府网站 | 贵州省政府网站 | 个人中心 | 适老化及无障碍浏览 --> 搜&nbsp;索 -…",
-      "会议 强调，要深刻领会新《条例》修订的重大意义，不折不扣抓好落地执行"
     ]
   }
 ]
