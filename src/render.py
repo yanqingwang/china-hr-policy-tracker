@@ -6,6 +6,8 @@ CAT_ORDER = [
     "补贴与保险待遇", "HR 服务情报", "其他",
 ]
 
+CAT_BILINGUAL = {}
+
 FUND_TABLE_HEADERS = {
     "zh_kwargs": "| 城市/地区 | 发布时间 | 生效时间 | 政策类型 | 发布单位 | 原基数 | 原比例 | 原下限 | 原上限 | 新基数 | 新比例 | 新下限 | 新上限 | 原文 |",
     "sep": "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|",
@@ -27,7 +29,7 @@ def _quotes_block(recs: list[dict], cat: str) -> list[str]:
         if not qs:
             continue
         meta = f"{_d(r['region'])} · {_d(r['publish_date'])}"
-        out.append(f"**{_d(r['policy_type']) if r['policy_type'] != '—' else cat}｜{meta}** — [{r['title'][:40]}]({r['url']})")
+        out.append(f"**{_d(r['policy_type']) if r['policy_type'] != '—' else CAT_BILINGUAL.get(cat, cat)}｜{meta}** — [{r['title'][:40]}]({r['url']})")
         for q in qs[:3]:
             out.append(f"> 「{q}」")
         out.append("")

@@ -1,8 +1,10 @@
-# 中国人力资源政策情报库 / China HR Policy Tracker
+# 中国人力资源政策周报 / China HR Policy Weekly README
 
-> 一条开源流水线：**收录 → 提取 → 过滤 → 合并（原发布单位优先）→ 分类 → 结构化周报**。
+> **中文优先**：一条开源流水线：**收录 → 提取 → 过滤 → 合并（原发布单位优先）→ 分类 → 结构化周报**。
 > 数据范围：人社局 · 公积金中心 · 税局 · 人民政府网站 · 工作许可与人才引进政策 · 主要 HR 服务商解读。
-> 社保公积金变化由机器人尝试做**数据表化**（城市、发布/生效时间、新旧行基数/比例/上下限等）。
+> 社保公积金变化由机器人尝试做**数据表化**（城市、发布/生效时间、原/新基数/比例/上下限等）。
+>
+> **English (for international readers)**: An open source pipeline tracking China HR policy changes (social insurance, housing fund, tax, work permits, talent introduction) from official sources; weekly digest with structured data tables, auto-built every Monday.
 
 ## 📊 本周条目总览（自动重建）
 

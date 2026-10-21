@@ -155,6 +155,7 @@ def main() -> None:
             attach = str(rep_dir / "weekly.md")
             mailer.send(f"中国人力资源政策周报 {today.isoformat()}", body, attach)
             print("邮件已发送（库主）", file=sys.stderr)
+            print("邮件已发送（库主）", file=sys.stderr)
             try:
                 from src import subscribers
                 subs = subscribers.sendable()
