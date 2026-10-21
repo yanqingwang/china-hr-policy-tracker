@@ -1,0 +1,55 @@
+# 中国人力资源政策情报库 数据源配置
+# ============================================================
+# 字段:
+#   adapter   gov_search(gov.cn 政策文件库全文检索) | gov_list(频道列表页扫描) | vendor_news(服务商/行业媒体)
+#   priority  发布单位权威级: 5=部委/最高, 4=省级官方, 3=区级官方, 2=服务商解读, 1=自媒体
+#   region    覆盖地区（默认全国）
+#   pages     gov_list / vendor_news 要扫描的频道页
+# ============================================================
+
+sources:
+  - id: gov-search
+    adapter: gov_search
+    priority: 5
+    region: 全国
+    n_per_query: 20
+
+  - id: mohrss
+    name: 人社部
+    adapter: gov_list
+    priority: 5
+    region: 全国
+    pages:
+      - http://www.mohrss.gov.cn/SYrlzyhshbzw/zcfg/
+      - http://www.mohrss.gov.cn/SYrlzyhshbzw/zwgk/tzgg/
+
+  - id: chinatax
+    name: 国家税务总局
+    adapter: gov_list
+    priority: 5
+    region: 全国
+    pages:
+      - https://www.chinatax.gov.cn/chinatax/n810341/n810755/index.html
+
+  - id: subway-gjj
+    name: 公积金中心（样例）
+    adapter: gov_list
+    priority: 4
+    region: —
+    pages: []
+
+  - id: fesco
+    name: FESCO（北京外企）
+    adapter: vendor_news
+    priority: 2
+    region: 全国
+    pages:
+      - https://www.fesco.com.cn/
+
+  - id: hroot
+    name: HRoot（行业媒体）
+    adapter: vendor_news
+    priority: 2
+    region: 全国
+    pages:
+      - https://www.hroot.com/news/

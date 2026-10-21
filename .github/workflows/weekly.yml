@@ -1,0 +1,43 @@
+name: weekly refresh
+
+on:
+  schedule:
+    - cron: "30 2 * * 1"     # 每周一 02:30 UTC（北京 10:30）
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: china-hr-policy-refresh
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: pip install pyyaml requests markdown
+      - name: Collect & build weekly report
+        env:
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          SUBSCRIBER_KEY: ${{ secrets.SUBSCRIBER_KEY }}
+        run: python -m src.main --mail
+      - name: Commit snapshot
+        run: |
+          git config user.name "hr-policy-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "weekly digest $(date -u +%Y-%m-%d)"
+            git push
+          fi

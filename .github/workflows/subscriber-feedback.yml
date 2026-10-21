@@ -1,0 +1,90 @@
+name: subscriber feedback
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: hr-subscriber-feedback
+  cancel-in-progress: false
+
+jobs:
+  handle:
+    if: contains(github.event.issue.labels.*.name, 'subscribe')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: pip install pyyaml
+      - name: Parse form & update encrypted list
+        id: parse
+        env:
+          GITHUB_EVENT: ${{ toJSON(github.event) }}
+          SUBSCRIBER_KEY: ${{ secrets.SUBSCRIBER_KEY }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re
+          ev = json.loads(os.environ["GITHUB_EVENT"])
+          body = ev["issue"]["body"] or ""
+          def pick(label, default=""):
+              m = re.search(rf"### {re.escape(label)}\s*\n+([^\n]*)", body)
+              return m.group(1).strip() if m else default
+          action = pick("动作 / Action", "订阅 / Subscribe")
+          email = pick("邮箱 / Email")
+          freq = pick("频率（仅订阅时生效）/ Frequency", "每周一 / Weekly (Monday)")
+          state, detail = "error", ""
+          if not re.match(r"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$", email):
+              state, detail = "invalid", "邮箱格式不合法，请检查后重试"
+          else:
+              from src import subscribers
+              if action.startswith("订阅"):
+                  r = subscribers.add(email, "daily" if freq.startswith("每日") else "weekly")
+                  state = r.split(":")[0]
+                  detail = {"subscribed": "✅ 已加入名单", "updated": "✅ 已更新频率", "exists": "ℹ️ 你已在名单里（频率未变）"}.get(state, "✅")
+                  detail += f"（频率：{'每周一' if 'weekly' in r else '每日'}）"
+              else:
+                  detail = {"removed": "✅ 已退订，不再向该邮箱发送", "not_found": "ℹ️ 邮箱不在名单里"}.get(
+                      subscribers.remove(email), "ℹ️ 邮箱不在名单里")
+                  state = "done"
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"state={state}\ndetail<<EOF\n{detail}\nEOF\n")
+          PY
+      - name: Commit encrypted list
+        if: steps.parse.outputs.state == 'subscribed' || steps.parse.outputs.state == 'updated' || steps.parse.outputs.state == 'done'
+        run: |
+          git config user.name "hr-policy-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/subscribers.enc
+          git diff --cached --quiet || git commit -m "chore(subscribers): encrypted list update"
+          git push
+      - name: Redact issue content (privacy hard rule)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          gh issue edit $ISSUE -R "$GITHUB_REPOSITORY" \
+            --title "邮件订阅/退订（已自动脱敏 #$ISSUE）" \
+            --body "（原文已自动脱敏：邮箱已加密入档或处理完成，明文不保留在公开仓库。处理结果见下方评论。）"
+      - name: Reply on issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+          DETAIL: ${{ steps.parse.outputs.detail }}
+          STATE: ${{ steps.parse.outputs.state }}
+        run: |
+          if [ "$STATE" = "invalid" ]; then
+            gh issue comment $ISSUE -R "$GITHUB_REPOSITORY" --body "❌ $DETAIL"
+          else
+            gh issue comment $ISSUE -R "$GITHUB_REPOSITORY" --body "$DETAIL
+
+          <sub>红色提示：本仓库不会在公开页保留你的邮箱明文；退订随时开新 issue 切换动作。</sub>"
+          fi
+          gh issue close $ISSUE -R "$GITHUB_REPOSITORY" --reason completed

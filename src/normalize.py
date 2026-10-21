@@ -1,0 +1,123 @@
+"""规范化：分类、地区、生效日期、社保公积金的数字提取。"""
+import re
+
+from src import util
+
+CATEGORIES = [
+    ("社保公积金", r"社保|社会保险|缴费基数|社保基数|公积金|住房公积金"),
+    ("个税", r"个税|个人所得税|专项附加"),
+    ("工资与劳动合同", r"最低工资|工资支付|薪酬|劳动合同|年终奖"),
+    ("工作许可与人才引进", r"工作许可|外国人|来华|人才引进|引进人才|积分落户|落户"),
+    ("补贴与保险待遇", r"补贴|稳岗|失业保险|工伤保险|生育保险|养老金|退休|津贴|残疾人就业|残保金"),
+    ("HR 服务情报", r"灵活用工|灵活就业|招聘|人力|裁员|员工福利|薪酬"),
+]
+
+
+def classify(title: str, source_adapter: str = "") -> str:
+    if source_adapter == "vendor_news":
+        return "HR 服务情报"
+    for cat, pat in CATEGORIES:
+        if re.search(pat, title or ""):
+            return cat
+    return "其他"
+
+POLICY_SUBTYPES = [
+    ("社保-养老", r"养老|退休"),
+    ("社保-医疗", r"医疗|医保"),
+    ("社保-失业", r"失业"),
+    ("社保-工伤", r"工伤"),
+    ("社保-生育", r"生育"),
+    ("社保-综合基数", r"缴费基数|社保基数|基数调整"),
+    ("公积金", r"公积金"),
+    ("最低工资", r"最低工资"),
+    ("个税", r"个税|个人所得税"),
+    ("工作许可", r"工作许可|外国人"),
+    ("人才引进", r"人才引进|落户|引进人才"),
+    ("就业补贴", r"就业补贴|稳岗|岗位补贴|创业补贴"),
+]
+
+
+def policy_type(title: str) -> str:
+    for sub, pat in POLICY_SUBTYPES:
+        if re.search(pat, title or ""):
+            return sub
+    return "—"
+
+
+def _num(s: str) -> int | None:
+    try:
+        return int(re.sub(r"[,，]", "", s))
+    except ValueError:
+        return None
+
+
+def _ratio(s: str) -> float | None:
+    try:
+        return float(s.rstrip("%"))
+    except ValueError:
+        return None
+
+
+def extract_fields(title: str, page_text: str = "") -> dict:
+    """社保公积金类条目的关键数字提取（自动提取，读原文复核）。"""
+    text = f"{title} 。 {page_text[:8000]}"
+    out = {}
+
+    m = re.search(r"由\s*([\d,，]{3,})\s*元?\s*(?:调整为|调至|调整为|提高到|上调为|上调至|调整为)\s*([\d,，]{3,})\s*元", text)
+    if m:
+        out["base_old"], out["base_new"] = _num(m.group(1)), _num(m.group(2))
+
+    if "base_new" not in out:
+        m = re.search(r"(?:缴费基数|缴存基数|社保缴费基数)\D{0,10}([\d,，]{4,})\s*元", text)
+        if m:
+            out["base_new"] = _num(m.group(1))
+
+    m = re.search(r"(?:上限|封顶|最高)\D{0,8}([\d,，]{4,})\s*元", text)
+    if m:
+        out["cap_new"] = _num(m.group(1))
+    m = re.search(r"(?:下限|保底|最低)\D{0,8}([\d,，]{4,})\s*元", text)
+    if m:
+        out["floor_new"] = _num(m.group(1))
+
+    m = re.search(r"(?:缴费比例|缴存比例)\s*(?:由)?\s*([\d.]+)\s*%(?:\s*(?:调整为|调至|为|提高到)\s*([\d.]+)\s*%)?", text)
+    if m:
+        out["ratio_old"] = _ratio(m.group(1)) or None
+        out["ratio_new"] = _ratio(m.group(2)) if m.group(2) else None
+
+    # 把"由 X 调至 Y"语言同时也匹配上下限
+    m = re.search(r"上限\s*(?:由)\s*([\d,，]{4,})\s*元?\s*(?:调整为|调至)\s*([\d,，]{4,})\s*元", text)
+    if m:
+        out["cap_old"], out["cap_new"] = _num(m.group(1)), _num(m.group(2))
+    m = re.search(r"下限\s*(?:由)\s*([\d,，]{4,})\s*元?\s*(?:调整为|调至)\s*([\d,，]{4,})\s*元", text)
+    if m:
+        out["floor_old"], out["floor_new"] = _num(m.group(1)), _num(m.group(2))
+
+    return out
+
+
+def build(raw: dict) -> dict:
+    """raw(adapter产出) -> canonical record。"""
+    title = raw["title"].strip()
+    url = raw["url"]
+    rec = {
+        "uid": util.sha(url),
+        "title": title,
+        "url": url,
+        "publisher": raw.get("publisher") or "—",
+        "publisher_rank": raw.get("publisher_rank") or 3,
+        "region": raw.get("region") or util.guess_region(title),
+        "category": classify(title, raw.get("source_adapter", "")),
+        "policy_type": "—",
+        "publish_date": raw.get("publish_date"),
+        "effective_date": util.effective_from_text(title),
+        "extracted": None,
+        "is_vendor": bool(raw.get("is_vendor")),
+        "source_id": raw.get("source_id"),
+        "detail_text": None,
+    }
+    if rec["region"] == "—" and re.search(
+        r"国务院|人社部|人力资源社会保障部|税务总局|财政部|民政部", title
+    ):
+        rec["region"] = "全国"
+    rec["policy_type"] = policy_type(title)
+    return rec
