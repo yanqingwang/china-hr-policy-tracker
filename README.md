@@ -13,6 +13,7 @@ _2026-10-21 自动重建 · 数据管道见 [`src/`](src/)，源清单见 [`data
 
 | 城市/地区 | 发布时间 | 生效时间 | 政策类型 | 分类 | 发布单位 | 标题 |
 |---|---|---|---|---|---|---|
+| 全国 | — | — | — | 其他 | 12333 社保平台族 | [全国就业公共服务](https://www.12333.gov.cn/job?channel=12333) |
 | 全国 | — | — | — | HR 服务情报 | HR 服务商线索（51社保/社保 | [智能社保SaaS登录](https://service.51shebao.com/standard/login) |
 | 全国 | — | — | — | HR 服务情报 | HR 服务商线索（51社保/社保 | [智能社保SaaS服务](https://www.51shebao.com/service/insure) |
 | 全国 | — | — | — | HR 服务情报 | HR 服务商线索（51社保/社保 | [全国社保一站式解决方案](https://www.51shebao.com/solutions/oneStep) |
@@ -32,27 +33,26 @@ _2026-10-21 自动重建 · 数据管道见 [`src/`](src/)，源清单见 [`data
 | 三亚 | — | — | 社保-养老 | 补贴与保险待遇 | 三亚官方 | [《个人养老金实施办法》政策解读](https://hrss.sanya.gov.cn/rsjsite/zcjd/202601/509bca5f5dc84fdabce516db3c0548c4.shtml) |
 | 三亚 | — | — | 社保-失业 | 其他 | 三亚官方 | [失业登记怎么办理？这篇教您](https://hrss.sanya.gov.cn/rsjsite/hygq/202602/e3087b4c43f44d04bdc39b19c8894dc0.shtml) |
 | 三亚 | — | — | — | 其他 | 三亚官方 | [劳动人事争议仲裁文书网上公...](https://hrss.sanya.gov.cn/rsjsite/ldrszyzc/list2.shtml) |
-| 金华 | — | — | 社保-养老 | 补贴与保险待遇 | 金华官方 | [江华民政局：召开退休干部重阳节座谈会](https://jh.gov.cn/jh/bmdt/202610/1fff290c30b647aea276bd6130e1b782.shtml) |
-| 无锡 | — | — | — | 其他 | 无锡官方 | [聚焦重点群体稳就业——推动经济持续向新向优向好发展](https://hrss.wuxi.gov.cn/doc/2026/09/07/4830351.shtml) |
-| 银川 | — | — | — | 其他 | 银川官方 | [2026年宁夏回族自治区公共就业服务专项...](https://rsj.yinchuan.gov.cn/rsdt/picnews/202610/t20261008_5365686.htm) |
-| 银川 | — | — | — | 其他 | 银川官方 | [投资于人，为劳动者赋能——宁夏探索就业友好型...](https://rsj.yinchuan.gov.cn/rsdt/gzdt/202610/t20261019_5375940.htm) |
-| 银川 | — | — | — | 其他 | 银川官方 | [银川市求职能力实训嘉年华启幕助青年打通就业...](https://rsj.yinchuan.gov.cn/rsdt/gzdt/202610/t20261015_5373223.htm) |
-| 银川 | — | — | — | 其他 | 银川官方 | [新业态孕育新机遇——宁夏探索新职业认定与就业...](https://rsj.yinchuan.gov.cn/rsdt/gzdt/202610/t20261008_5365683.htm) |
-| 银川 | — | — | 社保-养老 | 补贴与保险待遇 | 银川官方 | [从“被追缴”到“主动退”永宁县这起养老金退...](https://rsj.yinchuan.gov.cn/rsdt/gzdt/202609/t20260930_5362970.htm) |
-| 银川 | — | — | — | 其他 | 银川官方 | [《新就业形态劳动者权益保障办法》向社会公开征...](https://rsj.yinchuan.gov.cn/rsdt/qydt/202610/t20261008_5365684.htm) |
-| 银川 | — | — | — | 其他 | 银川官方 | [以高质量职业技能培训破解结构性就业矛盾](https://rsj.yinchuan.gov.cn/rsdt/qydt/202609/t20260902_5329644.htm) |
-| 银川 | — | — | — | 其他 | 银川官方 | [银川市劳动人事争议仲裁院（银川市劳动权益保障...](https://rsj.yinchuan.gov.cn/xxgk/zdgk/tzgg/202610/t20261019_5375926.htm) |
-| 银川 | — | — | — | 其他 | 银川官方 | [银川市劳动能力鉴定委员会鉴定结论送达公告](https://rsj.yinchuan.gov.cn/xxgk/zdgk/tzgg/202610/t20261015_5373179.htm) |
-| 银川 | — | — | 社保-失业 | 补贴与保险待遇 | 银川官方 | [2026年拟享受失业保险稳岗返还“免申即享”企业...](https://rsj.yinchuan.gov.cn/xxgk/zdgk/tzgg/202610/t20261008_5364152.htm) |
-| 银川 | — | — | — | HR 服务情报 | 银川官方 | [银川市人力资源和社会保障局关于公开征集劳动用...](https://rsj.yinchuan.gov.cn/xxgk/zdgk/tzgg/202609/t20260918_5348945.htm) |
-| 银川 | — | — | 社保-失业 | 补贴与保险待遇 | 银川官方 | [失业保险金申领规范](https://rsj.yinchuan.gov.cn/sbbzxxzyk/sybx/202609/t20260904_5333277.htm) |
-| 银川 | — | — | — | 其他 | 银川官方 | [7.如何预防职业病](https://rsj.yinchuan.gov.cn/sbbzxxzyk/gsbx/202603/t20260312_5191095.htm) |
-| 银川 | — | — | — | 其他 | 银川官方 | [6.职业病有哪些类型](https://rsj.yinchuan.gov.cn/sbbzxxzyk/gsbx/202603/t20260312_5191093.htm) |
-| 银川 | — | — | — | 其他 | 银川官方 | [5.什么是职业病](https://rsj.yinchuan.gov.cn/sbbzxxzyk/gsbx/202603/t20260312_5191091.htm) |
-| 银川 | — | — | 社保-工伤 | 其他 | 银川官方 | [4.企业应当如何做好工伤预防](https://rsj.yinchuan.gov.cn/sbbzxxzyk/gsbx/202603/t20260312_5191089.htm) |
-| 银川 | — | — | 社保-工伤 | 补贴与保险待遇 | 银川官方 | [3.为什么要缴纳工伤保险](https://rsj.yinchuan.gov.cn/sbbzxxzyk/gsbx/202603/t20260312_5191087.htm) |
-| 银川 | — | — | 社保-工伤 | 其他 | 银川官方 | [2.工伤认定由谁举证](https://rsj.yinchuan.gov.cn/sbbzxxzyk/gsbx/202603/t20260312_5191084.htm) |
-| 银川 | — | — | 社保-工伤 | 其他 | 银川官方 | [1.工伤认定向什么部门申请](https://rsj.yinchuan.gov.cn/sbbzxxzyk/gsbx/202603/t20260312_5191082.htm) |
+| 丹东 | — | — | — | 其他 | 丹东官方 | [丹东市召开“工会+法院+人社”劳动争议多元化解联席会暨调解员培训班](https://rsj.dandong.gov.cn/html/DDRSJ/202609/0179074751280022.html) |
+| 丹东 | — | — | — | HR 服务情报 | 丹东官方 | [人力资源社会保障部中央社会工作部民政部印发《关于优化城乡社区岗位吸纳高校毕业生就业工作的通知》](https://rsj.dandong.gov.cn/html/DDRSJ/202608/0178727791169254.html) |
+| 丹东 | — | — | 社保-工伤 | 其他 | 丹东官方 | [2026年10月部分工伤认定结论公示](https://rsj.dandong.gov.cn/html/DDRSJ/202610/0179213054115412.html) |
+| 丹东 | — | — | — | 其他 | 丹东官方 | [关于进一步优化调整丹东市政务服务事项劳动关系有关事项的通知](https://rsj.dandong.gov.cn/html/DDRSJ/202607/0178528715241676.html) |
+| 丹东 | — | — | 社保-工伤 | 其他 | 丹东官方 | [关于调整工伤认定管理权限的通知](https://rsj.dandong.gov.cn/html/DDRSJ/202606/0178269876630116.html) |
+| 北京 | — | — | 社保-养老 | 补贴与保险待遇 | 北京官方 | [重阳节致全市社会化管理退休人员的慰问信](https://rsj.beijing.gov.cn/xxgk/tzgg/202610/t20261012_4898055.html) |
+| 北京 | — | — | — | 其他 | 北京官方 | [北京市2026年第三批重大劳动保障违法行为社会公布案例](https://rsj.beijing.gov.cn/xxgk/tzgg/202609/t20260930_4886764.html) |
+| 北京 | — | — | — | 其他 | 北京官方 | [&sdot;&nbsp;怀柔新增4家就业见习基地](https://rsj.beijing.gov.cn/xwsl/mtgz/202604/t20260403_4573882.html) |
+| 北京 | — | — | — | 其他 | 北京官方 | [&sdot;&nbsp;北京赴10省市重点高校揽才，提供超7000个就业岗位](https://rsj.beijing.gov.cn/xwsl/mtgz/202604/t20260403_4573884.html) |
+| 北京 | — | — | 社保-养老 | 补贴与保险待遇 | 北京官方 | [领取养老金人员待遇资格认证](http://si.12333.gov.cn/184879.jhtml) |
+| 北京 | — | — | — | 其他 | 北京官方 | [促进就业税收优惠政策](https://rsj.beijing.gov.cn/fuwu/zxbs/202503/t20250305_4025760.html) |
+| 北京 | — | — | — | 其他 | 北京官方 | [解读问答《北京市“十五五”时期促进高质量充分就业规划》](https://rsj.beijing.gov.cn/xxgk/2024zcjd/202610/t20261009_4895407.html) |
+| 北京 | — | — | 社保-工伤 | 其他 | 北京官方 | [关于印发《北京市工伤预防五年行动计划重点任务举措（2026-2030年）》的通知](https://rsj.beijing.gov.cn/xxgk/2024qt/202608/t20260806_4811100.html) |
+| 北京 | — | — | — | 其他 | 北京官方 | [劳动保障监察举报投诉](http://rsj.beijing.gov.cn/bm/jgml/201912/t20191206_873983.html) |
+| 北京 | — | — | — | 其他 | 北京官方 | [劳动人事调解仲裁](https://map.beijing.gov.cn/category?categoryId=ldrszytjzcjg) |
+| 北京 | — | — | 最低工资 | 工资与劳动合同 | 北京官方 | [超龄劳动者的工资是否可以低于当地的最低工资标准？](https://rsj.beijing.gov.cn/qaknowledge/202610/t20261009_4894101.html) |
+| 北京 | — | — | — | 其他 | 北京官方 | [超龄劳动者的工资发放周期是多久？可以以实物代替吗？](https://rsj.beijing.gov.cn/qaknowledge/202610/t20261009_4894098.html) |
+| 北京 | — | — | — | 其他 | 北京官方 | [超龄劳动者享受带薪年休假吗？](https://rsj.beijing.gov.cn/qaknowledge/202609/t20260901_4845445.html) |
+| 北京 | — | — | — | 其他 | 北京官方 | [用人单位与超龄劳动者签订的用工协议应当包括哪些内容？](https://rsj.beijing.gov.cn/qaknowledge/202609/t20260901_4845442.html) |
+| 北京 | — | — | 社保-养老 | 补贴与保险待遇 | 北京官方 | [渐进式延迟退休政策实施后，如何判断一个人是否“超龄”？](https://rsj.beijing.gov.cn/qaknowledge/202608/t20260803_4805826.html) |
 <!-- AUTO-TABLE-END -->
 
 ## 社保公积金数据表说明
