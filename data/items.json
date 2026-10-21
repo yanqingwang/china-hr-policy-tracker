@@ -1,5 +1,27 @@
 [
   {
+    "uid": "b997c710a0e1",
+    "title": "Yantai - 烟台 市人力资源社会保障局",
+    "url": "https://rshj.yantai.gov.cn/index.html",
+    "publisher": "烟台官方",
+    "publisher_rank": 4,
+    "region": "烟台",
+    "region_city": "烟台",
+    "district": null,
+    "category": "HR 服务情报",
+    "policy_type": "—",
+    "key": "a5bb20d247dc",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": null,
+    "history": [],
+    "is_vendor": false,
+    "source_id": "search-70cities",
+    "detail_text": "1 天前&ensp;&#0183;&ensp;烟台项目斩获创业大赛全国一等奖 烟台市劳动人事争议特邀调解专家库入库人选公示 两业融合赋能 智造烟台未来 装备制造业 …",
+    "dup_links": [],
+    "quotes": []
+  },
+  {
     "uid": "993eff1d1bf0",
     "title": "南宁市社会保险事业管理中心关于符合企业职工特殊工种提前退休资格条件人员的公示（2026年10月）",
     "url": "https://rsj.nanning.gov.cn/tzgg/t6747560.html",
@@ -9001,25 +9023,5 @@
       "附件： 陈杰等231名参保人名单.xls 惠州市社会保险基金管理局 2023年12月20日 责任编辑：惠州市人社局 &nbsp; 网站地图 主办：惠州市人力资源和社会保障局 联系电话：0752-12333 传真：0752-2789397 惠州市人力资源和社会保障局 版权所有2010 粤公网安备 44130202000…",
       "&nbsp; 网站无障碍 | 适老版 首 页 | 政务公开 通知公告 政策 规范性文件 其他文件 政策解读 发展规划 工作动态 双随机、一公开 政府采购 组织机构 领导分工 机构职能 财政预决算 财政预决算 三公经费 | 政务服务 | 政民互动 调查征集 政策咨询 社会保障 人才人事 劳动关系 就业创业 直播访谈 |…"
     ]
-  },
-  {
-    "uid": "4a87aa2efadd",
-    "title": "关于惠州市新增工伤保险辅助器具配置协议机构名单的公示",
-    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5140708.html",
-    "publisher": "惠州官方",
-    "publisher_rank": 4,
-    "region": "惠州",
-    "region_city": "惠州",
-    "district": null,
-    "category": "补贴与保险待遇",
-    "policy_type": "社保-工伤",
-    "key": "704b1b9242c9",
-    "publish_date": null,
-    "effective_date": null,
-    "extracted": null,
-    "history": [],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null
   }
 ]
