@@ -13,46 +13,23 @@ _2026-10-21 自动重建 · 数据管道见 [`src/`](src/)，源清单见 [`data
 
 | 城市/地区 | 发布时间 | 生效时间 | 政策类型 | 分类 | 发布单位 | 标题 |
 |---|---|---|---|---|---|---|
-| 北京 | — | — | — | 其他 | 北京政府网 | [Beijing - 北京市 人民政府门户网站](https://www.beijing.gov.cn/) |
-| 北京 | — | — | — | 其他 | 北京政府网 | [Beijing - 北京市 文化和旅游局](https://whlyj.beijing.gov.cn/) |
-| 天津 | — | — | — | 其他 | 天津政府网 | [天津市 文化和旅游局](https://whly.tj.gov.cn/) |
-| 石家庄 | — | — | — | 其他 | 石家庄政府网 | [石家庄 市人民政府](https://www.sjz.gov.cn/) |
-| 呼和浩特 | — | — | — | 其他 | 呼和浩特政府网 | [呼和浩特 市人民政府](http://www.huhhot.gov.cn/index.html) |
-| 呼和浩特 | — | — | — | 其他 | 呼和浩特政府网 | [呼和浩特 市人民政府 - huhhot.gov.cn](http://www.huhhot.gov.cn/index_7037.html?zbb=true) |
-| 大连 | — | — | — | 其他 | 大连政府网 | [www.dl.gov.cn](https://www.dl.gov.cn/col/col3550/index.html) |
-| 上海 | — | — | — | 其他 | 上海政府网 | [上海市 人民政府](https://www.shanghai.gov.cn/) |
-| 南京 | — | — | — | 其他 | 南京政府网 | [Nanjing - 中共 南京 市委 南京 市人民政府](https://www.nanjing.gov.cn/index.html) |
-| 南京 | — | — | — | 其他 | 南京政府网 | [中共 南京 市委 南京 市人民政府 - Nanjing](https://www.nanjing.gov.cn/zzb/njgl/) |
-| 杭州 | — | — | — | 其他 | 杭州政府网 | [Hangzhou, China ( 浙江杭州) | Official site of Hangzhou,](https://www.ehangzhou.gov.cn/) |
-| 宁波 | — | — | — | 其他 | 宁波政府网 | [宁波 市人民政府](https://www.ningbo.gov.cn/) |
-| 合肥 | — | — | — | 其他 | 合肥政府网 | [政府信息公开_ 合肥 市人民政府](https://www.hefei.gov.cn/zwgk/index.html) |
-| 合肥 | — | — | — | 其他 | 合肥政府网 | [合肥 市人民政府（政府办公室）-信息公开](https://www.hefei.gov.cn/zwgk/public/column/1741?type=4&amp;catId=6711211&amp;action=list&amp;nav=3) |
-| 青岛 | — | — | — | 其他 | 青岛政府网 | [Qingdao - 青岛 市文化和旅游局](http://whlyj.qingdao.gov.cn/) |
-| 武汉 | — | — | — | 其他 | 武汉政府网 | [Wuhan - 武汉 市人民政府门户网站](https://www.wuhan.gov.cn/) |
-| 武汉 | — | — | — | 其他 | 武汉政府网 | [Wuhan - 武汉 市文化和旅游局](https://wlj.wuhan.gov.cn/) |
-| 长沙 | — | — | — | 其他 | 长沙政府网 | [www.changsha.gov.cn](https://www.changsha.gov.cn/) |
-| 深圳 | — | — | — | 其他 | 深圳政府网 | [深圳 政府在线_ 深圳 市人民政府门户网站](https://www.sz.gov.cn/) |
-| 银川 | — | — | — | 其他 | 银川政府网 | [Yinchuan - 银川 市人民政府](https://www.yinchuan.gov.cn/) |
-| 包头 | — | — | — | 其他 | 包头政府网 | [包头 市人民政府](https://www.baotou.gov.cn/) |
-| 丹东 | — | — | — | 其他 | 丹东政府网 | [走进 丹东 - 丹东 市人民政府](https://www.dandong.gov.cn/ddszf/zjdandong/index.html) |
-| 丹东 | — | — | — | 其他 | 丹东政府网 | [走进 丹东 - 丹东 市人民政府 - Dandong](https://www.dandong.gov.cn/ddszf/zjdd/index.html) |
-| 锦州 | — | — | — | 其他 | 锦州政府网 | [锦州 政务服务网](https://zwfw.jz.gov.cn/jeesaas/f?areacode=210701000000) |
-| 吉林 | — | — | — | 其他 | 吉林政府网 | [吉林 省文化和旅游厅](https://whhlyt.jl.gov.cn/) |
-| 牡丹江 | — | — | — | 其他 | 牡丹江政府网 | [hlj - 牡丹江 市政务服务网](https://mdj.zwfw.hlj.gov.cn/) |
-| 徐州 | — | — | — | 其他 | 徐州政府网 | [专利证书下载 - cnipa.gov.cn](https://cponline.cnipa.gov.cn/GzfwYwblGlwhT/zlzsxztz) |
-| 徐州 | — | — | — | 其他 | 徐州政府网 | [专利业务办理系统 - cnipa.gov.cn](https://cponline.cnipa.gov.cn/GzfwYwblGlwhTMVC/GzfwYwblGlwhT/selectIndexType) |
-| 蚌埠(省域) | — | — | — | 其他 | 蚌埠政府网 | [国家税务总局安徽省税务局 通知公告 @缴费人：2026年度 ...](http://anhui.chinatax.gov.cn/art/2026/10/15/art_9601_1328761.html) |
-| 蚌埠 | — | — | — | 其他 | 蚌埠政府网 | [www.bengbu.gov.cn](https://www.bengbu.gov.cn/zjbb/index.html) |
-| 泉州 | — | — | — | 其他 | 泉州政府网 | [Quanzhou - 泉州 市人民政府](http://www.quanzhou.gov.cn/) |
-| 九江 | — | — | — | 其他 | 九江政府网 | [中国 九江 网_ 九江 市委 市 政府门户网站](https://www.jiujiang.gov.cn/) |
-| 烟台 | — | — | — | HR 服务情报 | 烟台官方 | [Yantai - 烟台 市人力资源社会保障局](https://rshj.yantai.gov.cn/index.html) |
-| 烟台 | — | — | — | 其他 | 烟台政府网 | [山东政务服务网 烟台 市](http://ytzwfw.sd.gov.cn/yt/public/index) |
-| 济宁 | — | — | — | 其他 | 济宁政府网 | [济宁 市文化和旅游局](https://whlyj.jining.gov.cn/index.html) |
-| 宜昌 | — | — | — | 其他 | 宜昌政府网 | [宜昌 市人民政府](http://www.yichang.gov.cn/) |
-| 襄阳 | — | — | — | 其他 | 襄阳政府网 | [魅力 襄阳 - 襄阳 市政府 - Xiangyang](http://www.xiangyang.gov.cn/sq/) |
-| 常德 | — | — | — | 其他 | 常德政府网 | [Changde - 常德 市人民政府门户网站](https://www.changde.gov.cn/) |
-| 常德 | — | — | — | 其他 | 常德政府网 | [走进 常德 _ 常德 市人民政府门户网站 - Changde](https://www.changde.gov.cn/lccd) |
-| 三亚 | — | — | — | 其他 | 三亚政府网 | [Sanya - 三亚 市人民政府网](https://www.sanya.gov.cn/) |
+| — | 2026-10-10 | — | — | 社保公积金 | 国务院 | [实施就业优先战略 织密社会保障网络——国新办发布会聚焦“十五五”就业和 社保 高质量发展](https://www.gov.cn/zhengce/202610/content_7082936.htm) |
+| 蚌埠(省域) | 2026-09-04 | — | — | 社保公积金 | 蚌埠官方 | [关于发布2026年社会保险缴费 基数 上下限的通知_安徽省人力 ...](https://hrss.ah.gov.cn/public/6595721/80811450.html) |
+| 上海 | 2026-08-18 | — | 社保-综合基数 | 社保公积金 | 上海官方 | [本市 调整 2026年度 社保缴费基数 上下限_公示公告_ 上海 市 ...](https://rsj.sh.gov.cn/tgsgg_17341/20260818/t0035_1443203.html) |
+| 全国 | 2026-07-02 | — | 社保-失业 | 补贴与保险待遇 | 人力资源社会保障部 教育部 财政 | [人力资源社会保障部 教育部 财政部 国家税务总局关于失业保险支持企业稳岗扩岗的通知](https://www.gov.cn/zhengce/zhengceku/202607/content_7074139.htm) |
+| — | 2026-07-13 | — | 最低工资 | 工资与劳动合同 | 国务院 | [健全 最低工资 标准调整机制 多渠道增加城乡居民财产性收入](https://www.gov.cn/zhengce/202607/content_7075303.htm) |
+| 全国 | 2026-05-22 | — | 人才引进 | 工作许可与人才引进 | 国务院 | [促进未落户常住人口与户籍人口同等享有基本公共服务，国务院发文→](https://www.gov.cn/zhengce/202605/content_7069981.htm) |
+| 全国 | 2026-01-15 | — | 个税 | 个税 | 财政部 税务总局 住房城乡建设部 | [财政部 税务总局 住房城乡建设部关于延续实施支持居民换购住房有关 个人所得税 政策的公告](https://www.gov.cn/zhengce/zhengceku/202601/content_7054810.htm) |
+| 蚌埠 | 2026-01-04 | — | 社保-综合基数 | 社保公积金 | 蚌埠政府网 | [2025年 社保缴费基数调整 灵活就业人员缴费标准明确_ 蚌埠 市 ...](https://www.bblzh.gov.cn/xwzx/ztzl/msfwly/sbly/ggts/5088998.html) |
+| — | 2025-08-20 | — | 个税 | 个税 | 财政部 税务总局 | [关于育儿补贴有关 个人所得税 政策的公告](https://www.gov.cn/zhengce/zhengceku/202508/content_7037273.htm) |
+| — | 2025-07-18 | — | — | 补贴与保险待遇 | 国务院 | [国办印发方案，推出4方面13项政策举措——着力解决残疾人就业急难愁盼](https://www.gov.cn/zhengce/202507/content_7032670.htm) |
+| 全国 | 2025-06-30 | — | — | 补贴与保险待遇 | 国务院办公厅 | [国务院办公厅关于印发《促进残疾人就业三年行动方案（2025—2027年）》的通知](https://www.gov.cn/zhengce/zhengceku/202506/content_7030054.htm) |
+| 蚌埠(省域) | 2024-08-24 | — | 社保-综合基数 | 社保公积金 | 蚌埠官方 | [安徽 社保缴费基数调整 _安徽省人力资源和社会保障厅](https://hrss.ah.gov.cn/public/6595721/80751455.html) |
+| 全国 | 2023-08-31 | — | 个税 | 个税 | 国务院 | [国务院关于提高 个人所得税 有关专项附加扣除标准的通知](https://www.gov.cn/zhengce/zhengceku/202308/content_6901207.htm) |
+| 全国 | — | — | — | 其他 | 12333 社保平台族 | [全国就业公共服务](https://www.12333.gov.cn/job?channel=12333) |
+| 全国 | — | — | — | HR 服务情报 | HR 服务商线索（51社保/社保 | [智能社保SaaS登录](https://service.51shebao.com/standard/login) |
+| 全国 | — | — | — | HR 服务情报 | HR 服务商线索（51社保/社保 | [智能社保SaaS服务](https://www.51shebao.com/service/insure) |
+| 全国 | — | — | — | HR 服务情报 | HR 服务商线索（51社保/社保 | [全国社保一站式解决方案](https://www.51shebao.com/solutions/oneStep) |
 <!-- AUTO-TABLE-END -->
 
 ## 社保公积金数据表说明
