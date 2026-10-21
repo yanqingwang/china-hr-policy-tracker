@@ -16,11 +16,12 @@ sys.path.insert(0, str(REPO_ROOT))
 
 import yaml                                        # noqa: E402
 from src import util, normalize, merge             # noqa: E402
-from src import gov_search, gov_list, vendor_news, search_discovery  # noqa: E402
+from src import gov_search, gov_list, vendor_news, search_discovery, gov_city  # noqa: E402
 from src import render, mailer                     # noqa: E402
 
 ADAPTERS = {"gov_search": gov_search, "gov_list": gov_list,
-            "vendor_news": vendor_news, "search_discovery": search_discovery}
+            "vendor_news": vendor_news, "search_discovery": search_discovery,
+            "gov_city": gov_city}
 
 
 def load_sources() -> list[dict]:
@@ -53,8 +54,8 @@ def _load_shard_items() -> list[dict]:
 def collect(args) -> list[dict]:
     recs = []
     for s in load_sources():
-        # 分片汇总模式：内联 70 城扫描交给 discover 分片，这里跳过避免重复
-        if args.use_discovery and s.get("adapter") == "search_discovery":
+        # 分片汇总模式：内联城市门户/搜索发现已由分片产物覆盖，跳过避免重复
+        if args.use_discovery and s.get("adapter") in ("search_discovery", "gov_city"):
             continue
         try:
             if args.limit_cities and s.get("adapter") == "search_discovery":
@@ -106,6 +107,8 @@ def main() -> None:
 
     recs = collect(args)
     merged = merge.merge(recs)
+    merged_prefold = merged                    # state 基于折叠前全集（历史 URL 也算见过）
+    merged = merge.fold_history(merged)        # 同(区域,保险类型)折叠，主表同刻唯一
 
     # state: 见过的 uid
     state_path = REPO_ROOT / "data" / "state.json"
@@ -115,8 +118,8 @@ def main() -> None:
             seen = set(json.loads(state_path.read_text(encoding="utf-8")).get("seen") or [])
         except Exception:
             seen = set()
-    new_recs = [r for r in merged if r["uid"] not in seen]
-    seen |= {r["uid"] for r in merged}
+    new_recs = [r for r in merged_prefold if r["uid"] not in seen]
+    seen |= {r["uid"] for r in merged_prefold}
 
     for r in new_recs:
         if r["category"] == "社保公积金" and (r.get("extracted") is None):

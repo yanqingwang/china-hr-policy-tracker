@@ -23,13 +23,14 @@ def classify(title: str, source_adapter: str = "") -> str:
 
 POLICY_SUBTYPES = [
     ("公积金-缴存比例", r"缴存比例|缴费比例|比例.{0,10}自主|比例.{0,10}选择"),
+    ("公积金-基数", r"公积金.{0,8}基数|缴存基数"),
+    ("公积金", r"公积金"),
     ("社保-养老", r"养老|退休"),
     ("社保-医疗", r"医疗|医保"),
     ("社保-失业", r"失业"),
     ("社保-工伤", r"工伤"),
     ("社保-生育", r"生育"),
-    ("社保-综合基数", r"缴费基数|社保基数|基数调整"),
-    ("公积金", r"公积金"),
+    ("社保-综合基数", r"缴费基数|社保基数|缴费工资基数|工资基数|基数上下限|社保缴费"),
     ("最低工资", r"最低工资"),
     ("个税", r"个税|个人所得税"),
     ("工作许可", r"工作许可|外国人"),
@@ -109,18 +110,27 @@ def build(raw: dict) -> dict:
     """raw(adapter产出) -> canonical record。"""
     title = raw["title"].strip()
     url = raw["url"]
+    city = raw.get("region") or util.guess_region(title)
+    if city == "—":
+        city = util.guess_region(title)
+    region, district = util.split_region(title, city)
+    pt = policy_type(title)
     rec = {
         "uid": util.sha(url),
         "title": title,
         "url": url,
         "publisher": raw.get("publisher") or "—",
         "publisher_rank": raw.get("publisher_rank") or 3,
-        "region": raw.get("region") or util.guess_region(title),
+        "region": region,                 # 区域显示名（城市 或 城市+园区/新区）
+        "region_city": city,              # 城市/基础区域
+        "district": district,             # 区级细分（园区/新区/高新区…）
         "category": classify(title, raw.get("source_adapter", "")),
-        "policy_type": "—",
+        "policy_type": pt,
+        "key": util.sha(f"{region}|{pt}"),   # (区域, 保险类型) 唯一标识
         "publish_date": raw.get("publish_date"),
         "effective_date": util.effective_from_text(title),
         "extracted": None,
+        "history": [],                     # 同 key 的历史版本（沿革）
         "is_vendor": bool(raw.get("is_vendor")),
         "source_id": raw.get("source_id"),
         "detail_text": None,
@@ -129,5 +139,5 @@ def build(raw: dict) -> dict:
         r"国务院|人社部|人力资源社会保障部|税务总局|财政部|民政部", title
     ):
         rec["region"] = "全国"
-    rec["policy_type"] = policy_type(title)
+        rec["region_city"] = "全国"
     return rec

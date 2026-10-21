@@ -114,6 +114,41 @@ REGION_WORDS = [
     "内蒙古", "海南", "江西", "青海", "宁夏", "西藏", "大湾区",
 ]
 
+# 有独立社保/公积金政策的区/园区/新区（区级差异：如苏州工业园区）
+STANDALONE_DISTRICTS = [
+    "雄安新区", "前海深港现代服务业合作区", "前海合作区", "横琴粤澳深度合作区",
+    "海南自由贸易港", "上海自贸区临港新片区", "苏州工业园区",
+    "中新苏州工业园区", "天津滨海新区", "浦东新区", "上海浦东新区",
+]
+DISTRICT_SUFFIXES = [
+    "工业园区", "经济技术开发区", "经济开发区", "高新区", "高新技术产业开发区",
+    "保税区", "自贸试验区", "临港新片区", "新区",
+]
+
+
+def split_region(text: str, city: str = "") -> tuple[str, str | None]:
+    """从标题/正文识别区级政策域，返回 (区域显示名, 区级 or None)。
+
+    - 标题含独立政策区（雄安/前海/横琴/苏州工业园区…）→ 直接用该区名；
+    - 含「工业园区/高新区/新区」等后缀 → 拼成 {city}+{区}（如 苏州工业园区）；
+    - 否则返回 city 原样。
+    """
+    if not text:
+        return city, None
+    for sa in STANDALONE_DISTRICTS:
+        if sa in text:
+            return sa, sa
+    for suf in DISTRICT_SUFFIXES:
+        if suf in text:
+            base = city or ""
+            # 标题里已带区名（如「苏州工业园区」）则直接用它
+            if city and city in text:
+                m = re.search(rf"([\u4e00-\u9fa5]{{2,6}}{re.escape(suf)})", text)
+                if m:
+                    return m.group(1), m.group(1)
+            return f"{base}{suf}" if base else suf, suf
+    return city, None
+
 
 def guess_region(text: str) -> str:
     for w in REGION_WORDS:

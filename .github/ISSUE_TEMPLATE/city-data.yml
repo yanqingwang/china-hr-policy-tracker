@@ -1,0 +1,35 @@
+name: 🏙️ 城市政策征集 / City Policy Contribution
+description: 提供某个城市的社保/公积金官方公告链接，帮我们补全覆盖
+labels: ["city-data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        我们的自动采集覆盖不到全部 70 城（部分政府网站对自动化访问不友好）。
+        如果你知道某城市**官方**（人社局/公积金中心/政府门户）的社保或公积金政策公告页面，
+        请按下面格式提供，机器人会把它加入每周采集并溯源到原文。
+        提供 **官方链接**（rsj./gjj./政府门户 .gov.cn 域名）即可，不需要复制正文。
+  - type: input
+    id: city
+    attributes:
+      label: 城市 / City
+      placeholder: 如：呼和浩特
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: 官方公告页链接（人社局/公积金/政策公告目录）
+      placeholder: https://rsj.xxx.gov.cn/... 或 gjj.xxx.gov.cn/...
+    validations:
+      required: true
+  - type: input
+    id: note
+    attributes:
+      label: 备注（可选）：是社保基数 / 公积金缴存基数 / 缴存比例调整？
+      placeholder: 2026 社保缴费基数上下限公告
+  - type: markdown
+    attributes:
+      value: |
+        🔒 本表单只收**政策公告链接**，请不要填写任何个人信息。
+        每周一自动运行后，该城市会进入覆盖统计与周报数据表。
