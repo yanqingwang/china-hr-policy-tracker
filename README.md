@@ -13,46 +13,46 @@ _2026-10-21 自动重建 · 数据管道见 [`src/`](src/)，源清单见 [`data
 
 | 城市/地区 | 发布时间 | 生效时间 | 政策类型 | 分类 | 发布单位 | 标题 |
 |---|---|---|---|---|---|---|
-| 全国 | — | — | — | 其他 | 12333 社保平台族 | [全国就业公共服务](https://www.12333.gov.cn/job?channel=12333) |
-| 全国 | — | — | — | HR 服务情报 | HR 服务商线索（51社保/社保 | [智能社保SaaS登录](https://service.51shebao.com/standard/login) |
-| 全国 | — | — | — | HR 服务情报 | HR 服务商线索（51社保/社保 | [智能社保SaaS服务](https://www.51shebao.com/service/insure) |
-| 全国 | — | — | — | HR 服务情报 | HR 服务商线索（51社保/社保 | [全国社保一站式解决方案](https://www.51shebao.com/solutions/oneStep) |
+| 北京 | — | — | — | 其他 | 北京政府网 | [Beijing - 北京市 人民政府门户网站](https://www.beijing.gov.cn/) |
+| 北京 | — | — | — | 其他 | 北京政府网 | [Beijing - 北京市 文化和旅游局](https://whlyj.beijing.gov.cn/) |
+| 天津 | — | — | — | 其他 | 天津政府网 | [天津市 文化和旅游局](https://whly.tj.gov.cn/) |
+| 石家庄 | — | — | — | 其他 | 石家庄政府网 | [石家庄 市人民政府](https://www.sjz.gov.cn/) |
+| 呼和浩特 | — | — | — | 其他 | 呼和浩特政府网 | [呼和浩特 市人民政府](http://www.huhhot.gov.cn/index.html) |
+| 呼和浩特 | — | — | — | 其他 | 呼和浩特政府网 | [呼和浩特 市人民政府 - huhhot.gov.cn](http://www.huhhot.gov.cn/index_7037.html?zbb=true) |
+| 大连 | — | — | — | 其他 | 大连政府网 | [www.dl.gov.cn](https://www.dl.gov.cn/col/col3550/index.html) |
+| 上海 | — | — | — | 其他 | 上海政府网 | [上海市 人民政府](https://www.shanghai.gov.cn/) |
+| 南京 | — | — | — | 其他 | 南京政府网 | [Nanjing - 中共 南京 市委 南京 市人民政府](https://www.nanjing.gov.cn/index.html) |
+| 南京 | — | — | — | 其他 | 南京政府网 | [中共 南京 市委 南京 市人民政府 - Nanjing](https://www.nanjing.gov.cn/zzb/njgl/) |
+| 杭州 | — | — | — | 其他 | 杭州政府网 | [Hangzhou, China ( 浙江杭州) | Official site of Hangzhou,](https://www.ehangzhou.gov.cn/) |
+| 合肥 | — | — | — | 其他 | 合肥政府网 | [政府信息公开_ 合肥 市人民政府](https://www.hefei.gov.cn/zwgk/index.html) |
+| 合肥 | — | — | — | 其他 | 合肥政府网 | [合肥 市人民政府（政府办公室）-信息公开](https://www.hefei.gov.cn/zwgk/public/column/1741?type=4&amp;catId=6711211&amp;action=list&amp;nav=3) |
+| 青岛 | — | — | — | 其他 | 青岛政府网 | [Qingdao - 青岛 市文化和旅游局](http://whlyj.qingdao.gov.cn/) |
+| 武汉 | — | — | — | 其他 | 武汉政府网 | [Wuhan - 武汉 市人民政府门户网站](https://www.wuhan.gov.cn/) |
+| 武汉 | — | — | — | 其他 | 武汉政府网 | [Wuhan - 武汉 市文化和旅游局](https://wlj.wuhan.gov.cn/) |
+| 长沙 | — | — | — | 其他 | 长沙政府网 | [www.changsha.gov.cn](https://www.changsha.gov.cn/) |
+| 深圳 | — | — | — | 其他 | 深圳政府网 | [深圳 政府在线_ 深圳 市人民政府门户网站](https://www.sz.gov.cn/) |
+| 银川 | — | — | — | 其他 | 银川政府网 | [Yinchuan - 银川 市人民政府](https://www.yinchuan.gov.cn/) |
+| 包头 | — | — | — | 其他 | 包头政府网 | [包头 市人民政府](https://www.baotou.gov.cn/) |
+| 丹东 | — | — | — | 其他 | 丹东政府网 | [走进 丹东 - 丹东 市人民政府](https://www.dandong.gov.cn/ddszf/zjdandong/index.html) |
+| 丹东 | — | — | — | 其他 | 丹东政府网 | [走进 丹东 - 丹东 市人民政府 - Dandong](https://www.dandong.gov.cn/ddszf/zjdd/index.html) |
+| 锦州 | — | — | — | 其他 | 锦州政府网 | [锦州 政务服务网](https://zwfw.jz.gov.cn/jeesaas/f?areacode=210701000000) |
+| 吉林 | — | — | — | 其他 | 吉林政府网 | [吉林 省文化和旅游厅](https://whhlyt.jl.gov.cn/) |
+| 牡丹江 | — | — | — | 其他 | 牡丹江政府网 | [hlj - 牡丹江 市政务服务网](https://mdj.zwfw.hlj.gov.cn/) |
+| 蚌埠(省域) | — | — | — | 其他 | 蚌埠政府网 | [国家税务总局安徽省税务局 通知公告 @缴费人：2026年度 ...](http://anhui.chinatax.gov.cn/art/2026/10/15/art_9601_1328761.html) |
+| 泉州 | — | — | — | 其他 | 泉州政府网 | [Quanzhou - 泉州 市人民政府](http://www.quanzhou.gov.cn/) |
+| 九江 | — | — | — | 其他 | 九江政府网 | [中国 九江 网_ 九江 市委 市 政府门户网站](https://www.jiujiang.gov.cn/) |
+| 烟台 | — | — | — | HR 服务情报 | 烟台官方 | [Yantai - 烟台 市人力资源社会保障局](https://rshj.yantai.gov.cn/index.html) |
+| 烟台 | — | — | — | 其他 | 烟台政府网 | [山东政务服务网 烟台 市](http://ytzwfw.sd.gov.cn/yt/public/index) |
+| 济宁 | — | — | — | 其他 | 济宁政府网 | [济宁 市文化和旅游局](https://whlyj.jining.gov.cn/index.html) |
+| 宜昌 | — | — | — | 其他 | 宜昌政府网 | [宜昌 市人民政府](http://www.yichang.gov.cn/) |
+| 襄阳 | — | — | — | 其他 | 襄阳政府网 | [魅力 襄阳 - 襄阳 市政府 - Xiangyang](http://www.xiangyang.gov.cn/sq/) |
+| 常德 | — | — | — | 其他 | 常德政府网 | [Changde - 常德 市人民政府门户网站](https://www.changde.gov.cn/) |
+| 常德 | — | — | — | 其他 | 常德政府网 | [走进 常德 _ 常德 市人民政府门户网站 - Changde](https://www.changde.gov.cn/lccd) |
+| 三亚 | — | — | — | 其他 | 三亚政府网 | [Sanya - 三亚 市人民政府网](https://www.sanya.gov.cn/) |
+| 泸州 | — | — | — | 其他 | 泸州政府网 | [Luzhou - 泸州 市人民政府门户网站](https://www.luzhou.gov.cn/) |
+| 南充 | — | — | — | 其他 | 南充政府网 | [Nanchong - 南充 市人民政府](https://www.nanchong.gov.cn/) |
+| 南充 | — | — | — | 其他 | 南充政府网 | [南充 市人民政府 - Nanchong](https://www.nanchong.gov.cn/syjb/) |
 | 三亚 | — | — | — | 其他 | 三亚官方 | [促进新就业形态规范健康持续发展——《新就业形态劳动者权...](https://hrss.sanya.gov.cn/rsjsite/gzdt/202610/59c00e8c54414c20936870b4f52a11e2.shtml) |
-| 三亚 | — | — | — | 其他 | 三亚官方 | [海南多措并举促进青年就业找工作、提技能、想创业都有支持](https://hrss.sanya.gov.cn/rsjsite/gzdt/202609/4508bb943bf54a4baebbff485b5d5da0.shtml) |
-| 三亚 | — | — | — | 其他 | 三亚官方 | [新业态劳动争议仲裁实务与联合调解能力提升专题培训会在三...](https://hrss.sanya.gov.cn/rsjsite/gzdt/202609/3bfdc378911040a6b0ee1a8b713d79d8.shtml) |
-| 三亚 | — | — | — | HR 服务情报 | 三亚官方 | [三亚市人力资源开发局关于支付2026年9月就业困难人员社会保...](https://hrss.sanya.gov.cn/rsjsite/tzgg/202610/abf6ac3181c84ca3adb477d5da0847dc.shtml) |
-| 三亚 | — | — | 社保-失业 | HR 服务情报 | 三亚官方 | [三亚市人力资源开发局关于2026年8月登记失业半年以上人员重...](https://hrss.sanya.gov.cn/rsjsite/tzgg/202610/d8c00059b19c4a049f1b9759e6f9da0a.shtml) |
-| 三亚 | — | — | 社保-养老 | 补贴与保险待遇 | 三亚官方 | [特殊工种提前退休情况公示表](https://hrss.sanya.gov.cn/rsjsite/bmwjxx/202603/c01801b6020245e89f835062bc719783.shtml) |
-| 三亚 | — | — | 社保-工伤 | HR 服务情报 | 三亚官方 | [三亚市人力资源和社会保障局关于下达三亚市2026年工伤预防...](https://hrss.sanya.gov.cn/rsjsite/bmwjxx/202603/b4742f91434e4509b94b3ed9d662c8ac.shtml) |
-| 三亚 | — | — | — | 其他 | 三亚官方 | [劳动人事争议仲裁答辩书](https://hrss.sanya.gov.cn/rsjsite/bgxz/202609/49370c44093c4914b5dfa6a61032f136.shtml) |
-| 三亚 | — | — | 社保-失业 | 补贴与保险待遇 | 三亚官方 | [失业保险关系跨省转移承诺书](https://hrss.sanya.gov.cn/rsjsite/bgxz/202608/79623c16b18d4fe7a9c5f4a0c22067d6.shtml) |
-| 三亚 | — | — | — | 其他 | 三亚官方 | [职业伤害劳动能力（初次/复查）鉴定申请表](https://hrss.sanya.gov.cn/rsjsite/bgxz/202607/a9cec3f419b5432cb92b886fe6e1cc7a.shtml) |
-| 三亚 | — | — | — | 其他 | 三亚官方 | [关于进一步加强就业驿站服务和管理的通知](https://hrss.sanya.gov.cn/rsjsite/cyjyxx/202601/e61b649e37bd4cc7b6e1fe77c4efd5de.shtml) |
-| 三亚 | — | — | 社保-失业 | 补贴与保险待遇 | 三亚官方 | [失业保险业务相关问题解答](https://hrss.sanya.gov.cn/rsjsite/zcjd/202608/4ee2a8af375744bbbfe7aff9eb62abe7.shtml) |
-| 三亚 | — | — | 社保-失业 | 补贴与保险待遇 | 三亚官方 | [海南省城镇从业人员失业保险条例及实施细则政策问答](https://hrss.sanya.gov.cn/rsjsite/zcjd/202602/48541844963644beabcd04c4edea9f3a.shtml) |
-| 三亚 | — | — | 社保-养老 | 补贴与保险待遇 | 三亚官方 | [《个人养老金实施办法》政策解读](https://hrss.sanya.gov.cn/rsjsite/zcjd/202601/509bca5f5dc84fdabce516db3c0548c4.shtml) |
-| 三亚 | — | — | 社保-失业 | 其他 | 三亚官方 | [失业登记怎么办理？这篇教您](https://hrss.sanya.gov.cn/rsjsite/hygq/202602/e3087b4c43f44d04bdc39b19c8894dc0.shtml) |
-| 三亚 | — | — | — | 其他 | 三亚官方 | [劳动人事争议仲裁文书网上公...](https://hrss.sanya.gov.cn/rsjsite/ldrszyzc/list2.shtml) |
-| 丹东 | — | — | — | 其他 | 丹东官方 | [丹东市召开“工会+法院+人社”劳动争议多元化解联席会暨调解员培训班](https://rsj.dandong.gov.cn/html/DDRSJ/202609/0179074751280022.html) |
-| 丹东 | — | — | — | HR 服务情报 | 丹东官方 | [人力资源社会保障部中央社会工作部民政部印发《关于优化城乡社区岗位吸纳高校毕业生就业工作的通知》](https://rsj.dandong.gov.cn/html/DDRSJ/202608/0178727791169254.html) |
-| 丹东 | — | — | 社保-工伤 | 其他 | 丹东官方 | [2026年10月部分工伤认定结论公示](https://rsj.dandong.gov.cn/html/DDRSJ/202610/0179213054115412.html) |
-| 丹东 | — | — | — | 其他 | 丹东官方 | [关于进一步优化调整丹东市政务服务事项劳动关系有关事项的通知](https://rsj.dandong.gov.cn/html/DDRSJ/202607/0178528715241676.html) |
-| 丹东 | — | — | 社保-工伤 | 其他 | 丹东官方 | [关于调整工伤认定管理权限的通知](https://rsj.dandong.gov.cn/html/DDRSJ/202606/0178269876630116.html) |
-| 北京 | — | — | 社保-养老 | 补贴与保险待遇 | 北京官方 | [重阳节致全市社会化管理退休人员的慰问信](https://rsj.beijing.gov.cn/xxgk/tzgg/202610/t20261012_4898055.html) |
-| 北京 | — | — | — | 其他 | 北京官方 | [北京市2026年第三批重大劳动保障违法行为社会公布案例](https://rsj.beijing.gov.cn/xxgk/tzgg/202609/t20260930_4886764.html) |
-| 北京 | — | — | — | 其他 | 北京官方 | [&sdot;&nbsp;怀柔新增4家就业见习基地](https://rsj.beijing.gov.cn/xwsl/mtgz/202604/t20260403_4573882.html) |
-| 北京 | — | — | — | 其他 | 北京官方 | [&sdot;&nbsp;北京赴10省市重点高校揽才，提供超7000个就业岗位](https://rsj.beijing.gov.cn/xwsl/mtgz/202604/t20260403_4573884.html) |
-| 北京 | — | — | 社保-养老 | 补贴与保险待遇 | 北京官方 | [领取养老金人员待遇资格认证](http://si.12333.gov.cn/184879.jhtml) |
-| 北京 | — | — | — | 其他 | 北京官方 | [促进就业税收优惠政策](https://rsj.beijing.gov.cn/fuwu/zxbs/202503/t20250305_4025760.html) |
-| 北京 | — | — | — | 其他 | 北京官方 | [解读问答《北京市“十五五”时期促进高质量充分就业规划》](https://rsj.beijing.gov.cn/xxgk/2024zcjd/202610/t20261009_4895407.html) |
-| 北京 | — | — | 社保-工伤 | 其他 | 北京官方 | [关于印发《北京市工伤预防五年行动计划重点任务举措（2026-2030年）》的通知](https://rsj.beijing.gov.cn/xxgk/2024qt/202608/t20260806_4811100.html) |
-| 北京 | — | — | — | 其他 | 北京官方 | [劳动保障监察举报投诉](http://rsj.beijing.gov.cn/bm/jgml/201912/t20191206_873983.html) |
-| 北京 | — | — | — | 其他 | 北京官方 | [劳动人事调解仲裁](https://map.beijing.gov.cn/category?categoryId=ldrszytjzcjg) |
-| 北京 | — | — | 最低工资 | 工资与劳动合同 | 北京官方 | [超龄劳动者的工资是否可以低于当地的最低工资标准？](https://rsj.beijing.gov.cn/qaknowledge/202610/t20261009_4894101.html) |
-| 北京 | — | — | — | 其他 | 北京官方 | [超龄劳动者的工资发放周期是多久？可以以实物代替吗？](https://rsj.beijing.gov.cn/qaknowledge/202610/t20261009_4894098.html) |
-| 北京 | — | — | — | 其他 | 北京官方 | [超龄劳动者享受带薪年休假吗？](https://rsj.beijing.gov.cn/qaknowledge/202609/t20260901_4845445.html) |
-| 北京 | — | — | — | 其他 | 北京官方 | [用人单位与超龄劳动者签订的用工协议应当包括哪些内容？](https://rsj.beijing.gov.cn/qaknowledge/202609/t20260901_4845442.html) |
-| 北京 | — | — | 社保-养老 | 补贴与保险待遇 | 北京官方 | [渐进式延迟退休政策实施后，如何判断一个人是否“超龄”？](https://rsj.beijing.gov.cn/qaknowledge/202608/t20260803_4805826.html) |
 <!-- AUTO-TABLE-END -->
 
 ## 社保公积金数据表说明
