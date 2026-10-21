@@ -100,7 +100,7 @@ def _next_page(html, page: str) -> str | None:
     return None
 
 
-def _scan_with_pagination(list_url: str, city: str, seen: set, depth: int = 3) -> list[dict]:
+def _scan_with_pagination(list_url: str, city: str, seen: set, depth: int = 5) -> list[dict]:
     """扫列表页并跟随分页（翻最近几个月的历史，抓 4月/7月 基数调整高峰文件）。"""
     items = []
     cur = list_url
