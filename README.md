@@ -9,7 +9,7 @@
 ## 📊 本周条目总览（自动重建）
 
 <!-- AUTO-TABLE-START -->
-_2026-10-21 自动重建 · 数据管道见 [`src/`](src/)，源清单见 [`data/sources.yml`](data/sources.yml)_
+_2026-10-22 自动重建 · 数据管道见 [`src/`](src/)，源清单见 [`data/sources.yml`](data/sources.yml)_
 
 | 城市/地区 | 发布时间 | 生效时间 | 政策类型 | 分类 | 发布单位 | 标题 |
 |---|---|---|---|---|---|---|
