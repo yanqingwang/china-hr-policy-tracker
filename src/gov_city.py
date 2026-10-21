@@ -39,12 +39,14 @@ def _collect_links(html, page: str, city: str, seen: set) -> list[dict]:
     txt = html.decode("utf-8", "ignore") if isinstance(html, bytes) else html
     for href, label in A_RE.findall(txt):
         title = re.sub(r"\s+", "", util.text_of(label))
-        if len(title) < 8 or not KW.search(title) or not util.is_hr_relevant(title, url or ""):
+        if len(title) < 8:
             continue
         url = util.ensure_absolute(href, page)
         if not url or url.lower().endswith((".png", ".jpg", ".css", ".js", ".ico", ".pdf", ".doc", ".docx", ".xls", ".xlsx")):
             continue
         if ".gov.cn" not in url or url in seen:
+            continue
+        if not KW.search(title) or not util.is_hr_relevant(title, url):
             continue
         seen.add(url)
         date = util.first_date(label) or util.first_date(txt[max(0, txt.find(label)):txt.find(label) + 200])

@@ -32,9 +32,8 @@ QUERIES = [
     "{city} 住房公积金 缴存比例 自主选择",
     f"{{city}} {_THIS_YEAR}年度 社保 缴费基数 上下限",
     f"{{city}} {_THIS_YEAR}年 公积金 缴存基数 调整",
-    f"{{city}} {_THIS_YEAR}年 {_LAST_YEAR}年 养老金 最低工资 调整",
 ]
-DELAY = (1.5, 3.0)
+DELAY = (2.0, 3.5)
 DETAIL_FETCH_CAP = int(os.environ.get("DETAIL_FETCH_CAP", "30"))   # 目标有效条数
 DETAIL_FETCH_MAX = int(os.environ.get("DETAIL_FETCH_MAX", "80"))   # 单次抓取硬上限（无效跳过重抓）
 
