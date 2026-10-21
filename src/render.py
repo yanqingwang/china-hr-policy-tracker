@@ -233,7 +233,9 @@ def table(recs: list[dict]) -> str:
         "| 城市/地区 | 发布时间 | 生效时间 | 政策类型 | 分类 | 发布单位 | 标题 |",
         "|---|---|---|---|---|---|---|",
     ]
-    for r in sorted(recs, key=lambda x: (x.get("publish_date") or "9999")[:7], reverse=True)[:40]:
+    # 有发布日期的在前，无日期（门户噪声）沉底
+    key = lambda x: (x.get("publish_date") or "0000")[:7]
+    for r in sorted(recs, key=key, reverse=True)[:40]:
         rows.append(
             f"| {_d(r['region'])} | {_d(r['publish_date'])} | {_d(r['effective_date'])} "
             f"| {_d(r['policy_type'])} | {r['category']} | {_d(r['publisher'])[:16]} "

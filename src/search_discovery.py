@@ -8,6 +8,7 @@
 - 探测失败（限流/断网）优雅降级为 0 条，并写 data/discovery-cache-*.json；
 - 只索引公开政策页，不接触个人信息。
 """
+import datetime as _dt
 import json
 import os
 import random
@@ -22,10 +23,16 @@ from src import util
 
 ROOT = Path(__file__).resolve().parent.parent
 
+# 年度锚定查询：4月1日/7月1日是社保/公积金基数比例调整高峰期，追最近一年（含今年+去年）
+_THIS_YEAR = _dt.date.today().year
+_LAST_YEAR = _THIS_YEAR - 1
 QUERIES = [
     "{city} 社保 缴费基数 调整",
     "{city} 住房公积金 缴存基数",
     "{city} 住房公积金 缴存比例 自主选择",
+    f"{{city}} {_THIS_YEAR}年度 社保 缴费基数 上下限",
+    f"{{city}} {_THIS_YEAR}年 公积金 缴存基数 调整",
+    f"{{city}} {_THIS_YEAR}年 {_LAST_YEAR}年 养老金 最低工资 调整",
 ]
 DELAY = (1.5, 3.0)
 DETAIL_FETCH_CAP = int(os.environ.get("DETAIL_FETCH_CAP", "30"))   # 目标有效条数
@@ -154,8 +161,8 @@ def _scan(cities: list[str], source: dict) -> tuple[list[dict], list[dict]]:
                     fails = 0
             hit = 0
             for final, title, snippet in results:
-                if not _is_gov(final) or len(title) < 8:
-                    continue
+                if not _is_gov(final) or len(title) < 8 or not util.is_hr_relevant(title, final):
+                    continue  # 门户首页/无关部门/非HR内容过滤
                 region = city
                 if "省" in title and city not in title:
                     region = f"{city}(省域)"

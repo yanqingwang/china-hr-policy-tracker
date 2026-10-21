@@ -39,7 +39,7 @@ def _collect_links(html, page: str, city: str, seen: set) -> list[dict]:
     txt = html.decode("utf-8", "ignore") if isinstance(html, bytes) else html
     for href, label in A_RE.findall(txt):
         title = re.sub(r"\s+", "", util.text_of(label))
-        if len(title) < 8 or not KW.search(title):
+        if len(title) < 8 or not KW.search(title) or not util.is_hr_relevant(title, url or ""):
             continue
         url = util.ensure_absolute(href, page)
         if not url or url.lower().endswith((".png", ".jpg", ".css", ".js", ".ico", ".pdf", ".doc", ".docx", ".xls", ".xlsx")):

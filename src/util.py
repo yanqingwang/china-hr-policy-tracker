@@ -1,11 +1,42 @@
 """中国人力资源政策情报库 fetch/parse utilities."""
 import hashlib
 import re
+import urllib.parse
 
 import requests
 
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36"
 TIMEOUT = 20
+
+# 人力资源相关政策标题必须命中的关键词（用于过滤门户首页/无关部门噪声）
+HR_TITLE_RE = re.compile(
+    r"社保|社会保险|公积金|住房公积金|缴存|缴费基数|缴费比例|缴存基数|缴存比例|"
+    r"最低工资|工资|养老金|养老|失业|工伤|生育|医保|医疗保险|医疗|就业|人才|落户|"
+    r"劳动|劳动合同|补贴|稳岗|残保金|福利|薪酬|基数|比例|社保卡|人力资源|劳动保障|"
+    r"职称|职业资格|职业技能|就业见习|创业补贴|工伤认定|劳动仲裁|调解仲裁|集体合同"
+)
+# 与人力资源政策无关的部门/领域（仅当标题命中这些且无 HR 词时排除）
+UNRELATED_BUREAU_RE = re.compile(
+    r"文旅|旅游|统计局|公安|交通|住建|生态环境|市场监管|应急管理|农业农村|"
+    r"地震|气象|海关|民宗|档案|商务局|水务|林业"
+)
+
+
+def is_hr_relevant(title: str, url: str) -> bool:
+    """过滤：标题须含人力资源相关政策词；排除门户首页 URL 与无关部门。"""
+    if not HR_TITLE_RE.search(title or ""):
+        return False
+    try:
+        path = urllib.parse.urlparse(url or "").path.rstrip("/")
+    except Exception:
+        path = ""
+    if path in ("", "/") or re.match(
+        r"^(index|default)(_\d+)?\.(html?|shtml|aspx)?$", path, re.I
+    ):
+        return False  # 门户首页（无具体政策页面）
+    if UNRELATED_BUREAU_RE.search(title or ""):
+        return False
+    return True
 
 
 def http_get(url: str, timeout: int = TIMEOUT) -> str | bytes | None:
