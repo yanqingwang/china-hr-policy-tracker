@@ -1,5 +1,61 @@
 [
   {
+    "uid": "9da6bdbf6649",
+    "title": "2026年9月公益性岗位补贴及社保补贴公示",
+    "url": "https://hrss.xz.gov.cn/govxxgk/014052557/2026-10-22/76c4fd17-b5ba-475f-b73b-8df3e3b7cb88.html",
+    "publisher": "徐州官方",
+    "publisher_rank": 4,
+    "region": "徐州",
+    "region_city": "徐州",
+    "district": null,
+    "category": "社保公积金",
+    "policy_type": "就业补贴",
+    "key": "0a45d94402bf",
+    "publish_date": "2026-10-22",
+    "effective_date": null,
+    "extracted": {},
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null,
+    "quotes": [
+      "2026年9月公益性岗位补贴及社保补贴公示_徐州市人力资源和社会保障网 您当前位置： 首页 &gt; 政务公开 索引号: 发布机构: 市人力资源和社会保障局 发文日期: 2026-10-22 信息名称: 2026年9月公益性岗位补贴及社保补贴公示 文号: 2026年9月公益性岗位补贴及社保补贴公示 根据《江苏省公益性…",
+      "徐州市人力资源和公共就业管理中心 2026年10月22日 附件下载: 2026年9月份公益性岗位及社保补贴公示名单.xls 视频: 相关报道： 相关文件： 相关专题： 图解： 解读： 分享到： 打印",
+      "经审核，现将符合条件的单位面向社会进行公示（名单见附件），公示时间为2026年10月22日—10月28日"
+    ],
+    "dup_links": [
+      "https://hrss.xz.gov.cn/govxxgk/014052557/2026-10-08/49b6a8de-7bac-475e-9f25-2e7c333d219d.html"
+    ]
+  },
+  {
+    "uid": "c616dfa59adf",
+    "title": "优化调整我市住房公积金部分提取业务政策的解读",
+    "url": "https://zfgjj.ganzhou.gov.cn/gzszfjj/zcjd/202507/fbabd78217334885a159d6b24e965daf.shtml",
+    "publisher": "赣州官方",
+    "publisher_rank": 4,
+    "region": "赣州",
+    "region_city": "赣州",
+    "district": null,
+    "category": "社保公积金",
+    "policy_type": "公积金",
+    "key": "79a759c60959",
+    "publish_date": null,
+    "effective_date": null,
+    "extracted": {},
+    "history": [],
+    "is_vendor": false,
+    "source_id": "city-portal",
+    "detail_text": null,
+    "quotes": [
+      "举例： 缴存人张三购买一套 100 万的商品住房时，申请商业贷款，首付款比例为 15% ，贷款金额为 85 万元",
+      "（四）缴存人购买新建商品住房时，办理了首付款提取或购房提取，且符合我市住房公积金贷款条件的，申请住房公积金贷款时， “贷款的额度须扣除已提取金额”的规定， 调整为 “贷款额度加上已提取金额不得超过房屋总价”",
+      "优化调整我市住房公积金部分贷款业务政策的解读 | 赣州市住房公积金管理中心 网站首页 新闻中心 机构职能 政务公开 政务服务 互动交流 业务指南 专题专栏 无障碍 关怀版 无障碍 当前位置： 首页 &nbsp;>&nbsp; 政务公开 &nbsp;>&nbsp; 政策解读 优化调整我市住房公积金部分贷款业务政策的解读…"
+    ],
+    "dup_links": [
+      "https://zfgjj.ganzhou.gov.cn/gzszfjj/zcjd/202507/02c07a65c51b42a3ac66f002b0755cc6.shtml"
+    ]
+  },
+  {
     "uid": "f05995c8c073",
     "title": "南宁市劳动就业服务管理中心关于南宁市2026年第34批重点群体个人社会保险补贴审核情况的公示",
     "url": "https://rsj.nanning.gov.cn/tzgg/t6749900.html",
@@ -9378,55 +9434,5 @@
     "is_vendor": false,
     "source_id": "city-portal",
     "detail_text": null
-  },
-  {
-    "uid": "2a49473a662b",
-    "title": "关于惠州市博诚安装工程有限公司支付黄建军工伤保险待遇催告通知书的送达公告",
-    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5498004.html",
-    "publisher": "惠州官方",
-    "publisher_rank": 4,
-    "region": "惠州",
-    "region_city": "惠州",
-    "district": null,
-    "category": "补贴与保险待遇",
-    "policy_type": "社保-工伤",
-    "key": "704b1b9242c9",
-    "publish_date": null,
-    "effective_date": null,
-    "extracted": null,
-    "history": [],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null
-  },
-  {
-    "uid": "6e5940070b4d",
-    "title": "惠州市社会保险基金管理局仲恺分局送达公告（郑海军）",
-    "url": "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5492658.html",
-    "publisher": "惠州官方",
-    "publisher_rank": 4,
-    "region": "惠州",
-    "region_city": "惠州",
-    "district": null,
-    "category": "社保公积金",
-    "policy_type": "—",
-    "key": "1927c5bc1a96",
-    "publish_date": null,
-    "effective_date": null,
-    "extracted": {},
-    "history": [],
-    "is_vendor": false,
-    "source_id": "city-portal",
-    "detail_text": null,
-    "quotes": [
-      "附件:《退款通知书》(惠仲社保失业退字〔2025〕1号) 惠州市社会保险基金管理局仲恺分局 2025年3月26日 退款通知书 惠仲社保失业退字〔2025〕1号 参保人 姓名：郑海军，性别：男，公民身份号码：4311********291293 住址：广东省惠州市仲恺区陈江大道北51号荷兰小城24栋1503房 银行账户…",
-      "联系人：温辛河 联系电话：0752-3278371 联系地址：仲恺高新区和畅五路西8号投资控股大厦二楼自然人厅 惠州市社会保险基金管理局仲恺分局 2025年2月25日 送达回证 受送达人 郑海军（身份证4311********291293） 送达内容 惠仲社保失业退字〔2025〕1号 送达人 惠州市社会保险基金管理局…",
-      "&nbsp; 网站无障碍 | 适老版 首 页 | 政务公开 通知公告 政策 规范性文件 其他文件 政策解读 发展规划 工作动态 双随机、一公开 政府采购 组织机构 领导分工 机构职能 财政预决算 财政预决算 三公经费 | 政务服务 | 政民互动 调查征集 政策咨询 社会保障 人才人事 劳动关系 就业创业 直播访谈 |…"
-    ],
-    "dup_links": [
-      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5492659.html",
-      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5451354.html",
-      "http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5451353.html"
-    ]
   }
 ]
