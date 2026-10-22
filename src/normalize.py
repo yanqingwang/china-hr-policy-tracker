@@ -62,6 +62,19 @@ def is_noise(title: str) -> bool:
     return bool(NOISE_RE.search(title or ""))
 
 
+
+
+# 关键文章：标题含基数/比例/调整等年度调整信号（重点检索与展示）
+KEY_ARTICLE_RE = re.compile(
+    r"基数|比例|调整|上限|下限|缴存|缴费基数|缴存基数|缴存比例|缴费比例|调至|调为|提高到|降低"
+)
+
+
+def is_key_article(title: str) -> bool:
+    """关键文章（年度基数/比例/上下限调整等）→ True。"""
+    return bool(KEY_ARTICLE_RE.search(title or ""))
+
+
 def has_policy_content(text: str) -> bool:
     """详情页是否含实质政策内容（比例/基数/上下限/金额/生效条款）。
 
@@ -241,6 +254,8 @@ def build(raw: dict) -> dict:
         "effective_date": util.effective_from_text(title),
         "extracted": None,
         "history": [],                     # 同 key 的历史版本（沿革）
+        "is_key": is_key_article(title),        # 关键文章（基数/比例/调整）
+        "is_key": is_key_article(title),        # 关键文章（基数/比例/调整）
         "is_vendor": bool(raw.get("is_vendor")),
         "source_id": raw.get("source_id"),
         "detail_text": None,

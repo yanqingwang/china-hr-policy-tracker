@@ -101,9 +101,10 @@ def fund_table(recs: list[dict]) -> str:
                 vals.append(f"{v:,}")
         link = f"[原文]({r['url']})"
         auto = "🤖 自动提取，读原文复核" if ex else "—（数字化待补）"
+        key_star = "⭐ " if r.get("is_key") else ""
         rows.append(
             f"| {_d(r['region_city'])} | {_d(r['district']) if r.get('district') else '—（市级）'} "
-            f"| {_d(r['policy_type'])} | {_d(r['effective_date'])} | {_d(r['publish_date'])} "
+            f"| {key_star}{_d(r['policy_type'])} | {_d(r['effective_date'])} | {_d(r['publish_date'])} "
             f"| {_d(r['publisher'])[:20]} "
             f"| {' | '.join(vals)} | {link} <br>_{auto}_ |"
         )
@@ -234,11 +235,12 @@ def table(recs: list[dict]) -> str:
         "|---|---|---|---|---|---|---|",
     ]
     # 有发布日期的在前，无日期（门户噪声）沉底
-    key = lambda x: (x.get("publish_date") or "0000")[:7]
+    key = lambda x: (bool(x.get("is_key")), (x.get("publish_date") or "0000")[:7])
     for r in sorted(recs, key=key, reverse=True)[:40]:
+        star = "⭐ " if r.get("is_key") else ""
         rows.append(
             f"| {_d(r['region'])} | {_d(r['publish_date'])} | {_d(r['effective_date'])} "
             f"| {_d(r['policy_type'])} | {r['category']} | {_d(r['publisher'])[:16]} "
-            f"| [{r['title'][:52]}]({r['url']}) |"
+            f"| [{star}{r['title'][:52]}]({r['url']}) |"
         )
     return "\n".join(rows)
