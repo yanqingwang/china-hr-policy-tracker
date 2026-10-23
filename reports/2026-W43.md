@@ -16,7 +16,6 @@
 | 青岛 | —（市级） | ⭐ 公积金-基数 | — | 2026-07-06 | 青岛政府网 | — | — | — | — | — | — | — | — | 4,121 | [原文](http://www.qingdao.gov.cn/ywdt/zwzl/zxwdpt_00/zxwdpt_39/202607/t20260706_10652736.shtml) <br>_🤖 自动提取，读原文复核_ |
 | 成都(省域) | —（市级） | ⭐ 社保-综合基数 | — | 2026-09-07 | 成都官方 | — | — | — | — | 23,493 | — | — | 4,699 | 23,493 | [原文](https://rst.sc.gov.cn/rst/gsgg/2026/9/7/8b8edb37d4cd43ed995a0055f46b7705.shtml) <br>_🤖 自动提取，读原文复核_ |
 | 成都 | —（市级） | ⭐ 社保-综合基数 | — | 2025-09-22 | 成都官方 | — | — | — | — | 22,938 | 16% | 8% | 4,588 | 22,938 | [原文](https://rst.sc.gov.cn/rst/gsgg/2025/9/22/1d1531e8b4954379a3d7e5c65f9ca89b.shtml) <br>_🤖 自动提取，读原文复核_ |
-| 三亚 | —（市级） | — | — | — | 三亚官方 | — | — | — | — | — | — | — | — | — | [原文](https://hrss.sanya.gov.cn/rsjsite/bgxz/202609/88f89e6903f34f8ca00e52bdbaca6be1.shtml) <br>_—（数字化待补）_ |
 | 丹东 | —（市级） | — | — | — | 丹东官方 | — | — | — | — | — | — | — | — | — | [原文](https://rsj.dandong.gov.cn/html/DDRSJ/202610/0179144731911670.html) <br>_—（数字化待补）_ |
 | 丹东 | —（市级） | ⭐ 社保-养老 | — | — | 丹东官方 | — | — | — | — | 22,665 | — | — | 4,533 | 22,665 | [原文](https://rsj.dandong.gov.cn/html/DDRSJ/202609/0178833132293152.html) <br>_🤖 自动提取，读原文复核_ |
 | 北京 | —（市级） | — | — | — | 北京官方 | — | — | — | — | — | — | — | — | — | [原文](https://rsj.beijing.gov.cn/fuwu/zxbs/202007/t20200720_1952515.html) <br>_—（数字化待补）_ |
@@ -28,14 +27,11 @@
 | 大连 | —（市级） | — | — | 2026-09-03 | 大连官方 | — | — | — | — | — | — | — | — | — | [原文](https://rsj.dl.gov.cn/art/2026/9/3/art_4341_2533976.html) <br>_—（数字化待补）_ |
 | 宁波 | —（市级） | — | — | — | 宁波官方 | — | — | — | — | — | — | — | — | — | [原文](https://rsj.ningbo.gov.cn/art/2024/3/15/art_1229676732_4369333.html) <br>_—（数字化待补）_ |
 | 宜昌 | —（市级） | — | — | 2026-10-19 | 宜昌官方 | — | — | — | — | — | — | — | — | — | [原文](http://rsj.yichang.gov.cn/content-22796-984235-1.html) <br>_—（数字化待补）_ |
-| 宜昌 | 宜昌高新区 | — | — | 2026-10-15 | 宜昌官方 | — | — | — | — | — | — | — | — | — | [原文](http://rsj.yichang.gov.cn/content-22796-984216-1.html) <br>_—（数字化待补）_ |
-| 平顶山 | —（市级） | — | — | 2025-11-14 | 平顶山官方 | — | — | — | — | — | — | — | — | — | [原文](https://rsj.pds.gov.cn/contents/26031/461442.html) <br>_—（数字化待补）_ |
 | 广州 | —（市级） | — | — | — | 广州官方 | — | — | — | — | — | — | — | — | — | [原文](https://rsj.gz.gov.cn/zwdt/tzgg/content/post_10978284.html) <br>_—（数字化待补）_ |
-| 徐州 | —（市级） | 社保-养老 | — | 2026-09-23 | 徐州官方 | — | — | — | — | — | — | — | — | — | [原文](https://hrss.xz.gov.cn/001/001002/20260923/e2f92e39-63be-4251-9005-24ddc0d8b9e4.html) <br>_—（数字化待补）_ |
 | 徐州 | —（市级） | 就业补贴 | — | 2026-10-22 | 徐州官方 | — | — | — | — | — | — | — | — | — | [原文](https://hrss.xz.gov.cn/govxxgk/014052557/2026-10-22/76c4fd17-b5ba-475f-b73b-8df3e3b7cb88.html) <br>_—（数字化待补）_ |
 | 徐州 | —（市级） | — | — | 2026-10-22 | 徐州官方 | — | — | — | — | — | — | — | — | — | [原文](https://hrss.xz.gov.cn/govxxgk/014052557/2026-10-22/3042d711-de7b-417d-b8bb-858cb705a8dd.html) <br>_—（数字化待补）_ |
-| 惠州 | —（市级） | — | — | — | 惠州官方 | — | — | — | — | — | — | — | — | — | [原文](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_4072299.html) <br>_—（数字化待补）_ |
 | 惠州 | —（市级） | ⭐ 社保-失业 | — | — | 惠州官方 | — | — | — | — | — | — | — | 2,040 | 28,710 | [原文](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5845549.html) <br>_🤖 自动提取，读原文复核_ |
+| 惠州 | —（市级） | — | — | — | 惠州官方 | — | — | — | — | — | — | — | — | — | [原文](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5784586.html) <br>_—（数字化待补）_ |
 | 惠州 | —（市级） | 社保-工伤 | — | — | 惠州官方 | — | — | — | — | — | — | — | — | — | [原文](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5720139.html) <br>_—（数字化待补）_ |
 | 惠州 | —（市级） | 社保-养老 | — | — | 惠州官方 | — | — | — | — | — | — | — | — | — | [原文](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5137869.html) <br>_—（数字化待补）_ |
 | 无锡 | —（市级） | — | — | 2026-09-09 | 无锡官方 | — | — | — | — | — | — | — | — | — | [原文](https://hrss.wuxi.gov.cn/doc/2026/09/08/4830251.shtml) <br>_—（数字化待补）_ |
@@ -66,8 +62,8 @@
 
 ## 📡 覆盖统计（70 大中城市）
 
-本周发现式采集命中 **42/70** 城（含省域命中的归入对应市）。
-未覆盖城市：天津、石家庄、太原、呼和浩特、长春、哈尔滨、上海、合肥、郑州、长沙、深圳、南宁、海口、贵阳、兰州、西宁、乌鲁木齐、唐山、包头、锦州、吉林、安庆、九江、襄阳、岳阳、常德、湛江、北海、大理
+本周发现式采集命中 **40/70** 城（含省域命中的归入对应市）。
+未覆盖城市：天津、石家庄、太原、呼和浩特、长春、哈尔滨、上海、合肥、郑州、长沙、深圳、南宁、海口、贵阳、兰州、西宁、乌鲁木齐、唐山、包头、锦州、吉林、安庆、九江、襄阳、岳阳、常德、湛江、北海、三亚、大理
 
 ---
 ### 关键原文摘录（社保公积金）
@@ -101,9 +97,6 @@
 > 「根据国家现行政策，个人参保人员参加企业职工基本养老保险，可在我省公布的缴费基数上下限之间选择适当的缴费基数，缴费比例统一为 20%」
 > 「按照现行三项社会保险缴费基数上下限确定机制， 2025 年度全省三项社会保险缴费基数上限为 22938 元 / 月，下限为 4588 元 / 月」
 > 「为便于个人参保人员选择，各市（州）在我省公布的缴费基数上下限 标准以内 ，为个人参保人员设置了不同的缴费基数档次，个人参保人员可以根据自己的实际情况自行选择」
-
-**社保公积金｜三亚 · —** — [重点群体社会保险补贴申请表及花名册](https://hrss.sanya.gov.cn/rsjsite/bgxz/202609/88f89e6903f34f8ca00e52bdbaca6be1.shtml)
-> 「重点群体社会保险补贴申请表及花名册_表格下载_ 三亚市人力资源和社会保障局 三亚市人力资源和社会保障局 hrss.sanya.gov.cn 中文域名 : 三亚市人力资源和社会保障局.政务 无障碍浏览 繁 &ensp; &ensp; &ensp; 首页 机构介绍 要闻动态 信息公开 解读回应 政务服务 数据开放 首页>…」
 
 **社保公积金｜丹东 · —** — [社会保险补贴扩围政策申报指南](https://rsj.dandong.gov.cn/html/DDRSJ/202610/0179144731911670.html)
 > 「四、 申领时限 补贴申请期限截至2026年12月31日，每人累计享受补贴最长不超过12个月」
@@ -178,6 +171,11 @@
 > 「关于调整我市失业保险缴费基数下限的通知-惠州市人力资源和社会保障局网站 --> 欢迎来到惠州市人力资源和社会保障局网站」
 > 「惠州市人力资源和社会保障局 国家税务总局惠州市税务局 2026年8月27日 责任编辑：惠州市人社局 &nbsp; 网站地图 主办：惠州市人力资源和社会保障局 联系电话：0752-12333 传真：0752-2789397 惠州市人力资源和社会保障局 版权所有2010 粤公网安备 44130202000719号 网站标…」
 
+**社保公积金｜惠州 · —** — [关于退回多享受社会保险待遇催告书的送达公告](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5784586.html)
+> 「根据《中华人民共和国行政强制法》第五十四条之规定，我单位于2026年5月19日依法作出《退回多享受社会保险待遇催告书》（以下简称“催告书”），请您（们）在收到催告书之日起10日内退回多享受的工伤保险待遇至社会保险经办机构指定账户」
+> 「联系人： 杨小姐&nbsp; &nbsp; &nbsp; 电话： 0752-2169007&nbsp; 联系地址：惠州市惠城区下埔路19号惠城社保分局稽核股 附件：白红平等9人人员公告信息明细表.pdf 惠州市社会保险基金管理局惠城分局 2026年6月5日 责任编辑：惠州市人社局 &nbsp; 网站地图 主办：惠州市…」
+> 「&nbsp; 网站无障碍 | 适老版 首 页 | 政务公开 通知公告 政策 规范性文件 其他文件 政策解读 发展规划 工作动态 双随机、一公开 政府采购 组织机构 领导分工 机构职能 财政预决算 财政预决算 三公经费 | 政务服务 | 政民互动 调查征集 政策咨询 社会保障 人才人事 劳动关系 就业创业 直播访谈 |…」
+
 **社保公积金｜桂林 · 2026-09-02** — [桂林市2025年第十二批重点群体个人社保补贴名单公示](https://rsj.guilin.gov.cn/xwzx/tzgg/t28213730.shtml)
 > 「附件： 1 .桂林市 2025 年第十二批重点群体个人社保补贴发放统计表 2 .桂林市 2025 年第十二批重点群体个人社保补贴人员明细表 桂林市人力资源和社会保障局 2026 年 10 月 12 日 文件下载： （附件）桂林市2025年第十二批重点群体个人社保补贴发放统计表及明细表.xlsx 关联文件： 主办:桂林…」
 > 「公示期为五个工作日，从 2026 年 10 月 12 日起至 10 月 16 日止」
@@ -224,10 +222,6 @@
 **成都 · 社保-综合基数（历史版本 1 条）**
 - — · [四川2026年度 社保缴费基数 公布 上限调至23493元/月](https://www.sc.gov.cn/10462/10464/10797/2026/9/9/4f59ccad3d554915a589d1fc2b224e19.shtml)
 
-**三亚 · —（历史版本 2 条）**
-- — · [海南省社会保险服务中心](https://hnsbyb.hainan.gov.cn/hnsbyb/)
-- — · [三亚市社会保险服务中心](https://www.sanya.gov.cn/sbfwzxsite/zfxxgk/newxxgk.shtml)
-
 **丹东 · —（历史版本 1 条）**
 - — · [关于调整丹东市就业困难人员和高校毕业生灵活就业社会保险补贴政策有关事宜的通知](https://rsj.dandong.gov.cn/html/DDRSJ/202607/0178528715241684.html)
 
@@ -250,15 +244,16 @@
 **宁波 · —（历史版本 1 条）**
 - — · [2022年度全市人力社保事业发展计划执行情况](https://rsj.ningbo.gov.cn/art/2023/3/15/art_1229676732_4223624.html)
 
-**宜昌 · —（历史版本 2 条）**
+**宜昌 · —（历史版本 1 条）**
 - 2026-10-16 · [政策送到烟火处社保温暖千万家——宜昌...](http://rsj.yichang.gov.cn/content-22796-984222-1.html)
-- 2026-10-15 · [晨练场里问社保夜市摊前办认证](http://rsj.yichang.gov.cn/content-22796-984220-1.html)
 
 **徐州 · —（历史版本 1 条）**
 - 2026-10-21 · [2026年7—8月重点行业重点群体社保补贴公示](https://hrss.xz.gov.cn/govxxgk/014052557/2026-10-21/3bd0fa90-af73-42b1-b53b-98dfa7343dfd.html)
 
-**惠州 · —（历史版本 13 条）**
-- — · [关于退回多享受社会保险待遇催告书的送达公告](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5784586.html)
+**惠州 · 社保-失业（历史版本 1 条）**
+- — · [关于调整2026社会保险年度我市失业保险缴费基数上限的通知](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5808153.html)
+
+**惠州 · —（历史版本 12 条）**
 - — · [2025年度惠州市社会保险信息披露](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5777027.html)
 - — · [惠州市社会保险基金管理局送达公告](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5759715.html)
 - — · [责令退回多享受社会保险待遇决定书](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5623995.html)
@@ -271,9 +266,6 @@
 - — · [2023年度惠州市社会保险信息披露](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5242131.html)
 - — · [关于封存社会保险缴费记录的通告](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5162752.html)
 - — · [广东省社会保险证明事项告知承诺书](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5036982.html)
-
-**惠州 · 社保-失业（历史版本 1 条）**
-- — · [关于调整2026社会保险年度我市失业保险缴费基数上限的通知](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5808153.html)
 
 **惠州 · 社保-工伤（历史版本 1 条）**
 - — · [惠州市社会保险基金管理局仲恺分局关于刘勇工伤待遇支付催告通知书送达公告](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5549589.html)
@@ -408,7 +400,7 @@
 - — · [《住房公积金管理条例》](https://zfgjj.ganzhou.gov.cn/gzszfjj/c103429/202609/39d6fd55d5464fd3bde50f057eb0b9c3.shtml)
 - — · [关于印发《赣州市住房公积金归集业务操作细则》《赣州市住房公积金提取业务操作细则》《赣州市住房](https://zfgjj.ganzhou.gov.cn/gzszfjj/c103431/202605/07bba404126144fe95f2de768abfe3c0.shtml)
 - — · [延续和完善我市灵活就业人员缴存和使用住房公积金政策的解读](https://zfgjj.ganzhou.gov.cn/gzszfjj/zcjd/202507/9f0fe51aea3f4f41bbd7afc57266f815.shtml)
-- — · [优化调整我市住房公积金部分贷款业务政策的解读](https://zfgjj.ganzhou.gov.cn/gzszfjj/zcjd/202507/02c07a65c51b42a3ac66f002b0755cc6.shtml)
+- — · [优化调整我市住房公积金部分提取业务政策的解读](https://zfgjj.ganzhou.gov.cn/gzszfjj/zcjd/202507/fbabd78217334885a159d6b24e965daf.shtml)
 - — · [支持使用住房公积金购买配售型保障性住房（含人才住房）政策的解读](https://zfgjj.ganzhou.gov.cn/gzszfjj/zcjd/202507/64c5ebff34ce47a2ae0036e85480a48a.shtml)
 - — · [关于优化提取住房公积金偿还商业性个人住房贷款本息政策的解读](https://zfgjj.ganzhou.gov.cn/gzszfjj/zcjd/202504/6547c7422f9c47af80c33499b04478fa.shtml)
 - — · [关于支持住宅小区老旧电梯更新改造提取住房公积金政策的解读](https://zfgjj.ganzhou.gov.cn/gzszfjj/zcjd/202504/06eb84869e204dfe970ca0c3c3dd44fe.shtml)
@@ -516,10 +508,6 @@
 - 【2026-07-02】[人力资源社会保障部 教育部 财政部 国家税务总局关于失业保险支持企业稳岗扩岗的通知](https://www.gov.cn/zhengce/zhengceku/202607/content_7074139.htm) — 2026-07-02 · 人力资源社会保障部 教育部 财政部  · 全国
 - 【2025-06-30】[国务院办公厅关于印发《促进残疾人就业三年行动方案（2025—2027年）》的通知](https://www.gov.cn/zhengce/zhengceku/202506/content_7030054.htm) — 2025-06-30 · 国务院办公厅 · 全国
 - 【2025-07-18】[国办印发方案，推出4方面13项政策举措——着力解决残疾人就业急难愁盼](https://www.gov.cn/zhengce/202507/content_7032670.htm) — 2025-07-18 · 国务院 · —
-- 【—】[失业保险关系跨省转移承诺书](https://hrss.sanya.gov.cn/rsjsite/bgxz/202608/79623c16b18d4fe7a9c5f4a0c22067d6.shtml) — — · 三亚官方 · 三亚
-- 【—】[失业保险业务相关问题解答](https://hrss.sanya.gov.cn/rsjsite/zcjd/202608/4ee2a8af375744bbbfe7aff9eb62abe7.shtml) — — · 三亚官方 · 三亚
-- 【—】[海南省城镇从业人员失业保险条例及实施细则政策问答](https://hrss.sanya.gov.cn/rsjsite/zcjd/202602/48541844963644beabcd04c4edea9f3a.shtml) — — · 三亚官方 · 三亚
-- 【—】[《个人养老金实施办法》政策解读](https://hrss.sanya.gov.cn/rsjsite/zcjd/202601/509bca5f5dc84fdabce516db3c0548c4.shtml) — — · 三亚官方 · 三亚
 - 【—】[领取养老金人员待遇资格认证](http://si.12333.gov.cn/184879.jhtml) — — · 北京官方 · 北京
 - 【—】[南昌市人力资源和社会保障局组织开展2026年机关退休老同志重阳节活动](https://rsj.nc.gov.cn/ncsrsj/gkzwxx/202610/d3e29d8444ef494fa1a29dc0fb77fe62.shtml) — — · 南昌官方 · 南昌
 - 【—】[南昌市举办工伤保险及新职伤专题培训班](https://rsj.nc.gov.cn/ncsrsj/gkzwxx/202609/e5e4e81379fd4b738b8cc20857baed3d.shtml) — — · 南昌官方 · 南昌
@@ -537,6 +525,10 @@
 - 【2025-11-07】[平顶山市稳岗补贴申请表](https://rsj.pds.gov.cn/contents/66103/753817.html) — 2025-11-07 · 平顶山官方 · 平顶山
 - 【2026-10-23】[依法支付工伤保险待遇催告通知书](https://hrss.xz.gov.cn/govxxgk/014052557/2026-10-23/d946b6fb-7e72-4630-a6c2-ac055616c0dc.html) — 2026-10-23 · 徐州官方 · 徐州
 - 【2026-10-09】[2026年10月徐州市新增市级拨付就业见习补贴人员公示](https://hrss.xz.gov.cn/govxxgk/014052557/2026-10-09/71562dc7-3f89-4fa7-93ca-ce38f43e2fb1.html) — 2026-10-09 · 徐州官方 · 徐州
+- 【2025-03-13】[工程建设项目工伤保险参保登记表](https://hrss.xz.gov.cn/zlxz/20250313/4ace08d6-51db-4955-8e71-22ecd73ce2e5.html) — 2025-03-13 · 徐州官方 · 徐州
+- 【—】[关于超过法定退休年龄参保人和死亡参保人遗属及时处理养老保险个人账户的通告](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5004615.html) — — · 惠州官方 · 惠州
+- 【—】[关于已达法定退休年龄参保人员和已逝世参保人遗属及时办理养老保险待遇业务的公告](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5872269.html) — — · 惠州官方 · 惠州
+- 【—】[2026年惠州市工伤保险服务协议机构名单](http://rsj.huizhou.gov.cn/ywzt/shbz/sbtzgg/content/post_5810369.html) — — · 惠州官方 · 惠州
 
 ---
 ## HR 服务情报
@@ -548,8 +540,6 @@
 - 【—】[Wuxi - 无锡 市人力资源和社会保障局-首页](https://hrss.wuxi.gov.cn/index.shtml) — — · 无锡官方 · 无锡
 - 【2025-10-20】[国家税务总局江苏省税务局网站 江苏省 省人力资源社会保障厅 ...](https://jiangsu.chinatax.gov.cn/art/2025/10/20/art_22437_1941.html) — 2025-10-20 · 无锡政府网 · 无锡(省域)
 - 【—】[Yantai - 烟台 市人力资源社会保障局](https://rshj.yantai.gov.cn/index.html) — — · 烟台官方 · 烟台
-- 【—】[三亚市人力资源开发局关于支付2026年9月就业困难人员社会保...](https://hrss.sanya.gov.cn/rsjsite/tzgg/202610/abf6ac3181c84ca3adb477d5da0847dc.shtml) — — · 三亚官方 · 三亚
-- 【—】[三亚市人力资源和社会保障局关于下达三亚市2026年工伤预防...](https://hrss.sanya.gov.cn/rsjsite/bmwjxx/202603/b4742f91434e4509b94b3ed9d662c8ac.shtml) — — · 三亚官方 · 三亚
 - 【—】[人力资源社会保障部部署开展2026年就业政策宣传月活动](https://rsj.dandong.gov.cn/html/DDRSJ/202609/0178894870273786.html) — — · 丹东官方 · 丹东
 - 【—】[丹东市劳动人事争议仲裁委员会聘任仲裁员名单公告（2026年度）](https://rsj.dandong.gov.cn/html/DDRSJ/202610/0179256267458967.html) — — · 丹东官方 · 丹东
 - 【—】[北京市劳动人事争议仲裁委员会仲裁员名册](https://rsj.beijing.gov.cn/bm/cxfw/202412/t20241209_3961026.html) — — · 北京官方 · 北京
@@ -565,18 +555,12 @@
 - 【2026-07-24】[苏家屯区解放街道金山社区：搭建就业暖心桥服务群众零距离——开展“百日千万”就业大集招聘会](https://rsj.shenyang.gov.cn/zwgkzdgz/jycyxx/jyzx/202607/t20260724_5062625.html) — 2026-07-24 · 沈阳官方 · 沈阳
 - 【2026-09-30】[叙永县就业服务管理局举办2026年东西部劳务协作“百日千万”暨高校毕业生专场招聘会](https://rsj.luzhou.gov.cn/gzdt/sndt/content_1158803) — 2026-09-30 · 泸州官方 · 泸州
 - 【—】[银川市人力资源和社会保障局关于公开征集劳动用...](https://rsj.yinchuan.gov.cn/xxgk/zdgk/tzgg/202609/t20260918_5348945.htm) — — · 银川官方 · 银川
+- 【—】[智能社保SaaS登录](https://service.51shebao.com/standard/login) — — · HR 服务商线索（51社保/社保10 · 全国
+- 【—】[智能社保SaaS服务](https://www.51shebao.com/service/insure) — — · HR 服务商线索（51社保/社保10 · 全国
 
 ---
 ## 其他
 
-- 【—】[促进新就业形态规范健康持续发展——《新就业形态劳动者权...](https://hrss.sanya.gov.cn/rsjsite/gzdt/202610/59c00e8c54414c20936870b4f52a11e2.shtml) — — · 三亚官方 · 三亚
-- 【—】[海南多措并举促进青年就业找工作、提技能、想创业都有支持](https://hrss.sanya.gov.cn/rsjsite/gzdt/202609/4508bb943bf54a4baebbff485b5d5da0.shtml) — — · 三亚官方 · 三亚
-- 【—】[新业态劳动争议仲裁实务与联合调解能力提升专题培训会在三...](https://hrss.sanya.gov.cn/rsjsite/gzdt/202609/3bfdc378911040a6b0ee1a8b713d79d8.shtml) — — · 三亚官方 · 三亚
-- 【—】[劳动人事争议仲裁答辩书](https://hrss.sanya.gov.cn/rsjsite/bgxz/202609/49370c44093c4914b5dfa6a61032f136.shtml) — — · 三亚官方 · 三亚
-- 【—】[职业伤害劳动能力（初次/复查）鉴定申请表](https://hrss.sanya.gov.cn/rsjsite/bgxz/202607/a9cec3f419b5432cb92b886fe6e1cc7a.shtml) — — · 三亚官方 · 三亚
-- 【—】[关于进一步加强就业驿站服务和管理的通知](https://hrss.sanya.gov.cn/rsjsite/cyjyxx/202601/e61b649e37bd4cc7b6e1fe77c4efd5de.shtml) — — · 三亚官方 · 三亚
-- 【—】[失业登记怎么办理？这篇教您](https://hrss.sanya.gov.cn/rsjsite/hygq/202602/e3087b4c43f44d04bdc39b19c8894dc0.shtml) — — · 三亚官方 · 三亚
-- 【—】[劳动人事争议仲裁文书网上公...](https://hrss.sanya.gov.cn/rsjsite/ldrszyzc/list2.shtml) — — · 三亚官方 · 三亚
 - 【—】[我市2026年离校未就业高校毕业生工作情况](https://rsj.dandong.gov.cn/html/DDRSJ/202610/0179256267458963.html) — — · 丹东官方 · 丹东
 - 【—】[丹东市召开“工会+法院+人社”劳动争议多元化解联席会暨调解员培训班](https://rsj.dandong.gov.cn/html/DDRSJ/202609/0179074751280022.html) — — · 丹东官方 · 丹东
 - 【—】[2026年10月部分工伤认定结论公示](https://rsj.dandong.gov.cn/html/DDRSJ/202610/0179256267458971.html) — — · 丹东官方 · 丹东
@@ -593,6 +577,14 @@
 - 【—】[超龄劳动者的工资发放周期是多久？可以以实物代替吗？](https://rsj.beijing.gov.cn/qaknowledge/202610/t20261009_4894098.html) — — · 北京官方 · 北京
 - 【—】[超龄劳动者享受带薪年休假吗？](https://rsj.beijing.gov.cn/qaknowledge/202609/t20260901_4845445.html) — — · 北京官方 · 北京
 - 【—】[用人单位与超龄劳动者签订的用工协议应当包括哪些内容？](https://rsj.beijing.gov.cn/qaknowledge/202609/t20260901_4845442.html) — — · 北京官方 · 北京
+- 【—】[工伤认定结论查询](https://fuwu.rsj.beijing.gov.cn/zhrs/sbgsyjs/conclusion-query-rd) — — · 北京官方 · 北京
+- 【—】[劳动能力鉴定结论电子文书](https://fuwu.rsj.beijing.gov.cn/zhrs/sbgsyjs/electronic-delivery) — — · 北京官方 · 北京
+- 【—】[朱从明在南京调研新就业形态劳动者权益...](https://rsj.nanjing.gov.cn/zxzx/xwdt/202604/t20260420_5826771.html) — — · 南京官方 · 南京
+- 【—】[青柠码宣传抢抓春招黄金期就业福利“...](https://rsj.nanjing.gov.cn/zxzx/xwdt/202603/t20260316_5805942.html) — — · 南京官方 · 南京
+- 【2024-11-13】[南京市近年工伤预防支出信息披露](https://rsj.nanjing.gov.cn/zwgk/shbxxxgk/202411/t20241113_5008730.html) — 2024-11-13 · 南京官方 · 南京
+- 【—】[关于《关于明确全市劳动人事争议仲裁管...](https://rsj.nanjing.gov.cn/hdjl/dczj/202610/t20261019_6021104.html) — — · 南京官方 · 南京
+- 【2026-10-13】[进贤县：深耕普法惠企赋能构建和谐劳动关系](https://rsj.nc.gov.cn/ncsrsj/gzdt/202610/2a41eac69138447eb52dbd4b5ac9576c.shtml) — 2026-10-13 · 南昌官方 · 南昌
+- 【2026-10-08】[新建区：夜市赋能就业服务精准直达](https://rsj.nc.gov.cn/ncsrsj/gzdt/202610/68b1c5ea44464c2f8fa1ea3d65c2e804.shtml) — 2026-10-08 · 南昌官方 · 南昌
 
 ---
 
