@@ -225,6 +225,21 @@ def inject_readme(readme_path: str, recs: list[dict], generated_on: str) -> None
     start = md.index("<!-- AUTO-TABLE-START -->")
     end = md.index("<!-- AUTO-TABLE-END -->") + len("<!-- AUTO-TABLE-END -->")
     md = md[:start] + block + md[end:]
+    # 城市五险一金标准表（AI核实+多模型校验）
+    ins_anchor = "<!-- INSURANCE-TABLE-START -->"
+    ins_block = (
+        f"\n\n## 🏦 主要城市五险一金标准（2026年度）\n\n"
+        f"> 经 glm-5.3-flash / kimi-k3 独立产出 + 豆包终审裁决（2026-10-23）。"
+        f"AI数据按研究日期；脚本数据仅在基数/比例/上下限变化时更新。详见 [`data/city_insurance_2026.json`](data/city_insurance_2026.json)。\n\n"
+        + insurance_table()
+        + "\n<!-- INSURANCE-TABLE-END -->"
+    )
+    if ins_anchor in md:
+        s0 = md.index(ins_anchor)
+        e0 = md.index("<!-- INSURANCE-TABLE-END -->") + len("<!-- INSURANCE-TABLE-END -->")
+        md = md[:s0] + ins_block + md[e0:]
+    else:
+        md = md + ins_block
     with open(readme_path, "w", encoding="utf-8") as f:
         f.write(md)
 
@@ -242,5 +257,40 @@ def table(recs: list[dict]) -> str:
             f"| {_d(r['region'])} | {_d(r['publish_date'])} | {_d(r['effective_date'])} "
             f"| {_d(r['policy_type'])} | {r['category']} | {_d(r['publisher'])[:16]} "
             f"| [{star}{r['title'][:52]}]({r['url']}) |"
+        )
+    return "\n".join(rows)
+
+
+def insurance_table(insurance_path: str = None) -> str:
+    """城市五险一金标准表（读 data/city_insurance_2026.json，AI核实+多模型校验）。"""
+    import json
+    from pathlib import Path as _P
+    if insurance_path is None:
+        insurance_path = str(_P(__file__).resolve().parent.parent / "data" / "city_insurance_2026.json")
+    try:
+        with open(insurance_path, encoding="utf-8") as f:
+            d = json.load(f)
+    except Exception as exc:
+        return f"> 城市五险一金数据暂不可用（{exc}）"
+    rows = [
+        "| 城市 | 养老基数(上限/下限) | 养老(个人/单位) | 医保(个人/单位) | 失业(个人/单位) | 公积金基数(上限/下限) | 公积金比例 | 数据日期 | 来源 |",
+        "|---|---|---|---|---|---|---|---|---|",
+    ]
+    for city in sorted(k for k in d if k != "_meta"):
+        v = d[city]
+        def g(ins, k):
+            try:
+                return v.get(ins, {}).get(k)
+            except Exception:
+                return None
+        rows.append(
+            f"| {city} "
+            f"| {g('养老','基数上限') or '—'}/{g('养老','基数下限') or '—'} "
+            f"| {g('养老','个人比例%') or '—'}/{g('养老','公司比例%') or '—'} "
+            f"| {g('医疗','个人比例%') or '—'}/{g('医疗','公司比例%') or '—'} "
+            f"| {g('失业','个人比例%') or '—'}/{g('失业','公司比例%') or '—'} "
+            f"| {g('公积金','基数上限') or '—'}/{g('公积金','基数下限') or '—'} "
+            f"| {g('公积金','个人比例%') or '—'}/{g('公积金','公司比例%') or '—'} "
+            f"| {v.get('_date', '—')} | {v.get('_src_type', '—')} |"
         )
     return "\n".join(rows)
