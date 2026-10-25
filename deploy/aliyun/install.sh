@@ -14,11 +14,11 @@ python3 -m venv .venv
 
 echo "[2/3] 配置 cron（每周日/一 UTC ${CRON_HOUR}:00 全量采集）"
 # 周一 02:30 CI 会拉阿里云数据，因此这里安排在周日 23:00 与周一 01:00 各跑一次，双保险
-cat > /etc/cron.d/china-hr-policy <<EOF
-0 ${CRON_HOUR} * * 0   root ${REPO_DIR}/deploy/aliyun/run_aliyun.sh >> /var/log/china-hr-policy-aliyun.log 2>&1
-0 1 * * 1              root ${REPO_DIR}/deploy/aliyun/run_aliyun.sh >> /var/log/china-hr-policy-aliyun.log 2>&1
+cat > /etc/cron.d/china-si-phf-policy <<EOF
+0 ${CRON_HOUR} * * 0   root ${REPO_DIR}/deploy/aliyun/run_aliyun.sh >> /var/log/si-phf-policy-aliyun.log 2>&1
+0 1 * * 1              root ${REPO_DIR}/deploy/aliyun/run_aliyun.sh >> /var/log/si-phf-policy-aliyun.log 2>&1
 EOF
-chmod 644 /etc/cron.d/china-hr-policy
+chmod 644 /etc/cron.d/china-si-phf-policy
 service cron reload 2>/dev/null || systemctl restart cron 2>/dev/null || true
 
 echo "[3/3] 手工跑一次验证（输出会很长，建议重定向日志）"
