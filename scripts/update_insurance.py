@@ -22,7 +22,29 @@ import re
 import sys
 from pathlib import Path
 
-REPO = Path(__file__).resolve().parent.parent       # 脚本位于 <repo>/scripts/
+def _find_repo() -> Path:
+    """定位仓库根：环境变量 > 脚本所在仓库 > 常见部署路径。"""
+    import os
+    here = Path(__file__).resolve().parent
+    for cand in (os.environ.get("HR_REPO_DIR"),
+                 str(here.parent),        # <repo>/scripts/ -> <repo>
+                 str(here),               # 脚本被复制到仓库根时
+                 "/www/hr-policy-tracker/repo"):
+        if cand and Path(cand).joinpath("data", "city_insurance_2026.json").exists():
+            return Path(cand)
+    for cand in (os.environ.get("HR_REPO_DIR"),
+                 str(here.parent),
+                 str(here),
+                 "/www/hr-policy-tracker/repo"):
+        if not cand:
+            continue
+        p = Path(cand)
+        if (p / "data" / "city_insurance_2026.json").exists():
+            return p
+    return Path(__file__).resolve().parent.parent
+
+
+REPO = _find_repo()
 sys.path.insert(0, str(REPO))
 try:
     from src.insurance_rules import should_skip_insurance
