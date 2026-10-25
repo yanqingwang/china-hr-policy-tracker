@@ -11,6 +11,10 @@
 > and **PHF (Public Housing Fund)** policies by city — contribution base caps/floors, individual and
 > employer rates, effective dates, with official-source traceability. Currently covers **144 cities**.
 
+## 📋 最新社保公积金政策总表
+
+👉 **[《社保公积金政策总表（2026 年度）》](reports/社保公积金政策.md)** —— 144 城 × 7 险种缴费基数上下限、个人/公司比例、生效日期，每次更新自动覆盖此文件；按日期的历史快照见 [`reports/`](reports/) 目录（`社保公积金政策_YYYY-MM-DD.md`）。
+
 ## 目标
 
 目标建立一个自动化的全国社保公积金自动更新和查询的数据库。如果大家发现任何数据错误，请打开 Issues 页的「📝 社保公积金政策纠错」模板提交 issue 来更新数据；提交时请注意附上官方原文链接（gov.cn），机器人会自动做格式与数值校验。
