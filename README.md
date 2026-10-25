@@ -1,10 +1,15 @@
-# 中国人力资源政策周报 / China HR Policy Weekly README
+# 中国 SI/PHF 政策仓库 / China SI/PHF Policy Repository
 
 > **中文优先**：一条开源流水线：**收录 → 提取 → 过滤 → 合并（原发布单位优先）→ 分类 → 结构化周报**。
 > 数据范围：人社局 · 公积金中心 · 税局 · 人民政府网站 · 工作许可与人才引进政策 · 主要 HR 服务商解读。
-> 社保公积金变化由机器人尝试做**数据表化**（城市、发布/生效时间、原/新基数/比例/上下限等）。
 >
-> **English (for international readers)**: An open source pipeline tracking China HR policy changes (social insurance, housing fund, tax, work permits, talent introduction) from official sources; weekly digest with structured data tables, auto-built every Monday.
+> **核心数据**：中国 **SI（社会保险 Social Insurance）** 与 **PHF（住房公积金 Public Housing Fund）** 政策
+> 按城市表化（基数上下限、个人/单位比例、生效日期、来源溯源）。
+> 当前覆盖 **144 城**，含全部省级行政区（含拉萨）及省直辖县级市/兵团师市。
+>
+> **English (for international readers)**: An open source pipeline tracking China **SI (Social Insurance)**
+> and **PHF (Public Housing Fund)** policies by city — contribution base caps/floors, individual and
+> employer rates, effective dates, with official-source traceability. Currently covers **144 cities**.
 
 ## 📊 本周条目总览（自动重建）
 

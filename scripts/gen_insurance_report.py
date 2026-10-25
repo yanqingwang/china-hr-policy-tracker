@@ -18,13 +18,13 @@ def _find_repo() -> Path:
     for cand in (os.environ.get("HR_REPO_DIR"),
                  str(here.parent),        # <repo>/scripts/ -> <repo>
                  str(here),               # 脚本被复制到仓库根时
-                 "/www/hr-policy-tracker/repo"):
+                 "/www/china-si-phf-policy/repo"):
         if cand and Path(cand).joinpath("data", "city_insurance_2026.json").exists():
             return Path(cand)
     for cand in (os.environ.get("HR_REPO_DIR"),
                  str(here.parent),
                  str(here),
-                 "/www/hr-policy-tracker/repo"):
+                 "/www/china-si-phf-policy/repo"):
         if not cand:
             continue
         p = Path(cand)
@@ -105,7 +105,7 @@ def main() -> None:
                 f"| {city} | — | {ins} | {up} | {lo} | {x.get('个人比例%') or '—'} | {x.get('公司比例%') or '—'} "
                 f"| {verify_detail(v, has_val)} | {INS_FREQ[ins]} |"
             )
-    lines += ["", "---", f"_本报告由 china-hr-policy-tracker 自动生成于 {TODAY}_"]
+    lines += ["", "---", f"_本报告由 china-si-phf-policy 自动生成于 {TODAY}_"]
     report = "\n".join(lines)
 
     OUT.mkdir(exist_ok=True)

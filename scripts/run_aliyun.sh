@@ -10,13 +10,13 @@ set -euo pipefail
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-REPO=/www/hr-policy-tracker/repo
-PY=/www/hr-policy-tracker/venv/bin/python
-BACKUP=/www/hr-policy-tracker/backup
+REPO=/www/china-si-phf-policy/repo
+PY=/www/china-si-phf-policy/venv/bin/python
+BACKUP=/www/china-si-phf-policy/backup
 TOKEN=$(cat /root/.config/hr-policy/github_pat)
 BRANCH=aliyun-data
 LOG=/var/log/china-hr-policy-aliyun.log
-REMOTE="https://x-access-token:${TOKEN}@github.com/yanqingwang/china-hr-policy-tracker.git"
+REMOTE="https://x-access-token:${TOKEN}@github.com/yanqingwang/china-si-phf-policy.git"
 
 log() { echo "$(date -u +%FT%TZ) $*" >> "$LOG"; }
 

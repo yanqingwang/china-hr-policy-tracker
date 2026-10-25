@@ -176,7 +176,7 @@ def report(recs: list[dict], path: str, week: str) -> str:
     else:
         cov_lines += ["✅ 全部 70 城均有官方页面命中。", ""]
     lines = [
-        "# 中国人力资源政策周报",
+        "# 中国 SI/PHF 政策仓库",
         "",
         f"**周期：{week} · 生成于 {today}（UTC）**",
         "",

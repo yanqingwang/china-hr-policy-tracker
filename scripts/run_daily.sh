@@ -7,14 +7,14 @@
 #   - 无补充公积金/双0/并入医保的险种行一律省略（统一规则 src/insurance_rules.py）
 set -uo pipefail
 export LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
-REPO=/www/hr-policy-tracker/repo
-PY=/www/hr-policy-tracker/venv/bin/python
+REPO=/www/china-si-phf-policy/repo
+PY=/www/china-si-phf-policy/venv/bin/python
 [ -x "$PY" ] || PY=$(command -v python3)
 LOG=/var/log/hr-policy-daily.log
 LOCK=/var/run/hr-policy-daily.lock
 CHANGED=/tmp/hr-insurance-changed
 TOKEN=$(cat /root/.config/hr-policy/github_pat)
-REMOTE="https://x-access-token:${TOKEN}@github.com/yanqingwang/china-hr-policy-tracker.git"
+REMOTE="https://x-access-token:${TOKEN}@github.com/yanqingwang/china-si-phf-policy.git"
 
 # 并发锁（上轮未结束则跳过）
 exec 9>"$LOCK"

@@ -3,9 +3,9 @@
 # 用法：bash merge_batches.sh
 set -euo pipefail
 export LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
-DIR=/www/hr-policy-tracker/repo/data/insurance_batches
-OUT=/www/hr-policy-tracker/repo/data/city_insurance_2026_raw.json
-PY=/www/hr-policy-tracker/venv/bin/python
+DIR=/www/china-si-phf-policy/repo/data/insurance_batches
+OUT=/www/china-si-phf-policy/repo/data/city_insurance_2026_raw.json
+PY=/www/china-si-phf-policy/venv/bin/python
 
 $PY - << PYEOF
 import json, glob, os

@@ -18,7 +18,7 @@ def md_to_html(md_text: str) -> str:
      max-width:780px;margin:0 auto;color:#222;line-height:1.6;">
 <style>table{{border-collapse:collapse}}td,th{{border:1px solid #ddd;padding:4px 8px;font-size:12px}}a{{color:#2563eb}}</style>
 {html}
-<hr><small>本邮件由 china-hr-policy-tracker 每周一自动发送 · 内容仅供合规参考，逐条以原文为准。</small>
+<hr><small>本邮件由 china-si-phf-policy 每周一自动发送 · 内容仅供合规参考，逐条以原文为准。</small>
 </div>"""
 
 
@@ -36,7 +36,7 @@ def send(subject: str, md_text: str, attach_path: str | None = None, to: str | N
 
     msg = MIMEMultipart("mixed")
     msg["Subject"] = Header(subject, "utf-8")
-    msg["From"] = formataddr((str(Header("中国人力资源政策周报机器人", "utf-8")), from_addr))
+    msg["From"] = formataddr((str(Header("中国 SI/PHF 政策仓库机器人", "utf-8")), from_addr))
     msg["To"] = ", ".join(to_addrs)
     msg["Date"] = formatdate()
 

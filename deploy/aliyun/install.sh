@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # 阿里云部署安装脚本：建 venv、装依赖、配 cron
-# 用法：bash install.sh /opt/china-hr-policy-tracker
+# 用法：bash install.sh /opt/china-si-phf-policy
 # 前提：仓库代码已就位（服务器访问不了 GitHub 时用 scp 打包上传，见 README）
 set -euo pipefail
 
-REPO_DIR="${1:-/opt/china-hr-policy-tracker}"
+REPO_DIR="${1:-/opt/china-si-phf-policy}"
 CRON_HOUR="${ALIYUN_CRON_HOUR:-23}"   # 默认 UTC 23:00（周一 CI 02:30 之前完成推送）
 
 echo "[1/3] 建 venv + 依赖"
