@@ -15,7 +15,7 @@ START=/var/run/hr-policy-hourly-start
 CRON=/etc/cron.d/china-si-phf-policy-hourly
 LOCK=/var/run/hr-policy-hourly.lock
 CHANGED=/tmp/hr-insurance-changed
-TOKEN=$(cat /root/.config/hr-policy/github_pat)
+TOKEN=$(cat /root/.config/si-phf-policy/github_pat)
 REMOTE="https://x-access-token:${TOKEN}@github.com/yanqingwang/china-si-phf-policy.git"
 
 # 并发锁

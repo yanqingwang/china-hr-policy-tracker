@@ -13,7 +13,7 @@ PY=/www/china-si-phf-policy/venv/bin/python
 LOG=/var/log/hr-policy-daily.log
 LOCK=/var/run/hr-policy-daily.lock
 CHANGED=/tmp/hr-insurance-changed
-TOKEN=$(cat /root/.config/hr-policy/github_pat)
+TOKEN=$(cat /root/.config/si-phf-policy/github_pat)
 REMOTE="https://x-access-token:${TOKEN}@github.com/yanqingwang/china-si-phf-policy.git"
 
 # 并发锁（上轮未结束则跳过）
