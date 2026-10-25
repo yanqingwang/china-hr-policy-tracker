@@ -10,13 +10,13 @@ set -euo pipefail
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-REPO=/www/china-si-phf-policy/repo
-PY=/www/china-si-phf-policy/venv/bin/python
-BACKUP=/www/china-si-phf-policy/backup
-TOKEN=$(cat /root/.config/si-phf-policy/github_pat)
+REPO=/www/china-hr-si-phf-policy/repo
+PY=/www/china-hr-si-phf-policy/venv/bin/python
+BACKUP=/www/china-hr-si-phf-policy/backup
+TOKEN=$(cat /root/.config/hr-si-phf-policy/github_pat)
 BRANCH=aliyun-data
-LOG=/var/log/si-phf-policy-aliyun.log
-REMOTE="https://x-access-token:${TOKEN}@github.com/yanqingwang/china-si-phf-policy.git"
+LOG=/var/log/hr-si-phf-policy-aliyun.log
+REMOTE="https://x-access-token:${TOKEN}@github.com/yanqingwang/china-hr-si-phf-policy-tracker.git"
 
 log() { echo "$(date -u +%FT%TZ) $*" >> "$LOG"; }
 

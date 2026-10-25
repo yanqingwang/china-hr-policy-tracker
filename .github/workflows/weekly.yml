@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: china-si-phf-policy-refresh
+  group: china-hr-si-phf-policy-refresh
   cancel-in-progress: true
 
 jobs:
@@ -76,7 +76,7 @@ jobs:
         run: python -m src.main --mail --detail --detail-cap 80 --use-discovery
       - name: Commit snapshot
         run: |
-          git config user.name "si-phf-policy-bot"
+          git config user.name "hr-si-phf-policy-bot"
           git config user.email "actions@users.noreply.github.com"
           git add -A
           if git diff --cached --quiet; then

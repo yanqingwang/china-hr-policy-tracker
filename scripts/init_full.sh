@@ -4,10 +4,10 @@ set -euo pipefail
 export LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
 export DETAIL_FETCH_CAP=100
 export DETAIL_FETCH_MAX=300
-REPO=/www/china-si-phf-policy/repo
-PY=/www/china-si-phf-policy/venv/bin/python
-TOKEN=$(cat /root/.config/si-phf-policy/github_pat)
-REMOTE="https://x-access-token:${TOKEN}@github.com/yanqingwang/china-hr-policy-tracker.git"
+REPO=/www/china-hr-si-phf-policy/repo
+PY=/www/china-hr-si-phf-policy/venv/bin/python
+TOKEN=$(cat /root/.config/hr-si-phf-policy/github_pat)
+REMOTE="https://x-access-token:${TOKEN}@github.com/yanqingwang/china-hr-si-phf-policy-tracker.git"
 LOG=/var/log/hr-policy-init-full.log
 
 echo "=== $(date -u +%FT%TZ) init-full start ===" >> "$LOG"

@@ -7,16 +7,16 @@
 #   - 无变化 → 只刷新当前「社保公积金政策.md」（含日期），不产生新版本、不产生提交
 set -uo pipefail
 export LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
-REPO=/www/china-si-phf-policy/repo
-PY=/www/china-si-phf-policy/venv/bin/python
+REPO=/www/china-hr-si-phf-policy/repo
+PY=/www/china-hr-si-phf-policy/venv/bin/python
 [ -x "$PY" ] || PY=$(command -v python3)
 LOG=/var/log/hr-policy-hourly.log
 START=/var/run/hr-policy-hourly-start
-CRON=/etc/cron.d/china-si-phf-policy-hourly
+CRON=/etc/cron.d/china-hr-si-phf-policy-hourly
 LOCK=/var/run/hr-policy-hourly.lock
 CHANGED=/tmp/hr-insurance-changed
-TOKEN=$(cat /root/.config/si-phf-policy/github_pat)
-REMOTE="https://x-access-token:${TOKEN}@github.com/yanqingwang/china-si-phf-policy.git"
+TOKEN=$(cat /root/.config/hr-si-phf-policy/github_pat)
+REMOTE="https://x-access-token:${TOKEN}@github.com/yanqingwang/china-hr-si-phf-policy-tracker.git"
 
 # 并发锁
 exec 9>"$LOCK"

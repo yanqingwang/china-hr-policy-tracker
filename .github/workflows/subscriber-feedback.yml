@@ -60,7 +60,7 @@ jobs:
       - name: Commit encrypted list
         if: steps.parse.outputs.state == 'subscribed' || steps.parse.outputs.state == 'updated' || steps.parse.outputs.state == 'done'
         run: |
-          git config user.name "si-phf-policy-bot"
+          git config user.name "hr-si-phf-policy-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/subscribers.enc
           git diff --cached --quiet || git commit -m "chore(subscribers): encrypted list update"

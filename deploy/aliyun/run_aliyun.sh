@@ -6,7 +6,7 @@
 #                      （需要你在 repo 设置 Secret: ALIYUN_DATA_URL）
 set -euo pipefail
 
-REPO_DIR="${ALIYUN_REPO_DIR:-/opt/china-si-phf-policy}"
+REPO_DIR="${ALIYUN_REPO_DIR:-/opt/china-hr-si-phf-policy}"
 WEB_DIR="${ALIYUN_WEB_DIR:-/var/www/html/hr-data}"
 PY="${ALIYUN_PY:-$REPO_DIR/.venv/bin/python}"
 BRANCH="aliyun-data"
@@ -35,7 +35,7 @@ if [ -n "${GH_PAT:-}" ]; then
   else
     git commit -m "aliyun scan $(date -u +%Y-%m-%d)" || true
   fi
-  if git push "https://x-access-token:${GH_PAT}@github.com/yanqingwang/china-si-phf-policy.git" "$BRANCH" 2>/dev/null; then
+  if git push "https://x-access-token:${GH_PAT}@github.com/yanqingwang/china-hr-si-phf-policy-tracker.git" "$BRANCH" 2>/dev/null; then
     echo "      ✅ git push 成功（分支 $BRANCH）"
     PUSHED=1
   else

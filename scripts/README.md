@@ -1,6 +1,6 @@
 # 服务器自动抓取脚本
 
-> 本目录已纳入版本管理。此前脚本仅存在于服务器 `/www/china-si-phf-policy/scripts/`，
+> 本目录已纳入版本管理。此前脚本仅存在于服务器 `/www/china-hr-si-phf-policy/scripts/`，
 > 而 `run_daily.sh` 在 `git reset --hard` 后以 `$REPO/scripts/...` 相对路径调用，
 > 导致 `update_insurance.py` / `gen_insurance_report.py` **长期未被执行**（报 No such file or directory）。
 > 现脚本随仓库分发，路径问题已修复。
@@ -42,9 +42,9 @@
 
 ```bash
 # 服务器（必须用 venv python，系统 python 过旧不支持 list[dict]）
-/www/china-si-phf-policy/venv/bin/python scripts/update_insurance.py
-/www/china-si-phf-policy/venv/bin/python scripts/gen_insurance_report.py --dated
+/www/china-hr-si-phf-policy/venv/bin/python scripts/update_insurance.py
+/www/china-hr-si-phf-policy/venv/bin/python scripts/gen_insurance_report.py --dated
 
 # 手动跑完整日更
-/www/china-si-phf-policy/scripts/run_daily.sh
+/www/china-hr-si-phf-policy/scripts/run_daily.sh
 ```

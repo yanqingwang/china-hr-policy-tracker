@@ -73,7 +73,7 @@
 # 仓库内
 python3 scripts/gen_insurance_report.py --dated
 # 服务器
-/www/china-si-phf-policy/venv/bin/python /www/china-si-phf-policy/scripts/gen_insurance_report.py --dated
+/www/china-hr-si-phf-policy/venv/bin/python /www/china-hr-si-phf-policy/scripts/gen_insurance_report.py --dated
 ```
 
 注意：服务器系统 python 为旧版（不支持 `list[dict]` 语法），必须用 venv 内的 python。

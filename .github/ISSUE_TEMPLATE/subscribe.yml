@@ -1,5 +1,5 @@
 name: 📮 订阅 / 退订邮件
-description: 输入邮箱，每周一自动收《中国 SI/PHF 政策仓库》
+description: 输入邮箱，每周一自动收《中国 HR/SI/PHF 政策仓库》
 labels: ["subscribe"]
 body:
   - type: dropdown

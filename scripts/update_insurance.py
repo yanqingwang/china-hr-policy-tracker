@@ -29,13 +29,13 @@ def _find_repo() -> Path:
     for cand in (os.environ.get("HR_REPO_DIR"),
                  str(here.parent),        # <repo>/scripts/ -> <repo>
                  str(here),               # 脚本被复制到仓库根时
-                 "/www/china-si-phf-policy/repo"):
+                 "/www/china-hr-si-phf-policy/repo"):
         if cand and Path(cand).joinpath("data", "city_insurance_2026.json").exists():
             return Path(cand)
     for cand in (os.environ.get("HR_REPO_DIR"),
                  str(here.parent),
                  str(here),
-                 "/www/china-si-phf-policy/repo"):
+                 "/www/china-hr-si-phf-policy/repo"):
         if not cand:
             continue
         p = Path(cand)

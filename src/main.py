@@ -1,4 +1,4 @@
-"""china-si-phf-policy orchestrator.
+"""china-hr-si-phf-policy orchestrator.
 
 用法:
     python -m src.main            # 抓取 → 规范化 → 合并 → 周报 + README
@@ -172,7 +172,7 @@ def main() -> None:
         if mailer.enabled():
             body = (rep_dir / "weekly.md").read_text(encoding="utf-8")
             attach = str(rep_dir / "weekly.md")
-            mailer.send(f"中国 SI/PHF 政策仓库 {today.isoformat()}", body, attach)
+            mailer.send(f"中国 HR/SI/PHF 政策仓库 {today.isoformat()}", body, attach)
             print("邮件已发送（库主）", file=sys.stderr)
             print("邮件已发送（库主）", file=sys.stderr)
             try:
@@ -182,7 +182,7 @@ def main() -> None:
                 subs = []
             for email, freq in subs:
                 try:
-                    mailer.send(f"中国 SI/PHF 政策仓库 {today.isoformat()}", body, attach, to=email)
+                    mailer.send(f"中国 HR/SI/PHF 政策仓库 {today.isoformat()}", body, attach, to=email)
                     print(f"邮件已发送（订阅者）", file=sys.stderr)
                 except Exception as exc:
                     print(f"订阅者发送失败: 天义 {type(exc).__name__}", file=sys.stderr)

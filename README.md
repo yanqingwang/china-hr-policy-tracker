@@ -1,4 +1,4 @@
-# 中国 SI/PHF 政策仓库 / China SI/PHF Policy Repository
+# 中国 HR/SI/PHF 政策仓库 / China HR/SI/PHF Policy Repository
 
 > **中文优先**：一条开源流水线：**收录 → 提取 → 过滤 → 合并（原发布单位优先）→ 分类 → 结构化周报**。
 > 数据范围：人社局 · 公积金中心 · 税局 · 人民政府网站 · 工作许可与人才引进政策 · 主要 HR 服务商解读。
