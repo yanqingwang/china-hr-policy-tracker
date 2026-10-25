@@ -26,7 +26,7 @@ def enabled() -> bool:
     return bool(os.environ.get("SMTP_USER")) and bool(os.environ.get("SMTP_PASS"))
 
 
-def send(subject: str, md_text: str, attach_path: str | None = None, to: str | None = None) -> None:
+def send(subject: str, md_text: str, attach_path: str | list[str] | None = None, to: str | None = None) -> None:
     host = os.environ.get("SMTP_HOST") or "smtp.qq.com"
     port = int(os.environ.get("SMTP_PORT") or 465)
     user = os.environ["SMTP_USER"]
@@ -42,12 +42,13 @@ def send(subject: str, md_text: str, attach_path: str | None = None, to: str | N
 
     msg.attach(MIMEText(md_to_html(md_text), "html", "utf-8"))
 
-    if attach_path and os.path.exists(attach_path):
-        with open(attach_path, "rb") as f:
-            att = MIMEApplication(f.read())
-        att.add_header("Content-Disposition", "attachment",
-                       filename=("utf-8", "", os.path.basename(attach_path)))
-        msg.attach(att)
+    for att_path in [attach_path] if isinstance(attach_path, str) else (attach_path or []):
+        if att_path and os.path.exists(att_path):
+            with open(att_path, "rb") as f:
+                att = MIMEApplication(f.read())
+            att.add_header("Content-Disposition", "attachment",
+                           filename=("utf-8", "", os.path.basename(att_path)))
+            msg.attach(att)
     ctx = ssl.create_default_context()
     if port == 465:
         server = smtplib.SMTP_SSL(host, port, context=ctx, timeout=30)

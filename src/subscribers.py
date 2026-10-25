@@ -78,6 +78,9 @@ def remove(email: str) -> str:
     return "removed"
 
 
-def sendable(today=None, weekday_send: bool = True) -> list[tuple[str, str]]:
-    """Weekly job: 直发全体名单（行内 freq 仅作记录，未来加 daily 细分）。"""
-    return _decrypt()
+def sendable(freq: str | None = None) -> list[tuple[str, str]]:
+    """发送名单：指定 freq 时只返回该频率订阅者（weekly=周一全量，daily=每日增量）。"""
+    pairs = _decrypt()
+    if freq is None:
+        return pairs
+    return [(e, f) for e, f in pairs if f == freq]

@@ -50,7 +50,12 @@ echo "aliyun-data 已推送" >> "$LOG"
 git checkout -f main >> "$LOG" 2>&1
 cp /tmp/aliyun-daily.json data/discovery-aliyun.json
 rm -f /tmp/aliyun-daily.json
+cp data/state.json /tmp/state_before.json 2>/dev/null || echo '{"seen":[]}' > /tmp/state_before.json
 "$PY" -m src.main --detail --detail-cap 60 >> "$LOG" 2>&1
+
+# 4.5) 当日新增条目清单（供 GitHub Actions 每日增量邮件 daily-digest.yml 消费）
+"$PY" "$REPO/scripts/make_digest.py" /tmp/state_before.json "$REPO/data/state.json" "$REPO/data/items.json" "$REPO/data/digest_new.json" >> "$LOG" 2>&1
+rm -f /tmp/state_before.json
 
 # 5) 保险数据严格增量更新（仅变化才改基准；变化时写标记）
 [ -f "$REPO/scripts/update_insurance.py" ] || { echo "❌ 缺少 update_insurance.py" >> "$LOG"; exit 1; }

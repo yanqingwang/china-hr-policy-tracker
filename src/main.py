@@ -171,21 +171,25 @@ def main() -> None:
     if args.mail:
         if mailer.enabled():
             body = (rep_dir / "weekly.md").read_text(encoding="utf-8")
-            attach = str(rep_dir / "weekly.md")
-            mailer.send(f"中国 HR/SI/PHF 政策仓库 {today.isoformat()}", body, attach)
-            print("邮件已发送（库主）", file=sys.stderr)
+            attaches = [str(rep_dir / "weekly.md")]
+            detail_report = rep_dir / "社保公积金政策.md"
+            if detail_report.exists():
+                attaches.append(str(detail_report))
+                body = ("> 📎 本邮件附件含《社保公积金政策总表》"
+                        "（144 城 × 7 险种缴费基数/比例明细，长表 9 列）与周报 markdown 原文。\n\n" + body)
+            mailer.send(f"中国 HR/SI/PHF 政策仓库 {today.isoformat()}", body, attaches)
             print("邮件已发送（库主）", file=sys.stderr)
             try:
                 from src import subscribers
-                subs = subscribers.sendable()
+                subs = subscribers.sendable(freq="weekly")
             except SystemExit:
                 subs = []
-            for email, freq in subs:
+            for email, _freq in subs:
                 try:
-                    mailer.send(f"中国 HR/SI/PHF 政策仓库 {today.isoformat()}", body, attach, to=email)
-                    print(f"邮件已发送（订阅者）", file=sys.stderr)
+                    mailer.send(f"中国 HR/SI/PHF 政策仓库 {today.isoformat()}", body, attaches, to=email)
+                    print(f"邮件已发送（订阅者 {email[:3]}***）", file=sys.stderr)
                 except Exception as exc:
-                    print(f"订阅者发送失败: 天义 {type(exc).__name__}", file=sys.stderr)
+                    print(f"订阅者发送失败: {type(exc).__name__}", file=sys.stderr)
         else:
             print("SMTP secrets 缺失，跳过邮件", file=sys.stderr)
 
