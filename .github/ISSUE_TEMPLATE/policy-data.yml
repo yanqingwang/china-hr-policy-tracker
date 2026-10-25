@@ -1,0 +1,151 @@
+name: 📝 社保公积金政策纠错 / Policy Data Correction
+description: 反馈《社保公积金政策总表》中的错误 / 缺失 / 待更新数据（需附官方原文链接）
+labels: ["policy-data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢帮助改进数据质量！本表单用于修正政策总表 [`reports/社保公积金政策.md`](../blob/main/reports/社保公积金政策.md)。
+        总表为 9 列长表：**城市 | 生效日期 | 险种 | 基数上限(元) | 基数下限(元) | 个人% | 公司% | 校验方式 | 更新频率**，
+        请在下方「官方口径数值」各栏填写**官方公告里的正确值**（与该问题无关的栏留空即可）。
+        ⚠️ **必须提供官方原文链接**（人社局 / 医保局 / 公积金中心的 gov.cn 页面或其发布的 PDF），无官方来源的数据无法采纳。
+        🔒 请勿填写个人工资、身份证号等任何个人信息。
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: 问题类型
+      options:
+        - 数值错误（表中有值但与官方不一致）
+        - 数值缺失（表中为 —，需补充）
+        - 缺少整行（该城市 × 险种在总表中没有）
+        - 生效日期缺失或错误
+        - 官方已发布新调整（新年度基数 / 费率）
+        - 其他
+    validations:
+      required: true
+  - type: dropdown
+    id: province
+    attributes:
+      label: 省 / 自治区 / 直辖市
+      description: 用于精确定位城市（养老基数多为省级统筹）
+      options:
+        - 北京市
+        - 天津市
+        - 上海市
+        - 重庆市
+        - 河北省
+        - 山西省
+        - 内蒙古自治区
+        - 辽宁省
+        - 吉林省
+        - 黑龙江省
+        - 江苏省
+        - 浙江省
+        - 安徽省
+        - 福建省
+        - 江西省
+        - 山东省
+        - 河南省
+        - 湖北省
+        - 湖南省
+        - 广东省
+        - 广西壮族自治区
+        - 海南省
+        - 四川省
+        - 贵州省
+        - 云南省
+        - 西藏自治区
+        - 陕西省
+        - 甘肃省
+        - 青海省
+        - 宁夏回族自治区
+        - 新疆维吾尔自治区
+        - 新疆生产建设兵团
+        - 香港特别行政区
+        - 澳门特别行政区
+        - 台湾省
+        - 其他 / 海外
+    validations:
+      required: true
+  - type: input
+    id: city
+    attributes:
+      label: 城市
+      description: 与总表「城市」列写法一致
+      placeholder: 如：东莞
+    validations:
+      required: true
+  - type: dropdown
+    id: insurance
+    attributes:
+      label: 险种
+      options:
+        - 养老
+        - 医疗
+        - 生育
+        - 失业
+        - 工伤
+        - 公积金
+        - 补充公积金
+    validations:
+      required: true
+  - type: input
+    id: effective_date
+    attributes:
+      label: 生效日期（官方公告口径）
+      description: 格式 YYYY-MM-DD；官方未写生效日期填 —
+      placeholder: 如 2026-07-01
+  - type: input
+    id: base_cap
+    attributes:
+      label: 基数上限(元) —— 官方口径
+      description: 纯数字；官方未公布留空
+      placeholder: 如 27603
+  - type: input
+    id: base_floor
+    attributes:
+      label: 基数下限(元) —— 官方口径
+      description: 纯数字；官方未公布留空
+      placeholder: 如 5521
+  - type: input
+    id: individual_rate
+    attributes:
+      label: 个人% —— 官方口径
+      description: 纯数字；公积金等区间填 5~12；未公布留空
+      placeholder: 如 8 或 5~12
+  - type: input
+    id: employer_rate
+    attributes:
+      label: 公司% —— 官方口径
+      description: 纯数字；区间填 0.2~1.9（工伤行业浮动）；未公布留空
+      placeholder: 如 16 或 0.2~1.9
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: 更新频率（如官方公告有说明）
+      options:
+        - 不确定 / 保持现有标注
+        - 年度（每年4/7月调整）
+        - 年度（每年7月调整）
+        - 年度（阶段性费率延续）
+        - 不定期（行业浮动）
+  - type: input
+    id: source_url
+    attributes:
+      label: 官方原文链接（必填）
+      description: 人社局 / 医保局 / 公积金中心 gov.cn 页面；无官方来源无法采纳
+      placeholder: https://rsj.xxx.gov.cn/... 或 https://gjj.xxx.gov.cn/...
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 问题说明
+      description: 请写清「总表现值 → 官方正确值」的对照；公告原文关键句可直接粘贴
+      placeholder: |
+        险种：养老
+        总表现值：基数上限 27603
+        官方正确值：28100（自 2026-07-01 起执行）
+        公告原文："2026年度企业职工基本养老保险缴费基数上限为28100元/月……"
+    validations:
+      required: true
