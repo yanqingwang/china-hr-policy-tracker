@@ -1,10 +1,16 @@
 {
- "generated_at": "2026-10-26T01:48:16+00:00",
+ "generated_at": "2026-10-26T19:42:38+00:00",
  "policy": {
-  "new_count": 0,
-  "new_cities": 0,
-  "cities": [],
-  "top_types": {}
+  "new_count": 2,
+  "new_cities": 2,
+  "cities": [
+   "南昌",
+   "韶关"
+  ],
+  "top_types": {
+   "—": 1,
+   "公积金": 1
+  }
  },
  "insurance": {
   "changed": false,
