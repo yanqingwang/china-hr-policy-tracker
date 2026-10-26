@@ -11,6 +11,15 @@
 > and **PHF (Public Housing Fund)** policies by city — contribution base caps/floors, individual and
 > employer rates, effective dates, with official-source traceability. Currently covers **144 cities**.
 
+
+<!-- CHANGES-SUMMARY-START -->
+## 🔔 最近一次变化
+
+**📌 政策条目：本次无新增政策**
+**💰 五险一金数值：各城市标准无变化**
+
+_更新时间：2026-10-26 01:48 UTC · 历史变化不保留_
+<!-- CHANGES-SUMMARY-END -->
 ## 📋 最新社保公积金政策总表
 
 👉 **[《社保公积金政策总表（2026 年度）》](reports/社保公积金政策.md)** —— 144 城 × 7 险种缴费基数上下限、个人/公司比例、生效日期，每次更新自动覆盖此文件；按日期的历史快照见 [`reports/`](reports/) 目录（`社保公积金政策_YYYY-MM-DD.md`）。
