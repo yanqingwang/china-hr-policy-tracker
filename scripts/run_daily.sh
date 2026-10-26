@@ -60,6 +60,7 @@ rm -f /tmp/state_before.json
 # 5) 保险数据严格增量更新（仅变化才改基准；变化时写标记）
 [ -f "$REPO/scripts/update_insurance.py" ] || { echo "❌ 缺少 update_insurance.py" >> "$LOG"; exit 1; }
 "$PY" "$REPO/scripts/update_insurance.py" >> "$LOG" 2>&1
+"$PY" "$REPO/scripts/refresh_changes.py" >> "$LOG" 2>&1 || echo "变化摘要刷新失败(忽略)" >> "$LOG"
 
 # 6) 生成社保公积金政策报告（当前版刷新；变化时生成带日期新版本）
 [ -f "$REPO/scripts/gen_insurance_report.py" ] || { echo "❌ 缺少 gen_insurance_report.py" >> "$LOG"; exit 1; }

@@ -167,11 +167,21 @@ def main() -> None:
     if changed_cities:
         BASE.write_text(json.dumps(base, ensure_ascii=False, indent=1), encoding="utf-8")
         CHANGED_FLAG.touch()
+        # 变更明细落盘（供变化摘要/邮件使用），覆盖旧摘要：只保留最近一次
+        try:
+            (REPO / "data" / "insurance_changes.json").write_text(
+                json.dumps(changed_cities, ensure_ascii=False, indent=1), encoding="utf-8")
+        except Exception:
+            pass
         print(f"✅ 检出真实变化 {len(changed_cities)} 城，已更新并写变更标记：")
         for c, det in changed_cities.items():
             print(f"   {c}: " + "; ".join(det[:4]))
     else:
         CHANGED_FLAG.unlink(missing_ok=True)
+        try:
+            (REPO / "data" / "insurance_changes.json").unlink(missing_ok=True)
+        except Exception:
+            pass
         print("ℹ️ 基数/比例/上下限均无变化 → 原始数据保持不变（不刷新日期、不改来源）")
 
 

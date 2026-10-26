@@ -18,6 +18,7 @@ import yaml                                        # noqa: E402
 from src import util, normalize, merge             # noqa: E402
 from src import gov_search, gov_list, vendor_news, search_discovery, gov_city  # noqa: E402
 from src import render, mailer                     # noqa: E402
+from src import changes, summary_render            # noqa: E402
 
 ADAPTERS = {"gov_search": gov_search, "gov_list": gov_list,
             "vendor_news": vendor_news, "search_discovery": search_discovery,
@@ -153,8 +154,21 @@ def main() -> None:
     render.report(merged, str(rep_dir / f"{week}.md"), week)
     render.report(merged, str(rep_dir / "weekly.md"), week)
 
+    # 变化摘要：对比上轮，产出邮件开头说明 + README 汇总（只保留最新一次）
+    try:
+        changes.main()
+        summary = json.loads((REPO_ROOT / "data" / "changes_summary.json").read_text(encoding="utf-8"))
+    except Exception as exc:
+        print(f"变化摘要生成失败: {type(exc).__name__}", file=sys.stderr)
+        summary = {}
+    summary_text = summary_render.render_text(summary)
+
     # README 注入（最近 40 条总览表）
     render.inject_readme(str(REPO_ROOT / "README.md"), merged, today.isoformat())
+    try:
+        summary_render.inject_readme(str(REPO_ROOT / "README.md"), summary)
+    except Exception as exc:
+        print(f"README 变化汇总注入失败: {type(exc).__name__}", file=sys.stderr)
 
     # state/bucket
     items_path = REPO_ROOT / "data" / "items.json"
@@ -173,10 +187,14 @@ def main() -> None:
             body = (rep_dir / "weekly.md").read_text(encoding="utf-8")
             attaches = [str(rep_dir / "weekly.md")]
             detail_report = rep_dir / "社保公积金政策.md"
+            prefix = ""
+            if summary_text:
+                prefix = summary_text + "\n---\n\n"
             if detail_report.exists():
                 attaches.append(str(detail_report))
-                body = ("> 📎 本邮件附件含《社保公积金政策总表》"
-                        "（144 城 × 7 险种缴费基数/比例明细，长表 9 列）与周报 markdown 原文。\n\n" + body)
+                prefix += ("> 📎 本邮件附件含《社保公积金政策总表》"
+                        "（144 城 × 7 险种缴费基数/比例明细，长表 9 列）与周报 markdown 原文。\n\n")
+            body = prefix + body
             mailer.send(f"中国 HR/SI/PHF 政策仓库 {today.isoformat()}", body, attaches)
             print("邮件已发送（库主）", file=sys.stderr)
             try:
