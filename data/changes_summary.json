@@ -1,17 +1,14 @@
 {
- "generated_at": "2026-10-28T19:42:42+00:00",
+ "generated_at": "2026-10-29T19:43:34+00:00",
  "policy": {
-  "new_count": 4,
-  "new_cities": 4,
+  "new_count": 2,
+  "new_cities": 2,
   "cities": [
    "南昌",
-   "无锡",
-   "洛阳",
-   "西安"
+   "昆明"
   ],
   "top_types": {
-   "—": 3,
-   "公积金": 1
+   "—": 2
   }
  },
  "insurance": {
