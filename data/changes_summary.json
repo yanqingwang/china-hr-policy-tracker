@@ -1,17 +1,10 @@
 {
- "generated_at": "2026-10-30T19:42:48+00:00",
+ "generated_at": "2026-10-31T19:43:39+00:00",
  "policy": {
-  "new_count": 12,
-  "new_cities": 3,
-  "cities": [
-   "大连",
-   "西安",
-   "遵义"
-  ],
-  "top_types": {
-   "公积金": 11,
-   "—": 1
-  }
+  "new_count": 0,
+  "new_cities": 0,
+  "cities": [],
+  "top_types": {}
  },
  "insurance": {
   "changed": false,
